@@ -1,0 +1,798 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.g.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Serbian (`sr`).
+class AppLocalizationsSr extends AppLocalizations {
+  AppLocalizationsSr([String locale = 'sr']) : super(locale);
+
+  @override
+  String get appCenterLabel => 'Центар за апликације';
+
+  @override
+  String get appstreamSearchGreylist =>
+      'апл.;апликација;пакет;програм;програм;пакет;алат';
+
+  @override
+  String get snapPageChannelLabel => 'Канал';
+
+  @override
+  String get snapPageConfinementLabel => 'Ограничење';
+
+  @override
+  String snapPageContactPublisherLabel(String publisher) {
+    return 'Контактирај $publisher';
+  }
+
+  @override
+  String get snapPageDeveloperWebsiteLabel => 'Вебсајт програмера';
+
+  @override
+  String get snapPageDownloadSizeLabel => 'Величина преузимања';
+
+  @override
+  String get snapPageSizeLabel => 'Величина';
+
+  @override
+  String get snapPageGalleryNextSemanticLabel => 'Next image';
+
+  @override
+  String get snapPageGalleryPreviousSemanticLabel => 'Previous image';
+
+  @override
+  String snapPageGalleryImageSemanticLabel(int n) {
+    return 'Image $n';
+  }
+
+  @override
+  String get snapPageLicenseLabel => 'Лиценца';
+
+  @override
+  String get snapPageLinksLabel => 'Везе';
+
+  @override
+  String get snapPagePublisherLabel => 'Издавач';
+
+  @override
+  String get snapPagePublishedLabel => 'Објављено';
+
+  @override
+  String get snapPageSummaryLabel => 'Резиме';
+
+  @override
+  String get snapPageVersionLabel => 'Верзија';
+
+  @override
+  String get snapPageShareLinkCopiedMessage => 'Веза копирана у клипборд';
+
+  @override
+  String get snapPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get snapPageReportSemanticLabel => 'Report';
+
+  @override
+  String sectionExpandSemanticLabel(String section) {
+    return 'Expand $section';
+  }
+
+  @override
+  String sectionCollapseSemanticLabel(String section) {
+    return 'Collapse $section';
+  }
+
+  @override
+  String get explorePageLabel => 'Истражи';
+
+  @override
+  String get explorePageCategoriesLabel => 'Категорије';
+
+  @override
+  String get managePageOwnUpdateAvailable =>
+      'Доступно ажурирање Центра за апликације';
+
+  @override
+  String get managePageQuitToUpdate => 'Изађи да ажурираш';
+
+  @override
+  String get managePageOwnUpdateDescription =>
+      'Када изађете из апликације, она ће се аутоматски ажурирати.';
+
+  @override
+  String get managePageOwnUpdateQuitButton => 'Изађи да ажурираш';
+
+  @override
+  String get managePageCheckForUpdates => 'Провери за ажурирања';
+
+  @override
+  String get managePageCheckingForUpdates => 'Проверавање ажурирања';
+
+  @override
+  String get managePageNoInternet =>
+      'Не могу да приступим серверу, проверите своју интернет везу или покушајте поново касније.';
+
+  @override
+  String get managePageDescription =>
+      'Провери доступна ажурирања, ажурирај своје апликације и управљај статусом свих својих апликација.';
+
+  @override
+  String get managePageDebUpdatesMessage =>
+      'Ажурирања Debian пакета се обрађују преко Ажурирача програма.';
+
+  @override
+  String get managePageInstalledAndUpdatedLabel => 'Инсталирано и ажурирано';
+
+  @override
+  String managePageInstallingLabel(int n) {
+    return 'Поступак инсталирања ($n)';
+  }
+
+  @override
+  String get managePageLabel => 'Управљај';
+
+  @override
+  String get managePageTitle => 'Управљај инсталираним snap-овима';
+
+  @override
+  String get managePageNoUpdatesAvailableDescription =>
+      'Нема доступних ажурирања. Све ваше апликације су ажуриране.';
+
+  @override
+  String get managePageSearchFieldSearchHint =>
+      'Претражи своје инсталиране апликације';
+
+  @override
+  String get managePageShowDetailsLabel => 'Прикажи детаље';
+
+  @override
+  String get managePageShowSystemSnapsLabel => 'Прикажи системске snap-ове';
+
+  @override
+  String get managePagePackageTypeLabel => 'Package type';
+
+  @override
+  String get managePagePackageTypeAll => 'All';
+
+  @override
+  String get managePagePackageTypeSnap => 'Snap';
+
+  @override
+  String get managePagePackageTypeDeb => 'Deb';
+
+  @override
+  String get managePagePackageTypeFlatpak => 'Flatpak';
+
+  @override
+  String get managePageUpdateAllLabel => 'Ажурирај све';
+
+  @override
+  String managePageUpdatedDaysAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n дана',
+      one: '$n дан',
+    );
+    return 'Ажурирано пре $_temp0';
+  }
+
+  @override
+  String managePageUpdatedWeeksAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n недеља',
+      few: '$n недеље',
+      one: '$n недељу',
+    );
+    return 'Ажурирано пре $_temp0';
+  }
+
+  @override
+  String managePageUpdatedMonthsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n месеци',
+      few: '$n месеца',
+      one: '$n месец',
+    );
+    return 'Ажурирано пре $_temp0';
+  }
+
+  @override
+  String managePageUpdatedYearsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n година',
+      few: '$n године',
+      one: '$n годину',
+    );
+    return 'Ажурирано пре $_temp0';
+  }
+
+  @override
+  String managePageUpdatesAvailable(int n) {
+    return 'Доступна ажурирања ($n)';
+  }
+
+  @override
+  String managePageUpdatesFailed(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n ажурирања',
+      one: 'Једно ажурирање',
+    );
+    return '$_temp0 није успело';
+  }
+
+  @override
+  String managePageUpdatesFailedBody(Object snapList) {
+    return 'Нисмо могли да ажурирамо ове апликације јер су тренутно покренуте.\n\n$snapList\nКада изађете из апликација, оне ће се аутоматски ажурирати.';
+  }
+
+  @override
+  String get managePageDocumentationLinkLabel =>
+      'Научите кроз документацију како да управљате Debian пакетима.';
+
+  @override
+  String get productivityPageLabel => 'Продуктивност';
+
+  @override
+  String get developmentPageLabel => 'Развој';
+
+  @override
+  String get gamesPageLabel => 'Игре';
+
+  @override
+  String get gamesPageTitle => 'Шта је популарно';
+
+  @override
+  String get gamesPageTop => 'Најбоље игре';
+
+  @override
+  String get gamesPageFeatured => 'Истакнути наслови';
+
+  @override
+  String get gamesPageBundles => 'Пакети апликација';
+
+  @override
+  String get unknownPublisher => 'Непознат издавач';
+
+  @override
+  String get searchFieldDebSection => 'Debian пакети';
+
+  @override
+  String get searchFieldSearchHint => 'Претражи апликације';
+
+  @override
+  String searchFieldSearchForLabel(String query) {
+    return 'Погледај све резултате за \"$query\"';
+  }
+
+  @override
+  String get searchFieldSnapSection => 'Snap пакети';
+
+  @override
+  String get searchPageFilterByLabel => 'Филтрирај по';
+
+  @override
+  String searchPageNoResults(String query) {
+    return 'Нема резултата за \"$query\"';
+  }
+
+  @override
+  String get searchPageNoResultsHint =>
+      'Покушајте да користите другачије или општије кључне речи';
+
+  @override
+  String get searchPageNoResultsCategory =>
+      'Извините, нисмо могли да пронађемо пакете у овој категорији';
+
+  @override
+  String get searchPageNoResultsCategoryHint =>
+      'Покушајте другу категорију или користите општије кључне речи';
+
+  @override
+  String get searchPageSortByLabel => 'Сортирај по';
+
+  @override
+  String get searchPageRelevanceLabel => 'Релевантност';
+
+  @override
+  String searchPageTitle(String query) {
+    return 'Резултати за \"$query\"';
+  }
+
+  @override
+  String get aboutPageLabel => 'О';
+
+  @override
+  String aboutPageVersionLabel(String version) {
+    return 'Верзија $version';
+  }
+
+  @override
+  String get aboutPageContributorTitle => 'Дизајнирано и развијено од:';
+
+  @override
+  String get aboutPageCommunityTitle => 'Будите део заједнице:';
+
+  @override
+  String get aboutPageContributeLabel => 'Доприносите или пријавите грешку';
+
+  @override
+  String get aboutPageGitHubLabel => 'Пронађите нас на GitHub-у';
+
+  @override
+  String get aboutPagePublishLabel => 'Објавите у Snap продавници';
+
+  @override
+  String get aboutPageLearnMoreLabel => 'Сазнајте више';
+
+  @override
+  String appUrlTypeContact(String publisher) {
+    return 'Contact $publisher';
+  }
+
+  @override
+  String get appUrlTypeHomepage => 'Developer website';
+
+  @override
+  String get appUrlTypeUnknown => 'Link';
+
+  @override
+  String get appConfinementUnknown => 'Unknown';
+
+  @override
+  String get appConfinementStrict => 'Sandboxed';
+
+  @override
+  String get appConfinementDevelopment => 'Devmode';
+
+  @override
+  String get appConfinementClassic => 'Unrestricted';
+
+  @override
+  String get appConfinementUnrestricted => 'Unrestricted';
+
+  @override
+  String get appLicenseUnknown => 'Unknown';
+
+  @override
+  String get appPublishedUnknown => 'Unknown';
+
+  @override
+  String get appMoreActionsSemanticLabel => 'More actions';
+
+  @override
+  String get packageFormatDebLabel => 'Debian пакети';
+
+  @override
+  String get packageFormatSnapLabel => 'Snap пакети';
+
+  @override
+  String get packageFormatAllLabel => 'All packages';
+
+  @override
+  String get packageFormatFlatpakLabel => 'Flatpak packages';
+
+  @override
+  String get searchFieldFlatpakSection => 'Flatpak packages';
+
+  @override
+  String get flatpakRemoteLabel => 'Remote';
+
+  @override
+  String get flatpakVersionUnknown => 'Unknown';
+
+  @override
+  String get snapActionCancelLabel => 'Откажи';
+
+  @override
+  String get snapActionInstallLabel => 'Поступак инсталирања';
+
+  @override
+  String get snapActionInstalledLabel => 'Инсталирано';
+
+  @override
+  String get snapActionInstallingLabel => 'Инсталирање';
+
+  @override
+  String get snapActionOpenLabel => 'Отвори';
+
+  @override
+  String get snapActionRemoveLabel => 'Деинсталирај';
+
+  @override
+  String get snapActionRemovingLabel => 'Деинсталирање';
+
+  @override
+  String get snapActionRevertLabel => 'Revert update';
+
+  @override
+  String get snapActionRevertingLabel => 'Reverting update';
+
+  @override
+  String get snapRevertConfirmTitle => 'Revert to previous version?';
+
+  @override
+  String get snapRevertConfirmMessage =>
+      'Automatic updates will resume when a new version is available.';
+
+  @override
+  String get snapRevertConfirmRevert => 'Revert';
+
+  @override
+  String get snapRevertConfirmCancel => 'Cancel';
+
+  @override
+  String snapRevertConfirmTitleWithVersions(String currentVersion,
+      int currentRevision, String previousVersion, int previousRevision) {
+    return 'Revert from $currentVersion (rev $currentRevision) to $previousVersion (rev $previousRevision)?';
+  }
+
+  @override
+  String get snapRevertNoPreviousRevisionMessage =>
+      'No previous local revision is available to revert to.';
+
+  @override
+  String get snapActionSwitchChannelLabel => 'Промени канал';
+
+  @override
+  String get snapActionUpdateLabel => 'Ажурирај';
+
+  @override
+  String get snapCategoryAll => 'Све категорије';
+
+  @override
+  String get snapActionUpdatingLabel => 'Ажурирање';
+
+  @override
+  String appCardPublisherSemanticLabel(String publisher) {
+    return 'Published by $publisher.';
+  }
+
+  @override
+  String appCardRatingSemanticLabel(String rating) {
+    return 'Rating $rating.';
+  }
+
+  @override
+  String get snapCategoryArtAndDesign => 'Уметност и дизајн';
+
+  @override
+  String get snapCategoryArtAndDesignButtonLabel => 'Почни да ствараш';
+
+  @override
+  String get snapCategoryArtAndDesignSlogan =>
+      'Од првог цртежа до финалног додира, истражите апликације за уметност и дизајн.';
+
+  @override
+  String get snapCategoryBooksAndReference => 'Књиге и референце';
+
+  @override
+  String get snapCategoryDefaultButtonLabel => 'Откријте више';
+
+  @override
+  String get snapCategoryDevelopment => 'Развој';
+
+  @override
+  String get snapCategoryDevelopmentSlogan => 'Неопходни снапови за програмере';
+
+  @override
+  String get snapCategoryDevicesAndIot => 'Уређаји и IoT';
+
+  @override
+  String get snapCategoryEducation => 'Образовање';
+
+  @override
+  String get snapCategoryEntertainment => 'Забава';
+
+  @override
+  String get snapCategoryFeatured => 'Истакнуто';
+
+  @override
+  String get snapCategoryFeaturedSlogan => 'Истакнути снапови';
+
+  @override
+  String get snapCategoryFinance => 'Финансије';
+
+  @override
+  String get snapCategoryGames => 'Игре';
+
+  @override
+  String get snapCategoryGamesSlogan => 'Све за вашу ноћ игрица';
+
+  @override
+  String get snapCategoryGameDev => 'Развој игара';
+
+  @override
+  String get snapCategoryGameDevSlogan => 'Развој игара';
+
+  @override
+  String get snapCategoryGameEmulators => 'Емулатори';
+
+  @override
+  String get snapCategoryGameEmulatorsSlogan => 'Емулатори';
+
+  @override
+  String get snapCategoryGnomeGames => 'GNOME Игре';
+
+  @override
+  String get snapCategoryGnomeGamesSlogan => 'GNOME пакет игрица';
+
+  @override
+  String get snapCategoryKdeGames => 'KDE Игре';
+
+  @override
+  String get snapCategoryKdeGamesSlogan => 'KDE пакет игрица';
+
+  @override
+  String get snapCategoryGameLaunchers => 'Покретачи игара';
+
+  @override
+  String get snapCategoryGameLaunchersSlogan => 'Покретачи игара';
+
+  @override
+  String get snapCategoryGameContentCreation => 'Креирање садржаја';
+
+  @override
+  String get snapCategoryGameContentCreationSlogan => 'Креирање садржаја';
+
+  @override
+  String get snapCategoryHealthAndFitness => 'Здравље и фитнес';
+
+  @override
+  String get snapCategoryMusicAndAudio => 'Музика и аудио';
+
+  @override
+  String get snapCategoryNewsAndWeather => 'Вести и време';
+
+  @override
+  String get snapCategoryPersonalisation => 'Персонализација';
+
+  @override
+  String get snapCategoryPhotoAndVideo => 'Фотографија и видео';
+
+  @override
+  String get snapCategoryProductivity => 'Продуктивност';
+
+  @override
+  String get snapCategoryProductivityButtonLabel =>
+      'Откријте колекцију за продуктивност';
+
+  @override
+  String get snapCategoryProductivitySlogan =>
+      'Прецртајте једну ствар са своје листе обавеза';
+
+  @override
+  String get snapCategoryScience => 'Наука';
+
+  @override
+  String get snapCategorySecurity => 'Безбедност';
+
+  @override
+  String get snapCategoryServerAndCloud => 'Сервер и облак';
+
+  @override
+  String get snapCategorySocial => 'Друштвено';
+
+  @override
+  String get snapCategoryUbuntuDesktop => 'Ubuntu Десктоп';
+
+  @override
+  String get snapCategoryUbuntuDesktopSlogan => 'Брзи почетак вашег десктопа';
+
+  @override
+  String get snapCategoryUtilities => 'Алатке';
+
+  @override
+  String get snapSortOrderAlphabeticalAsc => 'Абецедно (А до Ш)';
+
+  @override
+  String get snapSortOrderAlphabeticalDesc => 'Абецедно (Ш до А)';
+
+  @override
+  String get snapSortOrderDownloadSizeAsc => 'Величина (Најмања до највећа)';
+
+  @override
+  String get snapSortOrderDownloadSizeDesc => 'Величина (Највећа до најмања)';
+
+  @override
+  String get snapSortOrderInstalledSizeAsc => 'Величина (Најмања до највећа)';
+
+  @override
+  String get snapSortOrderInstalledSizeDesc => 'Величина (Највећа до најмања)';
+
+  @override
+  String get snapSortOrderInstalledDateAsc => 'Најмање недавно ажурирано';
+
+  @override
+  String get snapSortOrderInstalledDateDesc => 'Највише недавно ажурирано';
+
+  @override
+  String get snapSortOrderRelevance => 'Релевантност';
+
+  @override
+  String get snapRatingsBandVeryGood => 'Врло добро';
+
+  @override
+  String get snapRatingsBandGood => 'Добро';
+
+  @override
+  String get snapRatingsBandNeutral => 'Неутрално';
+
+  @override
+  String get snapRatingsBandPoor => 'Лоше';
+
+  @override
+  String get snapRatingsBandVeryPoor => 'Врло лоше';
+
+  @override
+  String get snapRatingsBandInsufficientVotes => 'Недовољно гласова';
+
+  @override
+  String snapRatingsVotes(int n) {
+    return '$n гласова';
+  }
+
+  @override
+  String snapReportLabel(String snapName) {
+    return 'Пријави $snapName';
+  }
+
+  @override
+  String get snapReportSelectReportReasonLabel =>
+      'Изаберите разлог за пријаву овог снапа';
+
+  @override
+  String get snapReportSelectAnOptionLabel => 'Изаберите опцију';
+
+  @override
+  String get snapReportOptionCopyrightViolation =>
+      'Повреда ауторских права или заштитног знака';
+
+  @override
+  String get snapReportOptionStoreViolation =>
+      'Кршење услова коришћења Snap продавнице';
+
+  @override
+  String get snapReportDetailsLabel =>
+      'Молимо наведите детаљнији разлог за вашу пријаву';
+
+  @override
+  String get snapReportOptionalEmailAddressLabel => 'Ваша е-пошта (опционално)';
+
+  @override
+  String get snapReportCancelButtonLabel => 'Откажи';
+
+  @override
+  String get snapReportSubmitButtonLabel => 'Пошаљи пријаву';
+
+  @override
+  String get snapReportEnterValidEmailError => 'Унесите важећу е-адресу';
+
+  @override
+  String get snapReportDetailsHint => 'Коментар...';
+
+  @override
+  String get snapReportPrivacyAgreementLabel =>
+      'Подношењем овог обрасца, потврђујем да сам прочитао и слажем се са ';
+
+  @override
+  String get snapReportPrivacyAgreementCanonicalPrivacyNotice =>
+      'Canonical-овим обавештењем о приватности ';
+
+  @override
+  String get snapReportPrivacyAgreementAndLabel => 'и ';
+
+  @override
+  String get snapReportPrivacyAgreementPrivacyPolicy => 'Политиком приватности';
+
+  @override
+  String get debPageErrorNoPackageInfo => 'Нису пронађене информације о пакету';
+
+  @override
+  String get debPageDocumentationLinkLabel =>
+      'Научите о управљању Debian пакетима';
+
+  @override
+  String get debPageShareLinkCopiedMessage => 'Link copied to clipboard';
+
+  @override
+  String get debPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get externalResources => 'Додатни ресурси';
+
+  @override
+  String get externalResourcesButtonLabel => 'Откријте више';
+
+  @override
+  String get allGamesButtonLabel => 'Све игре';
+
+  @override
+  String get externalResourcesDisclaimer =>
+      'Напомена: Ово су све спољашњи алати. Ови алати нису у власништву нити их дистрибуира Canonical.';
+
+  @override
+  String get openInBrowser => 'Отвори у прегледачу';
+
+  @override
+  String get installAll => 'Поступак инсталирања свих';
+
+  @override
+  String get localDebWarningTitle => 'Потенцијално небезбедно';
+
+  @override
+  String get localDebWarningBody =>
+      'Овај пакет је обезбеђен од стране треће стране. Поступак инсталирања пакета изван Центра апликација може повећати ризик за ваш систем и личне податке. Уверите се да верујете извору пре него што наставите.';
+
+  @override
+  String get localDebLearnMore => 'Сазнајте више о пакетима трећих страна';
+
+  @override
+  String get localDebDialogMessage =>
+      'Овај пакет је обезбеђен од стране треће стране и може угрозити ваш систем и личне податке.';
+
+  @override
+  String get localDebDialogConfirmation =>
+      'Да ли сте сигурни да желите да га инсталирате?';
+
+  @override
+  String snapdExceptionRunningApps(String snapName) {
+    return 'Нисмо могли да ажурирамо $snapName јер је тренутно покренут.';
+  }
+
+  @override
+  String get errorViewCheckStatusLabel => 'Проверите статус';
+
+  @override
+  String get errorViewNetworkErrorTitle => 'Повежи се на интернет';
+
+  @override
+  String get errorViewNetworkErrorDescription =>
+      'Не можемо учитати садржај у Центру апликација без интернет везе.';
+
+  @override
+  String get errorViewNetworkErrorAction =>
+      'Проверите своју везу и покушајте поново.';
+
+  @override
+  String get errorViewServerErrorDescription =>
+      'Извините, тренутно имамо проблема са Центром апликација.';
+
+  @override
+  String get errorViewServerErrorAction =>
+      'Проверите статус за ажурирања или покушајте поново касније.';
+
+  @override
+  String get errorViewUnknownErrorTitle => 'Нешто је пошло наопако';
+
+  @override
+  String get errorViewUnknownErrorDescription =>
+      'Извините, али нисмо сигурни у чему је грешка.';
+
+  @override
+  String get errorViewUnknownErrorAction =>
+      'Можете покушати поново сада, проверити статус за ажурирања или покушати поново касније.';
+
+  @override
+  String get codecPageTitle => 'Missing media codecs';
+
+  @override
+  String get codecPageDescription =>
+      'You need to install the following codecs for handling certain video and audio formats:';
+
+  @override
+  String get codecProprietaryDisclaimer =>
+      'Some of the recommended codecs could be proprietary.';
+
+  @override
+  String get codecInstallAllButton => 'Install recommended codecs';
+}

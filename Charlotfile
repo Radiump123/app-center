@@ -1,0 +1,49 @@
+[project]
+name = "app-center"
+author = "Ubuntu App Center Contributors"
+
+[tasks.setup]
+bash scripts/install-fvm.sh
+fvm use
+fvm dart run melos bootstrap
+
+[tasks.get]
+fvm dart run melos bootstrap
+
+[tasks.run]
+cd packages/app_center && fvm flutter run -d linux
+
+[tasks.build]
+cd packages/app_center && fvm flutter build linux --release
+
+[tasks.test]
+cd packages/app_center && fvm flutter test
+
+[tasks.lint]
+cd packages/app_center && fvm dart analyze --fatal-infos
+
+[tasks.format]
+cd packages/app_center && fvm dart format lib test
+
+[tasks.l10n]
+cd packages/app_center && fvm flutter gen-l10n
+
+[tasks.codegen]
+cd packages/app_center && fvm dart run build_runner build --delete-conflicting-outputs
+
+[tasks.clean]
+cd packages/app_center && fvm flutter clean
+
+[tasks.check-flatpak]
+flatpak --version
+
+[tasks.setup-flathub]
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+[tasks.all]
+bash scripts/install-fvm.sh
+fvm use
+fvm dart run melos bootstrap
+cd packages/app_center && fvm dart run build_runner build --delete-conflicting-outputs
+cd packages/app_center && fvm flutter gen-l10n
+cd packages/app_center && fvm flutter build linux --release

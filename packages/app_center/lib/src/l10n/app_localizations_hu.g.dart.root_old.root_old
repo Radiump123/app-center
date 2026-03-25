@@ -1,0 +1,804 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.g.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Hungarian (`hu`).
+class AppLocalizationsHu extends AppLocalizations {
+  AppLocalizationsHu([String locale = 'hu']) : super(locale);
+
+  @override
+  String get appCenterLabel => 'Alkalmazásközpont';
+
+  @override
+  String get appstreamSearchGreylist =>
+      'alkalmazás;csomag;program;alkalmazáscsomag;eszköz';
+
+  @override
+  String get snapPageChannelLabel => 'Csatorna';
+
+  @override
+  String get snapPageConfinementLabel => 'Bezártság';
+
+  @override
+  String snapPageContactPublisherLabel(String publisher) {
+    return 'Kapcsolatfelvétel: $publisher';
+  }
+
+  @override
+  String get snapPageDeveloperWebsiteLabel => 'Fejlesztő webhelye';
+
+  @override
+  String get snapPageDownloadSizeLabel => 'Letöltési méret';
+
+  @override
+  String get snapPageSizeLabel => 'Méret';
+
+  @override
+  String get snapPageGalleryNextSemanticLabel => 'Next image';
+
+  @override
+  String get snapPageGalleryPreviousSemanticLabel => 'Previous image';
+
+  @override
+  String snapPageGalleryImageSemanticLabel(int n) {
+    return 'Image $n';
+  }
+
+  @override
+  String get snapPageLicenseLabel => 'Licenc';
+
+  @override
+  String get snapPageLinksLabel => 'Hivatkozások';
+
+  @override
+  String get snapPagePublisherLabel => 'Kiadó';
+
+  @override
+  String get snapPagePublishedLabel => 'Kiadva';
+
+  @override
+  String get snapPageSummaryLabel => 'Összegzés';
+
+  @override
+  String get snapPageVersionLabel => 'Verzió';
+
+  @override
+  String get snapPageShareLinkCopiedMessage => 'Hivatkozás másolva a vágólapra';
+
+  @override
+  String get snapPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get snapPageReportSemanticLabel => 'Report';
+
+  @override
+  String sectionExpandSemanticLabel(String section) {
+    return 'Expand $section';
+  }
+
+  @override
+  String sectionCollapseSemanticLabel(String section) {
+    return 'Collapse $section';
+  }
+
+  @override
+  String get explorePageLabel => 'Felfedezés';
+
+  @override
+  String get explorePageCategoriesLabel => 'Kategóriák';
+
+  @override
+  String get managePageOwnUpdateAvailable =>
+      'Alkalmazásközpont frissítése érhető el';
+
+  @override
+  String get managePageQuitToUpdate => 'Kilépés a frissítéshez';
+
+  @override
+  String get managePageOwnUpdateDescription =>
+      'Amikor kilép az alkalmazásból, az automatikusan frissül.';
+
+  @override
+  String get managePageOwnUpdateQuitButton => 'Kilépés a frissítéshez';
+
+  @override
+  String get managePageCheckForUpdates => 'Frissítések keresése';
+
+  @override
+  String get managePageCheckingForUpdates => 'Frissítések keresése';
+
+  @override
+  String get managePageNoInternet =>
+      'Nem érhető el a kiszolgáló. Ellenőrizze az internetkapcsolatát, vagy próbálja meg később újra.';
+
+  @override
+  String get managePageDescription =>
+      'Az elérhető frissítések keresése, az alkalmazások frissítése és az összes alkalmazás állapotának kezelése.';
+
+  @override
+  String get managePageDebUpdatesMessage =>
+      'A Debian csomagfrissítéseit a Szoftverfrissítő kezeli.';
+
+  @override
+  String get managePageInstalledAndUpdatedLabel => 'Telepítve és frissítve';
+
+  @override
+  String managePageInstallingLabel(int n) {
+    return 'Telepítés ($n)';
+  }
+
+  @override
+  String get managePageLabel => 'Kezelés';
+
+  @override
+  String get managePageTitle => 'Telepített snap-csomagok kezelése';
+
+  @override
+  String get managePageNoUpdatesAvailableDescription =>
+      'Nem érhetők el frissítések. Az összes alkalmazása naprakész.';
+
+  @override
+  String get managePageSearchFieldSearchHint =>
+      'Telepített alkalmazások keresése';
+
+  @override
+  String get managePageShowDetailsLabel => 'Részletek megjelenítése';
+
+  @override
+  String get managePageShowSystemSnapsLabel =>
+      'Rendszer snap-csomagok megjelenítése';
+
+  @override
+  String get managePagePackageTypeLabel => 'Package type';
+
+  @override
+  String get managePagePackageTypeAll => 'All';
+
+  @override
+  String get managePagePackageTypeSnap => 'Snap';
+
+  @override
+  String get managePagePackageTypeDeb => 'Deb';
+
+  @override
+  String get managePagePackageTypeFlatpak => 'Flatpak';
+
+  @override
+  String get managePageUpdateAllLabel => 'Összes frissítése';
+
+  @override
+  String managePageUpdatedDaysAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n nappal',
+      one: '$n nappal',
+    );
+    return '$_temp0 ezelőtt frissítve';
+  }
+
+  @override
+  String managePageUpdatedWeeksAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n héttel',
+      one: '$n héttel',
+    );
+    return '$_temp0 ezelőtt frissítve';
+  }
+
+  @override
+  String managePageUpdatedMonthsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n hónappal',
+      one: '$n hónappal',
+    );
+    return '$_temp0 ezelőtt frissítve';
+  }
+
+  @override
+  String managePageUpdatedYearsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n évvel',
+      one: '$n évvel',
+    );
+    return '$_temp0 ezelőtt frissítve';
+  }
+
+  @override
+  String managePageUpdatesAvailable(int n) {
+    return 'Frissítések érhetők el ($n)';
+  }
+
+  @override
+  String managePageUpdatesFailed(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n frissítés',
+      one: 'Egy frissítés',
+    );
+    return '$_temp0 sikertelen';
+  }
+
+  @override
+  String managePageUpdatesFailedBody(Object snapList) {
+    return 'Ezeket az alkalmazásokat nem sikerült frissíteni, mert jelenleg futnak.\n\n$snapList\nAmikor kilép az alkalmazásokból, azok automatikusan frissülnek.';
+  }
+
+  @override
+  String get managePageDocumentationLinkLabel =>
+      'Ismerje meg a Debian-csomagok kezelésének módját a dokumentációból.';
+
+  @override
+  String get productivityPageLabel => 'Termelékenység';
+
+  @override
+  String get developmentPageLabel => 'Fejlesztés';
+
+  @override
+  String get gamesPageLabel => 'Játékok';
+
+  @override
+  String get gamesPageTitle => 'Mi a menő';
+
+  @override
+  String get gamesPageTop => 'Legjobbra értékelt';
+
+  @override
+  String get gamesPageFeatured => 'Kiemelt címek';
+
+  @override
+  String get gamesPageBundles => 'Alkalmazáscsomagok';
+
+  @override
+  String get unknownPublisher => 'Ismeretlen kiadó';
+
+  @override
+  String get searchFieldDebSection => 'Debian-csomagok';
+
+  @override
+  String get searchFieldSearchHint => 'Alkalmazások keresése';
+
+  @override
+  String searchFieldSearchForLabel(String query) {
+    return 'Összes találat megjelenítése ehhez: „$query”';
+  }
+
+  @override
+  String get searchFieldSnapSection => 'Snap-csomagok';
+
+  @override
+  String get searchPageFilterByLabel => 'Szűrés eszerint';
+
+  @override
+  String searchPageNoResults(String query) {
+    return 'Nincsenek találatok erre: „$query”';
+  }
+
+  @override
+  String get searchPageNoResultsHint =>
+      'Próbáljon meg más vagy általánosabb kulcsszavakat használni';
+
+  @override
+  String get searchPageNoResultsCategory =>
+      'Elnézést, de nem találhatók csomagok ebben a kategóriában';
+
+  @override
+  String get searchPageNoResultsCategoryHint =>
+      'Próbáljon más kategóriát vagy használjon általánosabb kulcsszavakat';
+
+  @override
+  String get searchPageSortByLabel => 'Rendezési sorrend';
+
+  @override
+  String get searchPageRelevanceLabel => 'Fontosság';
+
+  @override
+  String searchPageTitle(String query) {
+    return 'Találtok erre: „$query”';
+  }
+
+  @override
+  String get aboutPageLabel => 'Névjegy';
+
+  @override
+  String aboutPageVersionLabel(String version) {
+    return 'Verzió: $version';
+  }
+
+  @override
+  String get aboutPageContributorTitle => 'Tervezte és fejlesztette:';
+
+  @override
+  String get aboutPageCommunityTitle => 'Legyen része a közösségnek:';
+
+  @override
+  String get aboutPageContributeLabel => 'Közreműködés vagy hibajelentés';
+
+  @override
+  String get aboutPageGitHubLabel => 'Keressen minket a GitHubon';
+
+  @override
+  String get aboutPagePublishLabel => 'Közzététel a Snap áruházban';
+
+  @override
+  String get aboutPageLearnMoreLabel => 'Tudjon meg többet';
+
+  @override
+  String appUrlTypeContact(String publisher) {
+    return 'Contact $publisher';
+  }
+
+  @override
+  String get appUrlTypeHomepage => 'Developer website';
+
+  @override
+  String get appUrlTypeUnknown => 'Link';
+
+  @override
+  String get appConfinementUnknown => 'Unknown';
+
+  @override
+  String get appConfinementStrict => 'Sandboxed';
+
+  @override
+  String get appConfinementDevelopment => 'Devmode';
+
+  @override
+  String get appConfinementClassic => 'Unrestricted';
+
+  @override
+  String get appConfinementUnrestricted => 'Unrestricted';
+
+  @override
+  String get appLicenseUnknown => 'Unknown';
+
+  @override
+  String get appPublishedUnknown => 'Unknown';
+
+  @override
+  String get appMoreActionsSemanticLabel => 'More actions';
+
+  @override
+  String get packageFormatDebLabel => 'Debian-csomagok';
+
+  @override
+  String get packageFormatSnapLabel => 'Snap-csomagok';
+
+  @override
+  String get packageFormatAllLabel => 'All packages';
+
+  @override
+  String get packageFormatFlatpakLabel => 'Flatpak packages';
+
+  @override
+  String get searchFieldFlatpakSection => 'Flatpak packages';
+
+  @override
+  String get flatpakRemoteLabel => 'Remote';
+
+  @override
+  String get flatpakVersionUnknown => 'Unknown';
+
+  @override
+  String get snapActionCancelLabel => 'Mégse';
+
+  @override
+  String get snapActionInstallLabel => 'Telepítés';
+
+  @override
+  String get snapActionInstalledLabel => 'Telepítve';
+
+  @override
+  String get snapActionInstallingLabel => 'Telepítés';
+
+  @override
+  String get snapActionOpenLabel => 'Megnyitás';
+
+  @override
+  String get snapActionRemoveLabel => 'Eltávolítás';
+
+  @override
+  String get snapActionRemovingLabel => 'Eltávolítás';
+
+  @override
+  String get snapActionRevertLabel => 'Revert update';
+
+  @override
+  String get snapActionRevertingLabel => 'Reverting update';
+
+  @override
+  String get snapRevertConfirmTitle => 'Revert to previous version?';
+
+  @override
+  String get snapRevertConfirmMessage =>
+      'Automatic updates will resume when a new version is available.';
+
+  @override
+  String get snapRevertConfirmRevert => 'Revert';
+
+  @override
+  String get snapRevertConfirmCancel => 'Cancel';
+
+  @override
+  String snapRevertConfirmTitleWithVersions(String currentVersion,
+      int currentRevision, String previousVersion, int previousRevision) {
+    return 'Revert from $currentVersion (rev $currentRevision) to $previousVersion (rev $previousRevision)?';
+  }
+
+  @override
+  String get snapRevertNoPreviousRevisionMessage =>
+      'No previous local revision is available to revert to.';
+
+  @override
+  String get snapActionSwitchChannelLabel => 'Csatorna váltása';
+
+  @override
+  String get snapActionUpdateLabel => 'Frissítés';
+
+  @override
+  String get snapCategoryAll => 'Összes kategória';
+
+  @override
+  String get snapActionUpdatingLabel => 'Frissítés';
+
+  @override
+  String appCardPublisherSemanticLabel(String publisher) {
+    return 'Published by $publisher.';
+  }
+
+  @override
+  String appCardRatingSemanticLabel(String rating) {
+    return 'Rating $rating.';
+  }
+
+  @override
+  String get snapCategoryArtAndDesign => 'Művészet és tervezés';
+
+  @override
+  String get snapCategoryArtAndDesignButtonLabel => 'Létrehozás elkezdése';
+
+  @override
+  String get snapCategoryArtAndDesignSlogan =>
+      'A művészeti és tervezői alkalmazások felfedezése az első vázlattól az utolsó simításig.';
+
+  @override
+  String get snapCategoryBooksAndReference => 'Könyvek és hivatkozások';
+
+  @override
+  String get snapCategoryDefaultButtonLabel => 'Továbbiak felfedezése';
+
+  @override
+  String get snapCategoryDevelopment => 'Fejlesztés';
+
+  @override
+  String get snapCategoryDevelopmentSlogan =>
+      'Kötelező snap-csomagok fejlesztőknek';
+
+  @override
+  String get snapCategoryDevicesAndIot => 'Eszközök és dolgok internete';
+
+  @override
+  String get snapCategoryEducation => 'Oktatás';
+
+  @override
+  String get snapCategoryEntertainment => 'Szórakozás';
+
+  @override
+  String get snapCategoryFeatured => 'Kiemelt';
+
+  @override
+  String get snapCategoryFeaturedSlogan => 'Kiemelt snap-csomagok';
+
+  @override
+  String get snapCategoryFinance => 'Pénzügy';
+
+  @override
+  String get snapCategoryGames => 'Játékok';
+
+  @override
+  String get snapCategoryGamesSlogan => 'Minden a játékesthez';
+
+  @override
+  String get snapCategoryGameDev => 'Játékfejlesztés';
+
+  @override
+  String get snapCategoryGameDevSlogan => 'Játékfejlesztés';
+
+  @override
+  String get snapCategoryGameEmulators => 'Emulátorok';
+
+  @override
+  String get snapCategoryGameEmulatorsSlogan => 'Emulátorok';
+
+  @override
+  String get snapCategoryGnomeGames => 'GNOME játékok';
+
+  @override
+  String get snapCategoryGnomeGamesSlogan => 'GNOME játékcsomag';
+
+  @override
+  String get snapCategoryKdeGames => 'KDE játékok';
+
+  @override
+  String get snapCategoryKdeGamesSlogan => 'KDE játékcsomag';
+
+  @override
+  String get snapCategoryGameLaunchers => 'Játékindítók';
+
+  @override
+  String get snapCategoryGameLaunchersSlogan => 'Játékindítók';
+
+  @override
+  String get snapCategoryGameContentCreation => 'Tartalomgyártás';
+
+  @override
+  String get snapCategoryGameContentCreationSlogan => 'Tartalomgyártás';
+
+  @override
+  String get snapCategoryHealthAndFitness => 'Egészség és fitnesz';
+
+  @override
+  String get snapCategoryMusicAndAudio => 'Zene és hang';
+
+  @override
+  String get snapCategoryNewsAndWeather => 'Hírek és időjárás';
+
+  @override
+  String get snapCategoryPersonalisation => 'Személyre szabás';
+
+  @override
+  String get snapCategoryPhotoAndVideo => 'Fénykép és videó';
+
+  @override
+  String get snapCategoryProductivity => 'Termelékenység';
+
+  @override
+  String get snapCategoryProductivityButtonLabel =>
+      'A termelékenységi gyűjtemény felfedezése';
+
+  @override
+  String get snapCategoryProductivitySlogan =>
+      'Húzzon ki egy dolgot a tennivalók listájáról';
+
+  @override
+  String get snapCategoryScience => 'Tudomány';
+
+  @override
+  String get snapCategorySecurity => 'Biztonság';
+
+  @override
+  String get snapCategoryServerAndCloud => 'Kiszolgáló és felhő';
+
+  @override
+  String get snapCategorySocial => 'Közösségi';
+
+  @override
+  String get snapCategoryUbuntuDesktop => 'Ubuntu asztal';
+
+  @override
+  String get snapCategoryUbuntuDesktopSlogan => 'Ugrás az asztal indításához';
+
+  @override
+  String get snapCategoryUtilities => 'Segédprogramok';
+
+  @override
+  String get snapSortOrderAlphabeticalAsc => 'Betűrend (A-tól Z-ig)';
+
+  @override
+  String get snapSortOrderAlphabeticalDesc => 'Betűrend (Z-től A-ig)';
+
+  @override
+  String get snapSortOrderDownloadSizeAsc =>
+      'Méret (legkisebbtől a legnagyobbig)';
+
+  @override
+  String get snapSortOrderDownloadSizeDesc =>
+      'Méret (legnagyobbtól a legkisebbig)';
+
+  @override
+  String get snapSortOrderInstalledSizeAsc =>
+      'Méret (legkisebbtől a legnagyobbig)';
+
+  @override
+  String get snapSortOrderInstalledSizeDesc =>
+      'Méret (legnagyobbtól a legkisebbig)';
+
+  @override
+  String get snapSortOrderInstalledDateAsc => 'Legrégebben frissítve';
+
+  @override
+  String get snapSortOrderInstalledDateDesc => 'Legutóbb frissítve';
+
+  @override
+  String get snapSortOrderRelevance => 'Fontosság';
+
+  @override
+  String get snapRatingsBandVeryGood => 'Nagyon jó';
+
+  @override
+  String get snapRatingsBandGood => 'Jó';
+
+  @override
+  String get snapRatingsBandNeutral => 'Semleges';
+
+  @override
+  String get snapRatingsBandPoor => 'Gyenge';
+
+  @override
+  String get snapRatingsBandVeryPoor => 'Nagyon gyenge';
+
+  @override
+  String get snapRatingsBandInsufficientVotes => 'Nincs elegendő szavazat';
+
+  @override
+  String snapRatingsVotes(int n) {
+    return '$n szavazat';
+  }
+
+  @override
+  String snapReportLabel(String snapName) {
+    return '$snapName jelentése';
+  }
+
+  @override
+  String get snapReportSelectReportReasonLabel =>
+      'Válassza ki a snap-csomag jelentésének okát';
+
+  @override
+  String get snapReportSelectAnOptionLabel => 'Lehetőség kiválasztása';
+
+  @override
+  String get snapReportOptionCopyrightViolation =>
+      'Szerzői jog vagy védjegy megsértése';
+
+  @override
+  String get snapReportOptionStoreViolation =>
+      'Snap áruház szolgáltatási feltételeinek megsértése';
+
+  @override
+  String get snapReportDetailsLabel =>
+      'Adjon részletesebb indoklást a jelentéséhez';
+
+  @override
+  String get snapReportOptionalEmailAddressLabel =>
+      'Az Ön e-mail-címe (elhagyható)';
+
+  @override
+  String get snapReportCancelButtonLabel => 'Mégse';
+
+  @override
+  String get snapReportSubmitButtonLabel => 'Jelentés elküldése';
+
+  @override
+  String get snapReportEnterValidEmailError =>
+      'Adjon meg egy érvényes e-mail-címet';
+
+  @override
+  String get snapReportDetailsHint => 'Megjegyzés…';
+
+  @override
+  String get snapReportPrivacyAgreementLabel =>
+      'Az űrlap elküldésével megerősítem, hogy elolvastam és elfogadom a ';
+
+  @override
+  String get snapReportPrivacyAgreementCanonicalPrivacyNotice =>
+      'Canonical adatvédelmi tájékoztatóját ';
+
+  @override
+  String get snapReportPrivacyAgreementAndLabel => 'és ';
+
+  @override
+  String get snapReportPrivacyAgreementPrivacyPolicy =>
+      'adatvédelmi irányelveit';
+
+  @override
+  String get debPageErrorNoPackageInfo => 'Nem találhatók csomaginformációk';
+
+  @override
+  String get debPageDocumentationLinkLabel =>
+      'Ismerje meg a Debian-csomagok kezelésének módját';
+
+  @override
+  String get debPageShareLinkCopiedMessage => 'Link copied to clipboard';
+
+  @override
+  String get debPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get externalResources => 'További erőforrások';
+
+  @override
+  String get externalResourcesButtonLabel => 'Továbbiak felfedezése';
+
+  @override
+  String get allGamesButtonLabel => 'Összes játék';
+
+  @override
+  String get externalResourcesDisclaimer =>
+      'Megjegyzés: ezek mind külső eszközök. Ezek nem a Canonical tulajdonában vannak, és nem is a Canonical terjeszti őket.';
+
+  @override
+  String get openInBrowser => 'Megnyitás a böngészőben';
+
+  @override
+  String get installAll => 'Összes telepítése';
+
+  @override
+  String get localDebWarningTitle => 'Potenciálisan nem biztonságos';
+
+  @override
+  String get localDebWarningBody =>
+      'Ezt a csomagot harmadik fél biztosítja. Az Alkalmazásközponton kívülről származó csomagok telepítése növelheti a rendszerére és személyes adataira vonatkozó kockázatot. A folytatás előtt győződjön meg arról, hogy megbízik a forrásban.';
+
+  @override
+  String get localDebLearnMore =>
+      'Tudjon meg többet a harmadik féltől származó csomagokról';
+
+  @override
+  String get localDebDialogMessage =>
+      'Ezt a csomagot harmadik fél biztosítja, és veszélyeztetheti a rendszerét és a személyes adatait.';
+
+  @override
+  String get localDebDialogConfirmation => 'Biztosan telepíteni szeretné?';
+
+  @override
+  String snapdExceptionRunningApps(String snapName) {
+    return 'Nem sikerült frissíteni a(z) $snapName alkalmazást, mert az jelenleg fut.';
+  }
+
+  @override
+  String get errorViewCheckStatusLabel => 'Állapot ellenőrzése';
+
+  @override
+  String get errorViewNetworkErrorTitle => 'Kapcsolódás az internetre';
+
+  @override
+  String get errorViewNetworkErrorDescription =>
+      'Nem lehet az Alkalmazásközpontban lévő tartalmakat betölteni internetkapcsolat nélkül.';
+
+  @override
+  String get errorViewNetworkErrorAction =>
+      'Ellenőrizze a kapcsolatát, és próbálja újra.';
+
+  @override
+  String get errorViewServerErrorDescription =>
+      'Elnézést, de jelenleg problémák vannak az Alkalmazásközponttal.';
+
+  @override
+  String get errorViewServerErrorAction =>
+      'Ellenőrizze a frissítések állapotát, vagy próbálja meg később újra.';
+
+  @override
+  String get errorViewUnknownErrorTitle => 'Valami elromlott';
+
+  @override
+  String get errorViewUnknownErrorDescription =>
+      'Elnézést, de nem lehet tudni biztosan, hogy mi a hiba.';
+
+  @override
+  String get errorViewUnknownErrorAction =>
+      'Most újra megpróbálhatja, ellenőrizze a frissítések állapotát, vagy próbálja meg később újra.';
+
+  @override
+  String get codecPageTitle => 'Missing media codecs';
+
+  @override
+  String get codecPageDescription =>
+      'You need to install the following codecs for handling certain video and audio formats:';
+
+  @override
+  String get codecProprietaryDisclaimer =>
+      'Some of the recommended codecs could be proprietary.';
+
+  @override
+  String get codecInstallAllButton => 'Install recommended codecs';
+}

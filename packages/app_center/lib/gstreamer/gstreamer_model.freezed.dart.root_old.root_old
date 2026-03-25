@@ -1,0 +1,178 @@
+// coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
+
+part of 'gstreamer_model.dart';
+
+// **************************************************************************
+// FreezedGenerator
+// **************************************************************************
+
+T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+
+/// @nodoc
+mixin _$GStreamerData {
+  List<PackageKitPackageEvent> get packageInfos =>
+      throw _privateConstructorUsedError;
+  int? get activeTransactionId => throw _privateConstructorUsedError;
+
+  /// Create a copy of GStreamerData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $GStreamerDataCopyWith<GStreamerData> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $GStreamerDataCopyWith<$Res> {
+  factory $GStreamerDataCopyWith(
+          GStreamerData value, $Res Function(GStreamerData) then) =
+      _$GStreamerDataCopyWithImpl<$Res, GStreamerData>;
+  @useResult
+  $Res call(
+      {List<PackageKitPackageEvent> packageInfos, int? activeTransactionId});
+}
+
+/// @nodoc
+class _$GStreamerDataCopyWithImpl<$Res, $Val extends GStreamerData>
+    implements $GStreamerDataCopyWith<$Res> {
+  _$GStreamerDataCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of GStreamerData
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? packageInfos = null,
+    Object? activeTransactionId = freezed,
+  }) {
+    return _then(_value.copyWith(
+      packageInfos: null == packageInfos
+          ? _value.packageInfos
+          : packageInfos // ignore: cast_nullable_to_non_nullable
+              as List<PackageKitPackageEvent>,
+      activeTransactionId: freezed == activeTransactionId
+          ? _value.activeTransactionId
+          : activeTransactionId // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$GStreamerDataImplCopyWith<$Res>
+    implements $GStreamerDataCopyWith<$Res> {
+  factory _$$GStreamerDataImplCopyWith(
+          _$GStreamerDataImpl value, $Res Function(_$GStreamerDataImpl) then) =
+      __$$GStreamerDataImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {List<PackageKitPackageEvent> packageInfos, int? activeTransactionId});
+}
+
+/// @nodoc
+class __$$GStreamerDataImplCopyWithImpl<$Res>
+    extends _$GStreamerDataCopyWithImpl<$Res, _$GStreamerDataImpl>
+    implements _$$GStreamerDataImplCopyWith<$Res> {
+  __$$GStreamerDataImplCopyWithImpl(
+      _$GStreamerDataImpl _value, $Res Function(_$GStreamerDataImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of GStreamerData
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? packageInfos = null,
+    Object? activeTransactionId = freezed,
+  }) {
+    return _then(_$GStreamerDataImpl(
+      packageInfos: null == packageInfos
+          ? _value._packageInfos
+          : packageInfos // ignore: cast_nullable_to_non_nullable
+              as List<PackageKitPackageEvent>,
+      activeTransactionId: freezed == activeTransactionId
+          ? _value.activeTransactionId
+          : activeTransactionId // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$GStreamerDataImpl extends _GStreamerData {
+  _$GStreamerDataImpl(
+      {required final List<PackageKitPackageEvent> packageInfos,
+      this.activeTransactionId})
+      : _packageInfos = packageInfos,
+        super._();
+
+  final List<PackageKitPackageEvent> _packageInfos;
+  @override
+  List<PackageKitPackageEvent> get packageInfos {
+    if (_packageInfos is EqualUnmodifiableListView) return _packageInfos;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_packageInfos);
+  }
+
+  @override
+  final int? activeTransactionId;
+
+  @override
+  String toString() {
+    return 'GStreamerData(packageInfos: $packageInfos, activeTransactionId: $activeTransactionId)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$GStreamerDataImpl &&
+            const DeepCollectionEquality()
+                .equals(other._packageInfos, _packageInfos) &&
+            (identical(other.activeTransactionId, activeTransactionId) ||
+                other.activeTransactionId == activeTransactionId));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(_packageInfos), activeTransactionId);
+
+  /// Create a copy of GStreamerData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$GStreamerDataImplCopyWith<_$GStreamerDataImpl> get copyWith =>
+      __$$GStreamerDataImplCopyWithImpl<_$GStreamerDataImpl>(this, _$identity);
+}
+
+abstract class _GStreamerData extends GStreamerData {
+  factory _GStreamerData(
+      {required final List<PackageKitPackageEvent> packageInfos,
+      final int? activeTransactionId}) = _$GStreamerDataImpl;
+  _GStreamerData._() : super._();
+
+  @override
+  List<PackageKitPackageEvent> get packageInfos;
+  @override
+  int? get activeTransactionId;
+
+  /// Create a copy of GStreamerData
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$GStreamerDataImplCopyWith<_$GStreamerDataImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}

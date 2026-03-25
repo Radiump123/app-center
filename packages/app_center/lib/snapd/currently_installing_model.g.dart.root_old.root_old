@@ -1,0 +1,27 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'currently_installing_model.dart';
+
+// **************************************************************************
+// RiverpodGenerator
+// **************************************************************************
+
+String _$currentlyInstallingModelHash() =>
+    r'2448f022dc2c7c6484653b703d4a6156624b04fb';
+
+/// See also [CurrentlyInstallingModel].
+@ProviderFor(CurrentlyInstallingModel)
+final currentlyInstallingModelProvider =
+    NotifierProvider<CurrentlyInstallingModel, Map<String, SnapData>>.internal(
+  CurrentlyInstallingModel.new,
+  name: r'currentlyInstallingModelProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$currentlyInstallingModelHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+typedef _$CurrentlyInstallingModel = Notifier<Map<String, SnapData>>;
+// ignore_for_file: type=lint
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

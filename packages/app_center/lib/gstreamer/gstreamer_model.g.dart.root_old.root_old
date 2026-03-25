@@ -1,0 +1,177 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'gstreamer_model.dart';
+
+// **************************************************************************
+// RiverpodGenerator
+// **************************************************************************
+
+String _$gstreamerModelHash() => r'014013de5c04a6f13d11ee00d19b3a357dc0d0e0';
+
+/// Copied from Dart SDK
+class _SystemHash {
+  _SystemHash._();
+
+  static int combine(int hash, int value) {
+    // ignore: parameter_assignments
+    hash = 0x1fffffff & (hash + value);
+    // ignore: parameter_assignments
+    hash = 0x1fffffff & (hash + ((0x0007ffff & hash) << 10));
+    return hash ^ (hash >> 6);
+  }
+
+  static int finish(int hash) {
+    // ignore: parameter_assignments
+    hash = 0x1fffffff & (hash + ((0x03ffffff & hash) << 3));
+    // ignore: parameter_assignments
+    hash = hash ^ (hash >> 11);
+    return 0x1fffffff & (hash + ((0x00003fff & hash) << 15));
+  }
+}
+
+abstract class _$GstreamerModel
+    extends BuildlessAutoDisposeAsyncNotifier<GStreamerData> {
+  late final GstResourceCollection resources;
+
+  FutureOr<GStreamerData> build(
+    GstResourceCollection resources,
+  );
+}
+
+/// See also [GstreamerModel].
+@ProviderFor(GstreamerModel)
+const gstreamerModelProvider = GstreamerModelFamily();
+
+/// See also [GstreamerModel].
+class GstreamerModelFamily extends Family<AsyncValue<GStreamerData>> {
+  /// See also [GstreamerModel].
+  const GstreamerModelFamily();
+
+  /// See also [GstreamerModel].
+  GstreamerModelProvider call(
+    GstResourceCollection resources,
+  ) {
+    return GstreamerModelProvider(
+      resources,
+    );
+  }
+
+  @override
+  GstreamerModelProvider getProviderOverride(
+    covariant GstreamerModelProvider provider,
+  ) {
+    return call(
+      provider.resources,
+    );
+  }
+
+  static const Iterable<ProviderOrFamily>? _dependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get dependencies => _dependencies;
+
+  static const Iterable<ProviderOrFamily>? _allTransitiveDependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get allTransitiveDependencies =>
+      _allTransitiveDependencies;
+
+  @override
+  String? get name => r'gstreamerModelProvider';
+}
+
+/// See also [GstreamerModel].
+class GstreamerModelProvider extends AutoDisposeAsyncNotifierProviderImpl<
+    GstreamerModel, GStreamerData> {
+  /// See also [GstreamerModel].
+  GstreamerModelProvider(
+    GstResourceCollection resources,
+  ) : this._internal(
+          () => GstreamerModel()..resources = resources,
+          from: gstreamerModelProvider,
+          name: r'gstreamerModelProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$gstreamerModelHash,
+          dependencies: GstreamerModelFamily._dependencies,
+          allTransitiveDependencies:
+              GstreamerModelFamily._allTransitiveDependencies,
+          resources: resources,
+        );
+
+  GstreamerModelProvider._internal(
+    super._createNotifier, {
+    required super.name,
+    required super.dependencies,
+    required super.allTransitiveDependencies,
+    required super.debugGetCreateSourceHash,
+    required super.from,
+    required this.resources,
+  }) : super.internal();
+
+  final GstResourceCollection resources;
+
+  @override
+  FutureOr<GStreamerData> runNotifierBuild(
+    covariant GstreamerModel notifier,
+  ) {
+    return notifier.build(
+      resources,
+    );
+  }
+
+  @override
+  Override overrideWith(GstreamerModel Function() create) {
+    return ProviderOverride(
+      origin: this,
+      override: GstreamerModelProvider._internal(
+        () => create()..resources = resources,
+        from: from,
+        name: null,
+        dependencies: null,
+        allTransitiveDependencies: null,
+        debugGetCreateSourceHash: null,
+        resources: resources,
+      ),
+    );
+  }
+
+  @override
+  AutoDisposeAsyncNotifierProviderElement<GstreamerModel, GStreamerData>
+      createElement() {
+    return _GstreamerModelProviderElement(this);
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return other is GstreamerModelProvider && other.resources == resources;
+  }
+
+  @override
+  int get hashCode {
+    var hash = _SystemHash.combine(0, runtimeType.hashCode);
+    hash = _SystemHash.combine(hash, resources.hashCode);
+
+    return _SystemHash.finish(hash);
+  }
+}
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+mixin GstreamerModelRef on AutoDisposeAsyncNotifierProviderRef<GStreamerData> {
+  /// The parameter `resources` of this provider.
+  GstResourceCollection get resources;
+}
+
+class _GstreamerModelProviderElement
+    extends AutoDisposeAsyncNotifierProviderElement<GstreamerModel,
+        GStreamerData> with GstreamerModelRef {
+  _GstreamerModelProviderElement(super.provider);
+
+  @override
+  GstResourceCollection get resources =>
+      (origin as GstreamerModelProvider).resources;
+}
+// ignore_for_file: type=lint
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

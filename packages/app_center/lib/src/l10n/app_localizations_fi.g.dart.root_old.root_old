@@ -1,0 +1,795 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.g.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Finnish (`fi`).
+class AppLocalizationsFi extends AppLocalizations {
+  AppLocalizationsFi([String locale = 'fi']) : super(locale);
+
+  @override
+  String get appCenterLabel => 'Sovelluskeskus';
+
+  @override
+  String get appstreamSearchGreylist =>
+      'app;application;package;program;programme;suite;tool;sovellus;ohjelma;paketti;työkalu;äppi';
+
+  @override
+  String get snapPageChannelLabel => 'Kanava';
+
+  @override
+  String get snapPageConfinementLabel => 'Eristys';
+
+  @override
+  String snapPageContactPublisherLabel(String publisher) {
+    return 'Ota yhteys julkaisijaan $publisher';
+  }
+
+  @override
+  String get snapPageDeveloperWebsiteLabel => 'Kehittäjän sivusto';
+
+  @override
+  String get snapPageDownloadSizeLabel => 'Latauksen koko';
+
+  @override
+  String get snapPageSizeLabel => 'Koko';
+
+  @override
+  String get snapPageGalleryNextSemanticLabel => 'Next image';
+
+  @override
+  String get snapPageGalleryPreviousSemanticLabel => 'Previous image';
+
+  @override
+  String snapPageGalleryImageSemanticLabel(int n) {
+    return 'Image $n';
+  }
+
+  @override
+  String get snapPageLicenseLabel => 'Lisenssi';
+
+  @override
+  String get snapPageLinksLabel => 'Linkit';
+
+  @override
+  String get snapPagePublisherLabel => 'Julkaisija';
+
+  @override
+  String get snapPagePublishedLabel => 'Julkaistu';
+
+  @override
+  String get snapPageSummaryLabel => 'Yhteenveto';
+
+  @override
+  String get snapPageVersionLabel => 'Julkaisu';
+
+  @override
+  String get snapPageShareLinkCopiedMessage => 'Linkki kopioitu leikepöydälle';
+
+  @override
+  String get snapPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get snapPageReportSemanticLabel => 'Report';
+
+  @override
+  String sectionExpandSemanticLabel(String section) {
+    return 'Expand $section';
+  }
+
+  @override
+  String sectionCollapseSemanticLabel(String section) {
+    return 'Collapse $section';
+  }
+
+  @override
+  String get explorePageLabel => 'Tutustu';
+
+  @override
+  String get explorePageCategoriesLabel => 'Luokat';
+
+  @override
+  String get managePageOwnUpdateAvailable =>
+      'Sovelluskeskuksen päivitys saatavilla';
+
+  @override
+  String get managePageQuitToUpdate => 'Lopeta päivittääksesi';
+
+  @override
+  String get managePageOwnUpdateDescription =>
+      'Kun lopetat sovelluksen, se päivittyy automaattisesti.';
+
+  @override
+  String get managePageOwnUpdateQuitButton => 'Lopeta päivittääksesi';
+
+  @override
+  String get managePageCheckForUpdates => 'Tarkista päivitykset';
+
+  @override
+  String get managePageCheckingForUpdates => 'Tarkistetaan päivityksiä';
+
+  @override
+  String get managePageNoInternet =>
+      'Ei yhteyttä palvelimeen. Tarkista Internet-yhteyden tila ja yritä uudelleen.';
+
+  @override
+  String get managePageDescription =>
+      'Tarkista saatavilla olevat päivitykset, päivitä sovellukset ja hallitse kaikkien sovellusten tilaa.';
+
+  @override
+  String get managePageDebUpdatesMessage =>
+      'Debian-pakettien päivityksistä vastaa Ohjelmistojen päivitys.';
+
+  @override
+  String get managePageInstalledAndUpdatedLabel => 'Asennettu ja päivitetty';
+
+  @override
+  String managePageInstallingLabel(int n) {
+    return 'Asennetaan ($n)';
+  }
+
+  @override
+  String get managePageLabel => 'Hallitse';
+
+  @override
+  String get managePageTitle => 'Hallitse asennettuja snap-paketteja';
+
+  @override
+  String get managePageNoUpdatesAvailableDescription =>
+      'Päivityksiä ei ole saatavilla. Kaikki sovellukset ovat ajan tasalla.';
+
+  @override
+  String get managePageSearchFieldSearchHint => 'Etsi asennettuja sovelluksia';
+
+  @override
+  String get managePageShowDetailsLabel => 'Näytä tiedot';
+
+  @override
+  String get managePageShowSystemSnapsLabel => 'Näytä järjestelmä-snapit';
+
+  @override
+  String get managePagePackageTypeLabel => 'Package type';
+
+  @override
+  String get managePagePackageTypeAll => 'All';
+
+  @override
+  String get managePagePackageTypeSnap => 'Snap';
+
+  @override
+  String get managePagePackageTypeDeb => 'Deb';
+
+  @override
+  String get managePagePackageTypeFlatpak => 'Flatpak';
+
+  @override
+  String get managePageUpdateAllLabel => 'Päivitä kaikki';
+
+  @override
+  String managePageUpdatedDaysAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n päivää',
+      one: '$n päivä',
+    );
+    return 'Päivitetty $_temp0 sitten';
+  }
+
+  @override
+  String managePageUpdatedWeeksAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n viikkoa',
+      one: '$n viikko',
+    );
+    return 'Päivitetty $_temp0 sitten';
+  }
+
+  @override
+  String managePageUpdatedMonthsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '${n}kuukautta',
+      one: '$n kuukausi',
+    );
+    return 'Päivitetty $_temp0 sitten';
+  }
+
+  @override
+  String managePageUpdatedYearsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n vuotta',
+      one: '$n vuosi',
+    );
+    return 'Päivitetty $_temp0 sitten';
+  }
+
+  @override
+  String managePageUpdatesAvailable(int n) {
+    return 'Päivityksiä saatavilla ($n)';
+  }
+
+  @override
+  String managePageUpdatesFailed(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n päivitystä',
+      one: 'Yksi päivitys',
+    );
+    return '$_temp0 epäonnistui';
+  }
+
+  @override
+  String managePageUpdatesFailedBody(Object snapList) {
+    return 'Näitä sovelluksia ei voitu päivittää, koska ne ovat käynnissä.\n\n$snapList\nKun lopetat sovellukset, ne päivittyvät automaattisesti.';
+  }
+
+  @override
+  String get managePageDocumentationLinkLabel =>
+      'Learn how to manage Debian packages in the documentation.';
+
+  @override
+  String get productivityPageLabel => 'Tuotteliaisuus';
+
+  @override
+  String get developmentPageLabel => 'Kehitystyö';
+
+  @override
+  String get gamesPageLabel => 'Pelit';
+
+  @override
+  String get gamesPageTitle => 'Nousussa';
+
+  @override
+  String get gamesPageTop => 'Suosituimmat pelit';
+
+  @override
+  String get gamesPageFeatured => 'Suositut nimikkeet';
+
+  @override
+  String get gamesPageBundles => 'Sovelluskokoelmat';
+
+  @override
+  String get unknownPublisher => 'Tuntematon julkaisija';
+
+  @override
+  String get searchFieldDebSection => 'Debian-paketit';
+
+  @override
+  String get searchFieldSearchHint => 'Etsi sovelluksia';
+
+  @override
+  String searchFieldSearchForLabel(String query) {
+    return 'Näytä kaikki haun \"$query\" tulokset';
+  }
+
+  @override
+  String get searchFieldSnapSection => 'Snap-paketit';
+
+  @override
+  String get searchPageFilterByLabel => 'Suodata';
+
+  @override
+  String searchPageNoResults(String query) {
+    return 'Haku \"$query\" ei tuottanut tuloksia';
+  }
+
+  @override
+  String get searchPageNoResultsHint =>
+      'Käytä eri hakuehtoja tai yleisempiä avainsanoja';
+
+  @override
+  String get searchPageNoResultsCategory =>
+      'Valitettavasti tästä luokasta ei löytynyt paketteja';
+
+  @override
+  String get searchPageNoResultsCategoryHint =>
+      'Etsi eri luokasta tai käytä yleisempiä avainsanoja';
+
+  @override
+  String get searchPageSortByLabel => 'Järjestä';
+
+  @override
+  String get searchPageRelevanceLabel => 'Asiaankuuluvuus';
+
+  @override
+  String searchPageTitle(String query) {
+    return 'Tulokset haulla \"$query\"';
+  }
+
+  @override
+  String get aboutPageLabel => 'Tietoja';
+
+  @override
+  String aboutPageVersionLabel(String version) {
+    return 'Versio $version';
+  }
+
+  @override
+  String get aboutPageContributorTitle => 'Suunnitellut ja kehittänyt:';
+
+  @override
+  String get aboutPageCommunityTitle => 'Ole osa yhteisöä:';
+
+  @override
+  String get aboutPageContributeLabel => 'Osallistu tai ilmoita virheestä';
+
+  @override
+  String get aboutPageGitHubLabel => 'Löydät meidät GitHubista';
+
+  @override
+  String get aboutPagePublishLabel => 'Julkaise Snap-kauppaan';
+
+  @override
+  String get aboutPageLearnMoreLabel => 'Lue lisää';
+
+  @override
+  String appUrlTypeContact(String publisher) {
+    return 'Contact $publisher';
+  }
+
+  @override
+  String get appUrlTypeHomepage => 'Developer website';
+
+  @override
+  String get appUrlTypeUnknown => 'Link';
+
+  @override
+  String get appConfinementUnknown => 'Unknown';
+
+  @override
+  String get appConfinementStrict => 'Sandboxed';
+
+  @override
+  String get appConfinementDevelopment => 'Devmode';
+
+  @override
+  String get appConfinementClassic => 'Unrestricted';
+
+  @override
+  String get appConfinementUnrestricted => 'Unrestricted';
+
+  @override
+  String get appLicenseUnknown => 'Unknown';
+
+  @override
+  String get appPublishedUnknown => 'Unknown';
+
+  @override
+  String get appMoreActionsSemanticLabel => 'More actions';
+
+  @override
+  String get packageFormatDebLabel => 'Debian-paketit';
+
+  @override
+  String get packageFormatSnapLabel => 'Snap-paketit';
+
+  @override
+  String get packageFormatAllLabel => 'All packages';
+
+  @override
+  String get packageFormatFlatpakLabel => 'Flatpak packages';
+
+  @override
+  String get searchFieldFlatpakSection => 'Flatpak packages';
+
+  @override
+  String get flatpakRemoteLabel => 'Remote';
+
+  @override
+  String get flatpakVersionUnknown => 'Unknown';
+
+  @override
+  String get snapActionCancelLabel => 'Peru';
+
+  @override
+  String get snapActionInstallLabel => 'Asenna';
+
+  @override
+  String get snapActionInstalledLabel => 'Asennettu';
+
+  @override
+  String get snapActionInstallingLabel => 'Asennetaan';
+
+  @override
+  String get snapActionOpenLabel => 'Avaa';
+
+  @override
+  String get snapActionRemoveLabel => 'Poista asennus';
+
+  @override
+  String get snapActionRemovingLabel => 'Poistetaan asennus';
+
+  @override
+  String get snapActionRevertLabel => 'Revert update';
+
+  @override
+  String get snapActionRevertingLabel => 'Reverting update';
+
+  @override
+  String get snapRevertConfirmTitle => 'Revert to previous version?';
+
+  @override
+  String get snapRevertConfirmMessage =>
+      'Automatic updates will resume when a new version is available.';
+
+  @override
+  String get snapRevertConfirmRevert => 'Revert';
+
+  @override
+  String get snapRevertConfirmCancel => 'Cancel';
+
+  @override
+  String snapRevertConfirmTitleWithVersions(String currentVersion,
+      int currentRevision, String previousVersion, int previousRevision) {
+    return 'Revert from $currentVersion (rev $currentRevision) to $previousVersion (rev $previousRevision)?';
+  }
+
+  @override
+  String get snapRevertNoPreviousRevisionMessage =>
+      'No previous local revision is available to revert to.';
+
+  @override
+  String get snapActionSwitchChannelLabel => 'Vaihda kanavaa';
+
+  @override
+  String get snapActionUpdateLabel => 'Päivitä';
+
+  @override
+  String get snapCategoryAll => 'Kaikki luokat';
+
+  @override
+  String get snapActionUpdatingLabel => 'Päivitetään';
+
+  @override
+  String appCardPublisherSemanticLabel(String publisher) {
+    return 'Published by $publisher.';
+  }
+
+  @override
+  String appCardRatingSemanticLabel(String rating) {
+    return 'Rating $rating.';
+  }
+
+  @override
+  String get snapCategoryArtAndDesign => 'Taiteet ja suunnittelu';
+
+  @override
+  String get snapCategoryArtAndDesignButtonLabel => 'Aloita luominen';
+
+  @override
+  String get snapCategoryArtAndDesignSlogan =>
+      'Ensimmäisestä luonnoksesta viimeiseen silaukseen, selaa sovelluksia taiteiluun ja suunnitteluun.';
+
+  @override
+  String get snapCategoryBooksAndReference => 'Kirjat ja viitteet';
+
+  @override
+  String get snapCategoryDefaultButtonLabel => 'Löydä enemmän';
+
+  @override
+  String get snapCategoryDevelopment => 'Kehitystyö';
+
+  @override
+  String get snapCategoryDevelopmentSlogan => 'Tärkeimmät snapit kehittäjille';
+
+  @override
+  String get snapCategoryDevicesAndIot => 'Laitteet ja IoT';
+
+  @override
+  String get snapCategoryEducation => 'Opiskelu';
+
+  @override
+  String get snapCategoryEntertainment => 'Viihde';
+
+  @override
+  String get snapCategoryFeatured => 'Nyt esillä';
+
+  @override
+  String get snapCategoryFeaturedSlogan => 'Esittelyssä olevat snapit';
+
+  @override
+  String get snapCategoryFinance => 'Rahatalous';
+
+  @override
+  String get snapCategoryGames => 'Pelit';
+
+  @override
+  String get snapCategoryGamesSlogan => 'Kaikkea peli-iltaa varten';
+
+  @override
+  String get snapCategoryGameDev => 'Pelikehitys';
+
+  @override
+  String get snapCategoryGameDevSlogan => 'Pelikehitys';
+
+  @override
+  String get snapCategoryGameEmulators => 'Emulaattorit';
+
+  @override
+  String get snapCategoryGameEmulatorsSlogan => 'Emulaattorit';
+
+  @override
+  String get snapCategoryGnomeGames => 'Gnomen pelit';
+
+  @override
+  String get snapCategoryGnomeGamesSlogan => 'Gnomen pelikokoelma';
+
+  @override
+  String get snapCategoryKdeGames => 'KDE:n pelit';
+
+  @override
+  String get snapCategoryKdeGamesSlogan => 'KDE:n pelikokoelma';
+
+  @override
+  String get snapCategoryGameLaunchers => 'Pelikäynnistimet';
+
+  @override
+  String get snapCategoryGameLaunchersSlogan => 'Pelikäynnistimet';
+
+  @override
+  String get snapCategoryGameContentCreation => 'Sisällöntuotanto';
+
+  @override
+  String get snapCategoryGameContentCreationSlogan => 'Sisällöntuotanto';
+
+  @override
+  String get snapCategoryHealthAndFitness => 'Terveys ja kunto';
+
+  @override
+  String get snapCategoryMusicAndAudio => 'Musiikki ja ääni';
+
+  @override
+  String get snapCategoryNewsAndWeather => 'Uutiset ja sää';
+
+  @override
+  String get snapCategoryPersonalisation => 'Mukauttaminen';
+
+  @override
+  String get snapCategoryPhotoAndVideo => 'Kuva ja video';
+
+  @override
+  String get snapCategoryProductivity => 'Tuotteliaisuus';
+
+  @override
+  String get snapCategoryProductivityButtonLabel =>
+      'Tutustu tuottavuuskokoelmaan';
+
+  @override
+  String get snapCategoryProductivitySlogan =>
+      'Yksi asia vähemmän tehtävälistalla';
+
+  @override
+  String get snapCategoryScience => 'Tiede';
+
+  @override
+  String get snapCategorySecurity => 'Tietoturva';
+
+  @override
+  String get snapCategoryServerAndCloud => 'Palvelin ja pilvi';
+
+  @override
+  String get snapCategorySocial => 'Some';
+
+  @override
+  String get snapCategoryUbuntuDesktop => 'Ubuntu-työpöytä';
+
+  @override
+  String get snapCategoryUbuntuDesktopSlogan => 'Hyppy työpöydälle';
+
+  @override
+  String get snapCategoryUtilities => 'Apuohjelmat';
+
+  @override
+  String get snapSortOrderAlphabeticalAsc => 'Aakkosjärjestys (A-Ö)';
+
+  @override
+  String get snapSortOrderAlphabeticalDesc => 'Aakkosjärjestys (Ö-A)';
+
+  @override
+  String get snapSortOrderDownloadSizeAsc => 'Koko (pienimmästä suurimpaan)';
+
+  @override
+  String get snapSortOrderDownloadSizeDesc => 'Koko (suurimmasta pienimpään)';
+
+  @override
+  String get snapSortOrderInstalledSizeAsc => 'Koko (pienimmästä suurimpaan)';
+
+  @override
+  String get snapSortOrderInstalledSizeDesc => 'Koko (suurimmasta pienimpään)';
+
+  @override
+  String get snapSortOrderInstalledDateAsc => 'Pisin aika viime päivityksestä';
+
+  @override
+  String get snapSortOrderInstalledDateDesc =>
+      'Lyhyin aika viime päivityksestä';
+
+  @override
+  String get snapSortOrderRelevance => 'Asiaankuuluvuus';
+
+  @override
+  String get snapRatingsBandVeryGood => 'Erittäin hyvä';
+
+  @override
+  String get snapRatingsBandGood => 'Hyvä';
+
+  @override
+  String get snapRatingsBandNeutral => 'Neutraali';
+
+  @override
+  String get snapRatingsBandPoor => 'Heikko';
+
+  @override
+  String get snapRatingsBandVeryPoor => 'Erittäin heikko';
+
+  @override
+  String get snapRatingsBandInsufficientVotes => 'Ei riittävästi ääniä';
+
+  @override
+  String snapRatingsVotes(int n) {
+    return '$n ääntä';
+  }
+
+  @override
+  String snapReportLabel(String snapName) {
+    return 'Ilmoita $snapName';
+  }
+
+  @override
+  String get snapReportSelectReportReasonLabel =>
+      'Valitse syy, miksi teet ilmoituksen tästä snapista';
+
+  @override
+  String get snapReportSelectAnOptionLabel => 'Valitse yksi';
+
+  @override
+  String get snapReportOptionCopyrightViolation =>
+      'Tekijänoikeuden tai tavaramerkin loukkaus';
+
+  @override
+  String get snapReportOptionStoreViolation =>
+      'Snap-kaupan käyttöehtojen rikkominen';
+
+  @override
+  String get snapReportDetailsLabel => 'Anna lisätietoja ilmoitukseen';
+
+  @override
+  String get snapReportOptionalEmailAddressLabel =>
+      'Sähköpostiosoitteesi (valinnainen)';
+
+  @override
+  String get snapReportCancelButtonLabel => 'Peru';
+
+  @override
+  String get snapReportSubmitButtonLabel => 'Lähetä ilmoitus';
+
+  @override
+  String get snapReportEnterValidEmailError =>
+      'Kirjoita kelvollinen sähköpostiosoite';
+
+  @override
+  String get snapReportDetailsHint => 'Kommentti...';
+
+  @override
+  String get snapReportPrivacyAgreementLabel =>
+      'Lähettämällä tämän lomakkeen vahvistan lukeneeni ja hyväksyväni ';
+
+  @override
+  String get snapReportPrivacyAgreementCanonicalPrivacyNotice =>
+      'Canonicalin tietosuojakäytännön ';
+
+  @override
+  String get snapReportPrivacyAgreementAndLabel => 'ja ';
+
+  @override
+  String get snapReportPrivacyAgreementPrivacyPolicy => 'tietosuojakäytännön';
+
+  @override
+  String get debPageErrorNoPackageInfo => 'Paketin tietoja ei löytynyt';
+
+  @override
+  String get debPageDocumentationLinkLabel =>
+      'Learn about managing Debian packages';
+
+  @override
+  String get debPageShareLinkCopiedMessage => 'Link copied to clipboard';
+
+  @override
+  String get debPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get externalResources => 'Lisäresurssit';
+
+  @override
+  String get externalResourcesButtonLabel => 'Löydä lisää';
+
+  @override
+  String get allGamesButtonLabel => 'Kaikki pelit';
+
+  @override
+  String get externalResourcesDisclaimer =>
+      'Huomio: nämä ovat ulkoisia työkaluja. Canonical ei omista tai jakele niitä.';
+
+  @override
+  String get openInBrowser => 'Avaa selaimessa';
+
+  @override
+  String get installAll => 'Asenna kaikki';
+
+  @override
+  String get localDebWarningTitle => 'Mahdollisesti turvaton';
+
+  @override
+  String get localDebWarningBody =>
+      'This package is provided by a third party. Installing packages from outside the App Center can increase the risk to your system and personal data. Ensure you trust the source before proceeding.';
+
+  @override
+  String get localDebLearnMore => 'Lue lisää kolmansien osapuolten paketeista';
+
+  @override
+  String get localDebDialogMessage =>
+      'Tämän paketin tarjoaa kolmas osapuoli, ja se saattaa olla uhka järjestelmän turvallisuudelle sekä henkilökohtaisille tiedoille.';
+
+  @override
+  String get localDebDialogConfirmation => 'Haluatko varmasti asentaa sen?';
+
+  @override
+  String snapdExceptionRunningApps(String snapName) {
+    return 'Sovellusta $snapName ei voitu päivittää, koska se on käynnissä.';
+  }
+
+  @override
+  String get errorViewCheckStatusLabel => 'Tarkista tila';
+
+  @override
+  String get errorViewNetworkErrorTitle => 'Yhdistä Internetiin';
+
+  @override
+  String get errorViewNetworkErrorDescription =>
+      'Sovelluskeskuksen sisältöä ei voi ladata ilman Internet-yhteyttä.';
+
+  @override
+  String get errorViewNetworkErrorAction =>
+      'Tarkista yhteyden tila ja yritä uudelleen.';
+
+  @override
+  String get errorViewServerErrorDescription =>
+      'Sovelluskeskuksessa on valitettavasti ongelmia tällä hetkellä.';
+
+  @override
+  String get errorViewServerErrorAction =>
+      'Check the status for updates or try again later.';
+
+  @override
+  String get errorViewUnknownErrorTitle => 'Jokin meni pieleen';
+
+  @override
+  String get errorViewUnknownErrorDescription =>
+      'Valitettavasti emme tiedä mistä virheestä on kyse.';
+
+  @override
+  String get errorViewUnknownErrorAction =>
+      'Voit yrittää uudelleen nyt, tarkistaa päivitysten tilan, tai yrittää uudelleen myöhemmin.';
+
+  @override
+  String get codecPageTitle => 'Missing media codecs';
+
+  @override
+  String get codecPageDescription =>
+      'You need to install the following codecs for handling certain video and audio formats:';
+
+  @override
+  String get codecProprietaryDisclaimer =>
+      'Some of the recommended codecs could be proprietary.';
+
+  @override
+  String get codecInstallAllButton => 'Install recommended codecs';
+}

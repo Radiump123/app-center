@@ -1,5 +1,6 @@
 import 'package:app_center/appstream/appstream.dart';
 import 'package:app_center/constants.dart';
+import 'package:app_center/flatpak/flatpak_model.dart';
 import 'package:app_center/l10n.dart';
 import 'package:app_center/search/search_provider.dart';
 import 'package:app_center/snapd/snapd.dart';
@@ -10,11 +11,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:snapd/snapd.dart';
 import 'package:yaru/yaru.dart';
 
+// ---------------------------------------------------------------------------
+// Auto-complete option types
+// ---------------------------------------------------------------------------
+
 sealed class AutoCompleteOption {
   String get title => switch (this) {
         AutoCompleteSnapOption(snap: final snap) => snap.titleOrName,
         AutoCompleteDebOption(deb: final deb) => deb.getLocalizedName(),
-        AutoCompleteSearchOption(query: final query) => query,
+        AutoCompleteFlatpakOption(flatpak: final f) => f.name,
+        AutoCompleteSearchOption(query: final q) => q,
       };
 }
 
@@ -28,16 +34,26 @@ class AutoCompleteDebOption extends AutoCompleteOption {
   final AppstreamComponent deb;
 }
 
+class AutoCompleteFlatpakOption extends AutoCompleteOption {
+  AutoCompleteFlatpakOption(this.flatpak);
+  final FlatpakApp flatpak;
+}
+
 class AutoCompleteSearchOption extends AutoCompleteOption {
   AutoCompleteSearchOption(this.query);
   final String query;
 }
+
+// ---------------------------------------------------------------------------
+// SearchField widget
+// ---------------------------------------------------------------------------
 
 class SearchField extends ConsumerStatefulWidget {
   const SearchField({
     required this.onSearch,
     required this.onSnapSelected,
     required this.onDebSelected,
+    required this.onFlatpakSelected,
     required this.searchFocus,
     super.key,
   });
@@ -45,6 +61,7 @@ class SearchField extends ConsumerStatefulWidget {
   final ValueChanged<String> onSearch;
   final ValueChanged<String> onSnapSelected;
   final ValueChanged<String> onDebSelected;
+  final ValueChanged<FlatpakApp> onFlatpakSelected;
   final FocusNode searchFocus;
 
   @override
@@ -61,7 +78,11 @@ class _SearchFieldState extends ConsumerState<SearchField> {
       optionsBuilder: (query) async {
         ref.read(queryProvider.notifier).state = query.text;
         final options = await ref.watch(autoCompleteProvider.future);
-        if (options.snaps.isEmpty && options.debs.isEmpty) return [];
+        if (options.snaps.isEmpty &&
+            options.debs.isEmpty &&
+            options.flatpaks.isEmpty) {
+          return [];
+        }
         _optionsAvailable = true;
         final snapOptions = options.snaps
             .take(3)
@@ -71,16 +92,22 @@ class _SearchFieldState extends ConsumerState<SearchField> {
             .take(3)
             .map<AutoCompleteOption>(AutoCompleteDebOption.new)
             .toList();
+        final flatpakOptions = options.flatpaks
+            .take(3)
+            .map<AutoCompleteOption>(AutoCompleteFlatpakOption.new)
+            .toList();
         return <AutoCompleteOption>[
           AutoCompleteSearchOption(query.text),
-          ...snapOptions,
           ...debOptions,
+          ...snapOptions,
+          ...flatpakOptions,
         ];
       },
       displayStringForOption: (option) => option.title,
       optionsViewBuilder: (context, onSelected, options) {
         final snapOptions = options.whereType<AutoCompleteSnapOption>();
         final debOptions = options.whereType<AutoCompleteDebOption>();
+        final flatpakOptions = options.whereType<AutoCompleteFlatpakOption>();
         final searchOption =
             options.whereType<AutoCompleteSearchOption>().single;
         final highlightedOption =
@@ -95,6 +122,24 @@ class _SearchFieldState extends ConsumerState<SearchField> {
                 padding: EdgeInsets.zero,
                 shrinkWrap: true,
                 children: [
+                  // --- Deb section (shown first as default) ---
+                  if (debOptions.isNotEmpty) ...[
+                    ListTile(
+                      title: Text(
+                        l10n.searchFieldDebSection,
+                        style: Theme.of(context).textTheme.bodyMedium,
+                      ),
+                    ),
+                    ...debOptions.map(
+                      (e) => _AutoCompleteTile(
+                        option: e,
+                        onTap: () => onSelected(e),
+                        selected: e == highlightedOption,
+                      ),
+                    ),
+                    const Divider(),
+                  ],
+                  // --- Snap section ---
                   if (snapOptions.isNotEmpty) ...[
                     ListTile(
                       title: Text(
@@ -111,14 +156,15 @@ class _SearchFieldState extends ConsumerState<SearchField> {
                     ),
                     const Divider(),
                   ],
-                  if (debOptions.isNotEmpty) ...[
+                  // --- Flatpak section ---
+                  if (flatpakOptions.isNotEmpty) ...[
                     ListTile(
                       title: Text(
-                        l10n.searchFieldDebSection,
+                        l10n.searchFieldFlatpakSection,
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
                     ),
-                    ...debOptions.map(
+                    ...flatpakOptions.map(
                       (e) => _AutoCompleteTile(
                         option: e,
                         onTap: () => onSelected(e),
@@ -142,7 +188,9 @@ class _SearchFieldState extends ConsumerState<SearchField> {
         AutoCompleteSnapOption(snap: final snap) =>
           widget.onSnapSelected(snap.name),
         AutoCompleteDebOption(deb: final deb) => widget.onDebSelected(deb.id),
-        AutoCompleteSearchOption(query: final query) => widget.onSearch(query),
+        AutoCompleteFlatpakOption(flatpak: final f) =>
+          widget.onFlatpakSelected(f),
+        AutoCompleteSearchOption(query: final q) => widget.onSearch(q),
       },
       fieldViewBuilder: (context, controller, node, onFieldSubmitted) {
         return Focus(
@@ -235,11 +283,22 @@ class _AutoCompleteTile extends StatelessWidget {
           ),
           onTap: onTap,
         ),
+      AutoCompleteFlatpakOption(flatpak: final f) => ListTile(
+          selected: selected,
+          title: Text(f.name),
+          subtitle: f.description != null
+              ? Text(
+                  f.description!,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                )
+              : null,
+          leading: const AppIcon(size: _iconSize, iconUrl: null),
+          onTap: onTap,
+        ),
       AutoCompleteSearchOption(query: final query) => ListTile(
           selected: selected,
-          title: Text(
-            l10n.searchFieldSearchForLabel(query),
-          ),
+          title: Text(l10n.searchFieldSearchForLabel(query)),
           onTap: onTap,
         ),
     };

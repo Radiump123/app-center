@@ -1,0 +1,808 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.g.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Irish (`ga`).
+class AppLocalizationsGa extends AppLocalizations {
+  AppLocalizationsGa([String locale = 'ga']) : super(locale);
+
+  @override
+  String get appCenterLabel => 'Lárionad Aipeanna';
+
+  @override
+  String get appstreamSearchGreylist =>
+      'aip; iarratas; pacáiste; clár; an chláir; svuít; uirlis';
+
+  @override
+  String get snapPageChannelLabel => 'Cainéal';
+
+  @override
+  String get snapPageConfinementLabel => 'Gaibhniú';
+
+  @override
+  String snapPageContactPublisherLabel(String publisher) {
+    return 'Déan teagmháil le $publisher';
+  }
+
+  @override
+  String get snapPageDeveloperWebsiteLabel => 'Suíomh Gréasáin an fhorbróra';
+
+  @override
+  String get snapPageDownloadSizeLabel => 'Méid an íosluchtaithe';
+
+  @override
+  String get snapPageSizeLabel => 'Méid';
+
+  @override
+  String get snapPageGalleryNextSemanticLabel => 'Next image';
+
+  @override
+  String get snapPageGalleryPreviousSemanticLabel => 'Previous image';
+
+  @override
+  String snapPageGalleryImageSemanticLabel(int n) {
+    return 'Image $n';
+  }
+
+  @override
+  String get snapPageLicenseLabel => 'Ceadúnas';
+
+  @override
+  String get snapPageLinksLabel => 'Naisc';
+
+  @override
+  String get snapPagePublisherLabel => 'Foilsitheoir';
+
+  @override
+  String get snapPagePublishedLabel => 'Foilsithe';
+
+  @override
+  String get snapPageSummaryLabel => 'Achoimre';
+
+  @override
+  String get snapPageVersionLabel => 'Leagan';
+
+  @override
+  String get snapPageShareLinkCopiedMessage =>
+      'Cóipeáladh an nasc go dtí an ghearrthaisce';
+
+  @override
+  String get snapPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get snapPageReportSemanticLabel => 'Report';
+
+  @override
+  String sectionExpandSemanticLabel(String section) {
+    return 'Expand $section';
+  }
+
+  @override
+  String sectionCollapseSemanticLabel(String section) {
+    return 'Collapse $section';
+  }
+
+  @override
+  String get explorePageLabel => 'Déan iniúchadh';
+
+  @override
+  String get explorePageCategoriesLabel => 'Catagóirí';
+
+  @override
+  String get managePageOwnUpdateAvailable =>
+      'Nuashonrú ar an Lárionad Aipeanna ar fáil';
+
+  @override
+  String get managePageQuitToUpdate => 'Scoir den nuashonrú';
+
+  @override
+  String get managePageOwnUpdateDescription =>
+      'Nuair a scoireann tú den fheidhmchlár, nuashonróidh sé go huathoibríoch é.';
+
+  @override
+  String get managePageOwnUpdateQuitButton => 'Scoir den nuashonrú';
+
+  @override
+  String get managePageCheckForUpdates => 'Seiceáil le haghaidh nuashonruithe';
+
+  @override
+  String get managePageCheckingForUpdates =>
+      'Ag seiceáil le haghaidh nuashonruithe';
+
+  @override
+  String get managePageNoInternet =>
+      'Ní féidir teacht ar fhreastalaí, seiceáil do nasc idirlín nó bain triail eile as níos déanaí.';
+
+  @override
+  String get managePageDescription =>
+      'Seiceáil le haghaidh nuashonruithe atá ar fáil, nuashonraigh d\'fheidhmchláir, agus bainistigh stádas d\'fheidhmchláir go léir.';
+
+  @override
+  String get managePageDebUpdatesMessage =>
+      'Láimhseálann an Updater Bogearraí nuashonruithe pacáiste Debian.';
+
+  @override
+  String get managePageInstalledAndUpdatedLabel =>
+      'Suiteáilte agus nuashonraithe';
+
+  @override
+  String managePageInstallingLabel(int n) {
+    return 'Suiteáil ($n)';
+  }
+
+  @override
+  String get managePageLabel => 'Bainistigh';
+
+  @override
+  String get managePageTitle => 'Bainistigh snapanna suiteáilte';
+
+  @override
+  String get managePageNoUpdatesAvailableDescription =>
+      'Níl aon nuashonruithe ar fáil. Tá d\'iarratais cothrom le dáta ar fad.';
+
+  @override
+  String get managePageSearchFieldSearchHint =>
+      'Cuardaigh d\'fheidhmchláir suiteáilte';
+
+  @override
+  String get managePageShowDetailsLabel => 'Taispeáin sonraí';
+
+  @override
+  String get managePageShowSystemSnapsLabel => 'Taispeáin snapanna an chórais';
+
+  @override
+  String get managePagePackageTypeLabel => 'Package type';
+
+  @override
+  String get managePagePackageTypeAll => 'All';
+
+  @override
+  String get managePagePackageTypeSnap => 'Snap';
+
+  @override
+  String get managePagePackageTypeDeb => 'Deb';
+
+  @override
+  String get managePagePackageTypeFlatpak => 'Flatpak';
+
+  @override
+  String get managePageUpdateAllLabel => 'Nuashonraigh gach rud';
+
+  @override
+  String managePageUpdatedDaysAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n lá',
+      one: '$n lá',
+    );
+    return 'Nuashonraithe $_temp0 ó shin';
+  }
+
+  @override
+  String managePageUpdatedWeeksAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n seachtainí',
+      one: '$n seachtain',
+    );
+    return 'Nuashonraithe $_temp0 ó shin';
+  }
+
+  @override
+  String managePageUpdatedMonthsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n mhí',
+      one: '$n mí',
+    );
+    return 'Nuashonraithe $_temp0 ó shin';
+  }
+
+  @override
+  String managePageUpdatedYearsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n blianta',
+      one: '$n bhliain',
+    );
+    return 'Nuashonraithe $_temp0 ó shin';
+  }
+
+  @override
+  String managePageUpdatesAvailable(int n) {
+    return 'Nuashonruithe ar fáil ($n)';
+  }
+
+  @override
+  String managePageUpdatesFailed(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: 'Theip ar $n nuashonruithe',
+      one: 'Theip ar nuashonrú amháin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String managePageUpdatesFailedBody(Object snapList) {
+    return 'Ní raibh muid in ann na feidhmchláir seo a nuashonrú toisc go bhfuil siad ag rith faoi láthair.\n\n$snapList\nNuair a scoireann tú de na feidhmchláir, nuashonróidh siad go huathoibríoch.';
+  }
+
+  @override
+  String get managePageDocumentationLinkLabel =>
+      'Foghlaim conas pacáistí Debian a bhainistiú sa doiciméadú.';
+
+  @override
+  String get productivityPageLabel => 'Táirgiúlacht';
+
+  @override
+  String get developmentPageLabel => 'Forbairt';
+
+  @override
+  String get gamesPageLabel => 'Cluichí';
+
+  @override
+  String get gamesPageTitle => 'Cad atá Te';
+
+  @override
+  String get gamesPageTop => 'Barr rátáil';
+
+  @override
+  String get gamesPageFeatured => 'Teidil Faoi Thrácht';
+
+  @override
+  String get gamesPageBundles => 'Bundalaí Aip';
+
+  @override
+  String get unknownPublisher => 'Foilsitheoir anaithnid';
+
+  @override
+  String get searchFieldDebSection => 'Pacáistí Debian';
+
+  @override
+  String get searchFieldSearchHint => 'Cuardaigh feidhmchláir';
+
+  @override
+  String searchFieldSearchForLabel(String query) {
+    return 'Féach na torthaí go léir le haghaidh \"$query\"';
+  }
+
+  @override
+  String get searchFieldSnapSection => 'Pacáistí Snap';
+
+  @override
+  String get searchPageFilterByLabel => 'Scag de réir';
+
+  @override
+  String searchPageNoResults(String query) {
+    return 'Níor aimsíodh aon torthaí le haghaidh \"$query\"';
+  }
+
+  @override
+  String get searchPageNoResultsHint =>
+      'Bain triail as eochairfhocail éagsúla nó níos ginearálta a úsáid';
+
+  @override
+  String get searchPageNoResultsCategory =>
+      'Tá brón orm, ní raibh muid in ann teacht ar aon phacáistí sa chatagóir seo';
+
+  @override
+  String get searchPageNoResultsCategoryHint =>
+      'Bain triail as catagóir eile nó bain úsáid as eochairfhocail níos ginearálta';
+
+  @override
+  String get searchPageSortByLabel => 'Sórtáil de réir';
+
+  @override
+  String get searchPageRelevanceLabel => 'Ábharthacht';
+
+  @override
+  String searchPageTitle(String query) {
+    return 'Torthaí le haghaidh \"$query\"';
+  }
+
+  @override
+  String get aboutPageLabel => 'Maidir';
+
+  @override
+  String aboutPageVersionLabel(String version) {
+    return 'Leagan $version';
+  }
+
+  @override
+  String get aboutPageContributorTitle => 'Deartha agus forbartha ag:';
+
+  @override
+  String get aboutPageCommunityTitle => 'Bí mar chuid den phobal:';
+
+  @override
+  String get aboutPageContributeLabel => 'Cuir nó tuairiscigh fabht';
+
+  @override
+  String get aboutPageGitHubLabel => 'Faigh sinn ar GitHub';
+
+  @override
+  String get aboutPagePublishLabel => 'Foilsigh chuig an Snap Store';
+
+  @override
+  String get aboutPageLearnMoreLabel => 'Faigh tuilleadh eolais';
+
+  @override
+  String appUrlTypeContact(String publisher) {
+    return 'Contact $publisher';
+  }
+
+  @override
+  String get appUrlTypeHomepage => 'Developer website';
+
+  @override
+  String get appUrlTypeUnknown => 'Link';
+
+  @override
+  String get appConfinementUnknown => 'Unknown';
+
+  @override
+  String get appConfinementStrict => 'Sandboxed';
+
+  @override
+  String get appConfinementDevelopment => 'Devmode';
+
+  @override
+  String get appConfinementClassic => 'Unrestricted';
+
+  @override
+  String get appConfinementUnrestricted => 'Unrestricted';
+
+  @override
+  String get appLicenseUnknown => 'Unknown';
+
+  @override
+  String get appPublishedUnknown => 'Unknown';
+
+  @override
+  String get appMoreActionsSemanticLabel => 'More actions';
+
+  @override
+  String get packageFormatDebLabel => 'Pacáistí Debian';
+
+  @override
+  String get packageFormatSnapLabel => 'Pacáistí Snap';
+
+  @override
+  String get packageFormatAllLabel => 'All packages';
+
+  @override
+  String get packageFormatFlatpakLabel => 'Flatpak packages';
+
+  @override
+  String get searchFieldFlatpakSection => 'Flatpak packages';
+
+  @override
+  String get flatpakRemoteLabel => 'Remote';
+
+  @override
+  String get flatpakVersionUnknown => 'Unknown';
+
+  @override
+  String get snapActionCancelLabel => 'Cuir ar ceal';
+
+  @override
+  String get snapActionInstallLabel => 'Suiteáil';
+
+  @override
+  String get snapActionInstalledLabel => 'Suiteáilte';
+
+  @override
+  String get snapActionInstallingLabel => 'Ag suiteáil';
+
+  @override
+  String get snapActionOpenLabel => 'Oscail';
+
+  @override
+  String get snapActionRemoveLabel => 'Díshuiteáil';
+
+  @override
+  String get snapActionRemovingLabel => 'Ag díshuiteáil';
+
+  @override
+  String get snapActionRevertLabel => 'Revert update';
+
+  @override
+  String get snapActionRevertingLabel => 'Reverting update';
+
+  @override
+  String get snapRevertConfirmTitle => 'Revert to previous version?';
+
+  @override
+  String get snapRevertConfirmMessage =>
+      'Automatic updates will resume when a new version is available.';
+
+  @override
+  String get snapRevertConfirmRevert => 'Revert';
+
+  @override
+  String get snapRevertConfirmCancel => 'Cancel';
+
+  @override
+  String snapRevertConfirmTitleWithVersions(String currentVersion,
+      int currentRevision, String previousVersion, int previousRevision) {
+    return 'Revert from $currentVersion (rev $currentRevision) to $previousVersion (rev $previousRevision)?';
+  }
+
+  @override
+  String get snapRevertNoPreviousRevisionMessage =>
+      'No previous local revision is available to revert to.';
+
+  @override
+  String get snapActionSwitchChannelLabel => 'Athraigh cainéal';
+
+  @override
+  String get snapActionUpdateLabel => 'Nuashonrú';
+
+  @override
+  String get snapCategoryAll => 'Gach catagóir';
+
+  @override
+  String get snapActionUpdatingLabel => 'Ag nuashonrú';
+
+  @override
+  String appCardPublisherSemanticLabel(String publisher) {
+    return 'Published by $publisher.';
+  }
+
+  @override
+  String appCardRatingSemanticLabel(String rating) {
+    return 'Rating $rating.';
+  }
+
+  @override
+  String get snapCategoryArtAndDesign => 'Ealaín agus Dearadh';
+
+  @override
+  String get snapCategoryArtAndDesignButtonLabel => 'Tosaigh ag cruthú';
+
+  @override
+  String get snapCategoryArtAndDesignSlogan =>
+      'Ó do chéad sceitse go dtí an teagmháil deiridh, déan iniúchadh ar aipeanna le haghaidh ealaíne agus dearaidh.';
+
+  @override
+  String get snapCategoryBooksAndReference => 'Leabhair agus Tagairtí';
+
+  @override
+  String get snapCategoryDefaultButtonLabel => 'Tuilleadh eolais';
+
+  @override
+  String get snapCategoryDevelopment => 'Forbairt';
+
+  @override
+  String get snapCategoryDevelopmentSlogan =>
+      'Ní mór snapanna a bheith agat d\'fhorbróirí';
+
+  @override
+  String get snapCategoryDevicesAndIot => 'Gléasanna agus IoT';
+
+  @override
+  String get snapCategoryEducation => 'Oideachas';
+
+  @override
+  String get snapCategoryEntertainment => 'Siamsaíocht';
+
+  @override
+  String get snapCategoryFeatured => 'Réadmhaoin';
+
+  @override
+  String get snapCategoryFeaturedSlogan => 'Snapanna Réadmhaoin';
+
+  @override
+  String get snapCategoryFinance => 'Airgeadas';
+
+  @override
+  String get snapCategoryGames => 'Cluichí';
+
+  @override
+  String get snapCategoryGamesSlogan => 'Gach rud le haghaidh oíche cluiche';
+
+  @override
+  String get snapCategoryGameDev => 'Forbairt Cluiche';
+
+  @override
+  String get snapCategoryGameDevSlogan => 'Forbairt Cluiche';
+
+  @override
+  String get snapCategoryGameEmulators => 'Aithriseoirí';
+
+  @override
+  String get snapCategoryGameEmulatorsSlogan => 'Aithriseoirí';
+
+  @override
+  String get snapCategoryGnomeGames => 'Cluichí GNOME';
+
+  @override
+  String get snapCategoryGnomeGamesSlogan => 'Sraith Cluichí GNOME';
+
+  @override
+  String get snapCategoryKdeGames => 'Cluichí KDE';
+
+  @override
+  String get snapCategoryKdeGamesSlogan => 'Svuít Cluichí KDE';
+
+  @override
+  String get snapCategoryGameLaunchers => 'Cluiche Lainseálaithe';
+
+  @override
+  String get snapCategoryGameLaunchersSlogan => 'Cluiche Lainseálaithe';
+
+  @override
+  String get snapCategoryGameContentCreation => 'Cruthú Ábhar';
+
+  @override
+  String get snapCategoryGameContentCreationSlogan => 'Cruthú Ábhar';
+
+  @override
+  String get snapCategoryHealthAndFitness => 'Sláinte agus Folláine';
+
+  @override
+  String get snapCategoryMusicAndAudio => 'Ceol agus Fuaim';
+
+  @override
+  String get snapCategoryNewsAndWeather => 'Nuacht agus Aimsir';
+
+  @override
+  String get snapCategoryPersonalisation => 'Pearsanú';
+
+  @override
+  String get snapCategoryPhotoAndVideo => 'Grianghraf agus Físeán';
+
+  @override
+  String get snapCategoryProductivity => 'Táirgiúlacht';
+
+  @override
+  String get snapCategoryProductivityButtonLabel =>
+      'Faigh amach an bailiúchán táirgiúlachta';
+
+  @override
+  String get snapCategoryProductivitySlogan =>
+      'Trasnaigh rud amháin as do liosta tascanna';
+
+  @override
+  String get snapCategoryScience => 'Eolaíocht';
+
+  @override
+  String get snapCategorySecurity => 'Slándáil';
+
+  @override
+  String get snapCategoryServerAndCloud => 'Freastalaí agus Cloud';
+
+  @override
+  String get snapCategorySocial => 'Sóisialta';
+
+  @override
+  String get snapCategoryUbuntuDesktop => 'Deasc Ubuntu';
+
+  @override
+  String get snapCategoryUbuntuDesktopSlogan => 'Léim tús a chur le do dheasc';
+
+  @override
+  String get snapCategoryUtilities => 'Fóntais';
+
+  @override
+  String get snapSortOrderAlphabeticalAsc => 'Aibítreach (A go Z)';
+
+  @override
+  String get snapSortOrderAlphabeticalDesc => 'Aibítreach (Z go A)';
+
+  @override
+  String get snapSortOrderDownloadSizeAsc =>
+      'Méid (Is lú go dtí an ceann is mó)';
+
+  @override
+  String get snapSortOrderDownloadSizeDesc =>
+      'Méid (An ceann is mó go dtí an ceann is lú)';
+
+  @override
+  String get snapSortOrderInstalledSizeAsc =>
+      'Méid (Is lú go dtí an ceann is mó)';
+
+  @override
+  String get snapSortOrderInstalledSizeDesc =>
+      'Méid (An ceann is mó go dtí an ceann is lú)';
+
+  @override
+  String get snapSortOrderInstalledDateAsc =>
+      'Ar a laghad a nuashonraíodh le déanaí';
+
+  @override
+  String get snapSortOrderInstalledDateDesc =>
+      'An ceann is déanaí a nuashonraíodh';
+
+  @override
+  String get snapSortOrderRelevance => 'Ábharthacht';
+
+  @override
+  String get snapRatingsBandVeryGood => 'An-mhaith';
+
+  @override
+  String get snapRatingsBandGood => 'Go maith';
+
+  @override
+  String get snapRatingsBandNeutral => 'Neodrach';
+
+  @override
+  String get snapRatingsBandPoor => 'Bocht';
+
+  @override
+  String get snapRatingsBandVeryPoor => 'An-bhocht';
+
+  @override
+  String get snapRatingsBandInsufficientVotes => 'Easpa vótaí';
+
+  @override
+  String snapRatingsVotes(int n) {
+    return '$n vótaí';
+  }
+
+  @override
+  String snapReportLabel(String snapName) {
+    return 'Tuairiscigh $snapName';
+  }
+
+  @override
+  String get snapReportSelectReportReasonLabel =>
+      'Roghnaigh cúis leis an snap seo a thuairisciú';
+
+  @override
+  String get snapReportSelectAnOptionLabel => 'Roghnaigh rogha';
+
+  @override
+  String get snapReportOptionCopyrightViolation =>
+      'Sárú cóipchirt nó trádmhairc';
+
+  @override
+  String get snapReportOptionStoreViolation =>
+      'Téarmaí sáraithe seirbhíse Snap Store';
+
+  @override
+  String get snapReportDetailsLabel =>
+      'Tabhair cúis níos mionsonraithe le do thuarascáil';
+
+  @override
+  String get snapReportOptionalEmailAddressLabel => 'Do r-phost (roghnach)';
+
+  @override
+  String get snapReportCancelButtonLabel => 'Cuir ar ceal';
+
+  @override
+  String get snapReportSubmitButtonLabel => 'Tuarascáil a chur isteach';
+
+  @override
+  String get snapReportEnterValidEmailError =>
+      'Iontráil seoladh ríomhphoist bailí';
+
+  @override
+  String get snapReportDetailsHint => 'Nóta Tráchta...';
+
+  @override
+  String get snapReportPrivacyAgreementLabel =>
+      'Agus an fhoirm seo á cur isteach agam, deimhním gur léigh mé agus go n-aontaím ';
+
+  @override
+  String get snapReportPrivacyAgreementCanonicalPrivacyNotice =>
+      'Fógra Príobháideachais Canonical ';
+
+  @override
+  String get snapReportPrivacyAgreementAndLabel => 'agus ';
+
+  @override
+  String get snapReportPrivacyAgreementPrivacyPolicy =>
+      'Polasaí Príobháideachais';
+
+  @override
+  String get debPageErrorNoPackageInfo =>
+      'Níor aimsíodh aon fhaisnéis phacáiste';
+
+  @override
+  String get debPageDocumentationLinkLabel =>
+      'Foghlaim faoi phacáistí Debian a bhainistiú';
+
+  @override
+  String get debPageShareLinkCopiedMessage => 'Link copied to clipboard';
+
+  @override
+  String get debPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get externalResources => 'Acmhainní breise';
+
+  @override
+  String get externalResourcesButtonLabel => 'Tuilleadh eolais';
+
+  @override
+  String get allGamesButtonLabel => 'Gach cluichí';
+
+  @override
+  String get externalResourcesDisclaimer =>
+      'Nóta: Is uirlisí seachtracha iad seo go léir. Níl siad seo faoi úinéireacht ná á ndáileadh ag Canonical.';
+
+  @override
+  String get openInBrowser => 'Oscail i mbrabhsálaí';
+
+  @override
+  String get installAll => 'Suiteáil gach rud';
+
+  @override
+  String get localDebWarningTitle => 'D\'fhéadfadh sé a bheith neamhshábháilte';
+
+  @override
+  String get localDebWarningBody =>
+      'Cuireann tríú páirtí an pacáiste seo ar fáil. Is féidir le pacáistí a shuiteáil ó lasmuigh den Lárionad Aip an riosca le do chóras agus do shonraí pearsanta a mhéadú. Cinntigh go bhfuil muinín agat as an bhfoinse sula dtéann tú ar aghaidh.';
+
+  @override
+  String get localDebLearnMore =>
+      'Foghlaim tuilleadh faoi phacáistí tríú páirtí';
+
+  @override
+  String get localDebDialogMessage =>
+      'Cuireann tríú páirtí an pacáiste seo ar fáil agus d\'fhéadfadh sé do chóras agus do shonraí pearsanta a chur i mbaol.';
+
+  @override
+  String get localDebDialogConfirmation =>
+      'An bhfuil tú cinnte go bhfuil fonn ort é a shuiteáil?';
+
+  @override
+  String snapdExceptionRunningApps(String snapName) {
+    return 'Ní fhéadfaimis $snapName a nuashonrú toisc go bhfuil sé á rith faoi láthair.';
+  }
+
+  @override
+  String get errorViewCheckStatusLabel => 'Seiceáil stádas';
+
+  @override
+  String get errorViewNetworkErrorTitle => 'Ceangail leis an idirlíon';
+
+  @override
+  String get errorViewNetworkErrorDescription =>
+      'Ní féidir linn ábhar a luchtú sa App Center gan nasc idirlín.';
+
+  @override
+  String get errorViewNetworkErrorAction => 'Seiceáil do nasc agus atriail.';
+
+  @override
+  String get errorViewServerErrorDescription =>
+      'Tá brón orainn, tá fadhbanna againn leis an App Center faoi láthair.';
+
+  @override
+  String get errorViewServerErrorAction =>
+      'Seiceáil stádas na nuashonruithe nó bain triail eile as níos déanaí.';
+
+  @override
+  String get errorViewUnknownErrorTitle => 'Chuaigh rud éigin mícheart';
+
+  @override
+  String get errorViewUnknownErrorDescription =>
+      'Tá brón orainn, ach nílimid cinnte cad é an earráid.';
+
+  @override
+  String get errorViewUnknownErrorAction =>
+      'Is féidir leat triail a bhaint as anois, an stádas le haghaidh nuashonruithe a sheiceáil, nó triail eile a bhaint as níos déanaí.';
+
+  @override
+  String get codecPageTitle => 'Missing media codecs';
+
+  @override
+  String get codecPageDescription =>
+      'You need to install the following codecs for handling certain video and audio formats:';
+
+  @override
+  String get codecProprietaryDisclaimer =>
+      'Some of the recommended codecs could be proprietary.';
+
+  @override
+  String get codecInstallAllButton => 'Install recommended codecs';
+}

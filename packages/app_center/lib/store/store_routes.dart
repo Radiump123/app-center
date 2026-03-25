@@ -6,6 +6,7 @@ abstract class StoreRoutes {
   static const deb = '/deb';
   static const localDeb = '/local-deb';
   static const snap = '/snap';
+  static const flatpak = '/flatpak';
   static const manage = '/manage';
   static const search = '/search';
   static const externalTools = '/externalTools';
@@ -14,6 +15,7 @@ abstract class StoreRoutes {
   static bool isSnap(RouteSettings route) => routeOf(route) == snap;
   static bool isSearch(RouteSettings route) => routeOf(route) == search;
   static bool isDeb(RouteSettings route) => routeOf(route) == deb;
+  static bool isFlatpak(RouteSettings route) => routeOf(route) == flatpak;
 
   static String routeOf(RouteSettings route) =>
       Uri.parse(route.name ?? '').path;

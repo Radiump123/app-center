@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: app_center_ratings_client
+dependency_overrides:
+  app_center_ratings_client:
+    path: ../app_center_ratings_client

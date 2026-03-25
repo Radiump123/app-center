@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:app_center/appstream/appstream.dart';
+import 'package:app_center/flatpak/flatpak_service.dart';
 import 'package:app_center/config.dart';
 import 'package:app_center/error/error.dart';
 import 'package:app_center/l10n.dart';
@@ -64,6 +65,9 @@ Future<void> main(List<String> args) async {
   // metadata from the disk.
   unawaited(appstream.init());
   registerServiceInstance(appstream);
+
+  // Register FlatpakService (gracefully no-ops if flatpak is not installed)
+  registerServiceInstance(FlatpakService());
 
   registerService(PackageKitClient.new);
   registerService(

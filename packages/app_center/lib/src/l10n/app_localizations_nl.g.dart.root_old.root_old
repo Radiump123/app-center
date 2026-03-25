@@ -1,0 +1,799 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.g.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Dutch Flemish (`nl`).
+class AppLocalizationsNl extends AppLocalizations {
+  AppLocalizationsNl([String locale = 'nl']) : super(locale);
+
+  @override
+  String get appCenterLabel => 'App-centrale';
+
+  @override
+  String get appstreamSearchGreylist =>
+      'app;application;package;program;programme;suite;tool;applicatie;applicaties;toepassing;toepassingen;pakket;pakketten;programma;programma\'s;hulpmiddel;hulpmiddelen;gereedschap;software';
+
+  @override
+  String get snapPageChannelLabel => 'Kanaal';
+
+  @override
+  String get snapPageConfinementLabel => 'Beperking';
+
+  @override
+  String snapPageContactPublisherLabel(String publisher) {
+    return 'Contact $publisher';
+  }
+
+  @override
+  String get snapPageDeveloperWebsiteLabel => 'Website van de ontwikkelaar(s)';
+
+  @override
+  String get snapPageDownloadSizeLabel => 'Downloadgrootte';
+
+  @override
+  String get snapPageSizeLabel => 'Grootte';
+
+  @override
+  String get snapPageGalleryNextSemanticLabel => 'Next image';
+
+  @override
+  String get snapPageGalleryPreviousSemanticLabel => 'Previous image';
+
+  @override
+  String snapPageGalleryImageSemanticLabel(int n) {
+    return 'Image $n';
+  }
+
+  @override
+  String get snapPageLicenseLabel => 'Licentie';
+
+  @override
+  String get snapPageLinksLabel => 'Links';
+
+  @override
+  String get snapPagePublisherLabel => 'Uitgever';
+
+  @override
+  String get snapPagePublishedLabel => 'Uitgegeven';
+
+  @override
+  String get snapPageSummaryLabel => 'Samenvatting';
+
+  @override
+  String get snapPageVersionLabel => 'Versie';
+
+  @override
+  String get snapPageShareLinkCopiedMessage => 'Link gekopieerd naar klembord';
+
+  @override
+  String get snapPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get snapPageReportSemanticLabel => 'Report';
+
+  @override
+  String sectionExpandSemanticLabel(String section) {
+    return 'Expand $section';
+  }
+
+  @override
+  String sectionCollapseSemanticLabel(String section) {
+    return 'Collapse $section';
+  }
+
+  @override
+  String get explorePageLabel => 'Ontdekken';
+
+  @override
+  String get explorePageCategoriesLabel => 'Categorieën';
+
+  @override
+  String get managePageOwnUpdateAvailable =>
+      'Update beschikbaar van App-centrale';
+
+  @override
+  String get managePageQuitToUpdate => 'Afsluiten en bijwerken';
+
+  @override
+  String get managePageOwnUpdateDescription =>
+      'Wanneer je de applicatie afsluit, wordt deze automatisch bijgewerkt.';
+
+  @override
+  String get managePageOwnUpdateQuitButton => 'Afsluiten en bijwerken';
+
+  @override
+  String get managePageCheckForUpdates => 'Controleren op updates';
+
+  @override
+  String get managePageCheckingForUpdates => 'Controleren op updates';
+
+  @override
+  String get managePageNoInternet =>
+      'Geen verbinding met server, controleer de internetverbinding of probeer het later opnieuw.';
+
+  @override
+  String get managePageDescription =>
+      'Controleren of er updates beschikbaar zijn, apps bijwerken en de status van alle apps beheren.';
+
+  @override
+  String get managePageDebUpdatesMessage =>
+      'Updates van het Debian-pakket worden afgehandeld door de Software Updater.';
+
+  @override
+  String get managePageInstalledAndUpdatedLabel =>
+      'Geïnstalleerd en bijgewerkt';
+
+  @override
+  String managePageInstallingLabel(int n) {
+    return 'Installeren ($n)';
+  }
+
+  @override
+  String get managePageLabel => 'Beheren';
+
+  @override
+  String get managePageTitle => 'Geïnstalleerde snaps beheren';
+
+  @override
+  String get managePageNoUpdatesAvailableDescription =>
+      'Geen updates beschikbaar. De applicaties zijn allemaal up-to-date.';
+
+  @override
+  String get managePageSearchFieldSearchHint =>
+      'Geïnstalleerde apps doorzoeken';
+
+  @override
+  String get managePageShowDetailsLabel => 'Details weergeven';
+
+  @override
+  String get managePageShowSystemSnapsLabel => 'Systeem-snaps weergeven';
+
+  @override
+  String get managePagePackageTypeLabel => 'Package type';
+
+  @override
+  String get managePagePackageTypeAll => 'All';
+
+  @override
+  String get managePagePackageTypeSnap => 'Snap';
+
+  @override
+  String get managePagePackageTypeDeb => 'Deb';
+
+  @override
+  String get managePagePackageTypeFlatpak => 'Flatpak';
+
+  @override
+  String get managePageUpdateAllLabel => 'Alles bijwerken';
+
+  @override
+  String managePageUpdatedDaysAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n Dagen',
+      one: '$n Dag',
+    );
+    return '$_temp0 geleden bijgewerkt';
+  }
+
+  @override
+  String managePageUpdatedWeeksAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n Weken',
+      one: '$n Week',
+    );
+    return '$_temp0 geleden bijgewerkt';
+  }
+
+  @override
+  String managePageUpdatedMonthsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n Maanden',
+      one: '$n Maand',
+    );
+    return '$_temp0 geleden bijgewerkt';
+  }
+
+  @override
+  String managePageUpdatedYearsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n Jaren',
+      one: '$n Jaar',
+    );
+    return '$_temp0 geleden bijgewerkt';
+  }
+
+  @override
+  String managePageUpdatesAvailable(int n) {
+    return '($n) Updates beschikbaar';
+  }
+
+  @override
+  String managePageUpdatesFailed(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n Updates',
+      one: 'Een update',
+    );
+    return '$_temp0 mislukt';
+  }
+
+  @override
+  String managePageUpdatesFailedBody(Object snapList) {
+    return 'De volgende applicaties zijn niet bijgewerkt omdat ze momenteel actief zijn.\n\n$snapList\nWanneer u de applicaties afsluit, worden ze automatisch bijgewerkt.';
+  }
+
+  @override
+  String get managePageDocumentationLinkLabel =>
+      'Lees in de documentatie hoe je Debian-pakketten kunt beheren.';
+
+  @override
+  String get productivityPageLabel => 'Productiviteit';
+
+  @override
+  String get developmentPageLabel => 'Ontwikkeling';
+
+  @override
+  String get gamesPageLabel => 'Games';
+
+  @override
+  String get gamesPageTitle => 'Heet van de naald';
+
+  @override
+  String get gamesPageTop => 'Best beoordeeld';
+
+  @override
+  String get gamesPageFeatured => 'Uitgelichte titels';
+
+  @override
+  String get gamesPageBundles => 'App-bundels';
+
+  @override
+  String get unknownPublisher => 'Onbekende uitgever';
+
+  @override
+  String get searchFieldDebSection => 'Debian-pakketten';
+
+  @override
+  String get searchFieldSearchHint => 'Apps zoeken';
+
+  @override
+  String searchFieldSearchForLabel(String query) {
+    return 'Alle resultaten voor \"$query\" weergeven';
+  }
+
+  @override
+  String get searchFieldSnapSection => 'Snap-pakketten';
+
+  @override
+  String get searchPageFilterByLabel => 'Filteren op';
+
+  @override
+  String searchPageNoResults(String query) {
+    return 'Geen resultaten gevonden voor \"$query\"';
+  }
+
+  @override
+  String get searchPageNoResultsHint =>
+      'Probeer het met andere of meer algemene trefwoorden';
+
+  @override
+  String get searchPageNoResultsCategory =>
+      'Helaas, we hebben geen pakketten in deze categorie kunnen vinden';
+
+  @override
+  String get searchPageNoResultsCategoryHint =>
+      'Probeer een andere categorie of gebruik meer algemene trefwoorden';
+
+  @override
+  String get searchPageSortByLabel => 'Sorteren op';
+
+  @override
+  String get searchPageRelevanceLabel => 'Relevantie';
+
+  @override
+  String searchPageTitle(String query) {
+    return 'Resultaten voor \"$query\"';
+  }
+
+  @override
+  String get aboutPageLabel => 'Over';
+
+  @override
+  String aboutPageVersionLabel(String version) {
+    return 'Versie $version';
+  }
+
+  @override
+  String get aboutPageContributorTitle => 'Ontworpen en ontwikkeld door:';
+
+  @override
+  String get aboutPageCommunityTitle => 'Maak deel uit van de gemeenschap:';
+
+  @override
+  String get aboutPageContributeLabel => 'Bijdragen of fout melden';
+
+  @override
+  String get aboutPageGitHubLabel => 'Bezoek ons op GitHub';
+
+  @override
+  String get aboutPagePublishLabel => 'Publiceren in de Snap Store';
+
+  @override
+  String get aboutPageLearnMoreLabel => 'Meer informatie';
+
+  @override
+  String appUrlTypeContact(String publisher) {
+    return 'Contact $publisher';
+  }
+
+  @override
+  String get appUrlTypeHomepage => 'Developer website';
+
+  @override
+  String get appUrlTypeUnknown => 'Link';
+
+  @override
+  String get appConfinementUnknown => 'Unknown';
+
+  @override
+  String get appConfinementStrict => 'Sandboxed';
+
+  @override
+  String get appConfinementDevelopment => 'Devmode';
+
+  @override
+  String get appConfinementClassic => 'Unrestricted';
+
+  @override
+  String get appConfinementUnrestricted => 'Unrestricted';
+
+  @override
+  String get appLicenseUnknown => 'Unknown';
+
+  @override
+  String get appPublishedUnknown => 'Unknown';
+
+  @override
+  String get appMoreActionsSemanticLabel => 'More actions';
+
+  @override
+  String get packageFormatDebLabel => 'Debian-pakketten';
+
+  @override
+  String get packageFormatSnapLabel => 'Snap-pakketten';
+
+  @override
+  String get packageFormatAllLabel => 'All packages';
+
+  @override
+  String get packageFormatFlatpakLabel => 'Flatpak packages';
+
+  @override
+  String get searchFieldFlatpakSection => 'Flatpak packages';
+
+  @override
+  String get flatpakRemoteLabel => 'Remote';
+
+  @override
+  String get flatpakVersionUnknown => 'Unknown';
+
+  @override
+  String get snapActionCancelLabel => 'Annuleren';
+
+  @override
+  String get snapActionInstallLabel => 'Installeren';
+
+  @override
+  String get snapActionInstalledLabel => 'Geïnstalleerd';
+
+  @override
+  String get snapActionInstallingLabel => 'Installeren';
+
+  @override
+  String get snapActionOpenLabel => 'Openen';
+
+  @override
+  String get snapActionRemoveLabel => 'Verwijderen';
+
+  @override
+  String get snapActionRemovingLabel => 'Verwijderen';
+
+  @override
+  String get snapActionRevertLabel => 'Revert update';
+
+  @override
+  String get snapActionRevertingLabel => 'Reverting update';
+
+  @override
+  String get snapRevertConfirmTitle => 'Revert to previous version?';
+
+  @override
+  String get snapRevertConfirmMessage =>
+      'Automatic updates will resume when a new version is available.';
+
+  @override
+  String get snapRevertConfirmRevert => 'Revert';
+
+  @override
+  String get snapRevertConfirmCancel => 'Cancel';
+
+  @override
+  String snapRevertConfirmTitleWithVersions(String currentVersion,
+      int currentRevision, String previousVersion, int previousRevision) {
+    return 'Revert from $currentVersion (rev $currentRevision) to $previousVersion (rev $previousRevision)?';
+  }
+
+  @override
+  String get snapRevertNoPreviousRevisionMessage =>
+      'No previous local revision is available to revert to.';
+
+  @override
+  String get snapActionSwitchChannelLabel => 'Kanaal wisselen';
+
+  @override
+  String get snapActionUpdateLabel => 'Bijwerken';
+
+  @override
+  String get snapCategoryAll => 'Alle categorieën';
+
+  @override
+  String get snapActionUpdatingLabel => 'Bijwerken';
+
+  @override
+  String appCardPublisherSemanticLabel(String publisher) {
+    return 'Published by $publisher.';
+  }
+
+  @override
+  String appCardRatingSemanticLabel(String rating) {
+    return 'Rating $rating.';
+  }
+
+  @override
+  String get snapCategoryArtAndDesign => 'Kunst en Ontwerp';
+
+  @override
+  String get snapCategoryArtAndDesignButtonLabel => 'Beginnen met creëren';
+
+  @override
+  String get snapCategoryArtAndDesignSlogan =>
+      'Van je eerste schets tot de laatste hand, ontdek apps voor kunst en design.';
+
+  @override
+  String get snapCategoryBooksAndReference => 'Boeken en referentie';
+
+  @override
+  String get snapCategoryDefaultButtonLabel => 'Meer ontdekken';
+
+  @override
+  String get snapCategoryDevelopment => 'Ontwikkeling';
+
+  @override
+  String get snapCategoryDevelopmentSlogan =>
+      'Onmisbare snaps voor ontwikkelaars';
+
+  @override
+  String get snapCategoryDevicesAndIot => 'Apparaten en IoT';
+
+  @override
+  String get snapCategoryEducation => 'Onderwijs';
+
+  @override
+  String get snapCategoryEntertainment => 'Entertainment';
+
+  @override
+  String get snapCategoryFeatured => 'Aanbevolen';
+
+  @override
+  String get snapCategoryFeaturedSlogan => 'Aanbevolen Snaps';
+
+  @override
+  String get snapCategoryFinance => 'Financieel';
+
+  @override
+  String get snapCategoryGames => 'Games';
+
+  @override
+  String get snapCategoryGamesSlogan => 'Alles voor je spelletjesavond';
+
+  @override
+  String get snapCategoryGameDev => 'Game-ontwikkeling';
+
+  @override
+  String get snapCategoryGameDevSlogan => 'Game-ontwikkeling';
+
+  @override
+  String get snapCategoryGameEmulators => 'Emulators';
+
+  @override
+  String get snapCategoryGameEmulatorsSlogan => 'Emulators';
+
+  @override
+  String get snapCategoryGnomeGames => 'GNOME Games';
+
+  @override
+  String get snapCategoryGnomeGamesSlogan => 'GNOME Games Suite';
+
+  @override
+  String get snapCategoryKdeGames => 'KDE Games';
+
+  @override
+  String get snapCategoryKdeGamesSlogan => 'KDE Games Suite';
+
+  @override
+  String get snapCategoryGameLaunchers => 'Game Launchers';
+
+  @override
+  String get snapCategoryGameLaunchersSlogan => 'Game Launchers';
+
+  @override
+  String get snapCategoryGameContentCreation => 'Content-creatie';
+
+  @override
+  String get snapCategoryGameContentCreationSlogan => 'Content-creatie';
+
+  @override
+  String get snapCategoryHealthAndFitness => 'Gezondheid en fitness';
+
+  @override
+  String get snapCategoryMusicAndAudio => 'Muziek en audio';
+
+  @override
+  String get snapCategoryNewsAndWeather => 'Nieuws en weer';
+
+  @override
+  String get snapCategoryPersonalisation => 'Personalisatie';
+
+  @override
+  String get snapCategoryPhotoAndVideo => 'Foto en video';
+
+  @override
+  String get snapCategoryProductivity => 'Productiviteit';
+
+  @override
+  String get snapCategoryProductivityButtonLabel =>
+      'Ontdek de productiviteitscollectie';
+
+  @override
+  String get snapCategoryProductivitySlogan =>
+      'Streep één ding van je takenlijst';
+
+  @override
+  String get snapCategoryScience => 'Wetenschap';
+
+  @override
+  String get snapCategorySecurity => 'Beveiliging';
+
+  @override
+  String get snapCategoryServerAndCloud => 'Server en Cloud';
+
+  @override
+  String get snapCategorySocial => 'Social';
+
+  @override
+  String get snapCategoryUbuntuDesktop => 'Ubuntu bureaublad';
+
+  @override
+  String get snapCategoryUbuntuDesktopSlogan =>
+      'Snel aan de slag gaan met je bureaublad';
+
+  @override
+  String get snapCategoryUtilities => 'Hulpmiddelen';
+
+  @override
+  String get snapSortOrderAlphabeticalAsc => 'Alfabetisch (A - Z)';
+
+  @override
+  String get snapSortOrderAlphabeticalDesc => 'Alfabetisch (Z - A)';
+
+  @override
+  String get snapSortOrderDownloadSizeAsc => 'Grootte (van klein naar groot)';
+
+  @override
+  String get snapSortOrderDownloadSizeDesc => 'Grootte (van groot naar klein)';
+
+  @override
+  String get snapSortOrderInstalledSizeAsc => 'Grootte (van klein naar groot)';
+
+  @override
+  String get snapSortOrderInstalledSizeDesc => 'Grootte (van groot naar klein)';
+
+  @override
+  String get snapSortOrderInstalledDateAsc => 'Minst recent bijgewerkt';
+
+  @override
+  String get snapSortOrderInstalledDateDesc => 'Meest recent bijgewerkt';
+
+  @override
+  String get snapSortOrderRelevance => 'Relevantie';
+
+  @override
+  String get snapRatingsBandVeryGood => 'Zeer goed';
+
+  @override
+  String get snapRatingsBandGood => 'Goed';
+
+  @override
+  String get snapRatingsBandNeutral => 'Neutraal';
+
+  @override
+  String get snapRatingsBandPoor => 'Slecht';
+
+  @override
+  String get snapRatingsBandVeryPoor => 'Zeer slecht';
+
+  @override
+  String get snapRatingsBandInsufficientVotes => 'Onvoldoende stemmen';
+
+  @override
+  String snapRatingsVotes(int n) {
+    return '$n stemmen';
+  }
+
+  @override
+  String snapReportLabel(String snapName) {
+    return '$snapName melden';
+  }
+
+  @override
+  String get snapReportSelectReportReasonLabel =>
+      'Kies een reden om deze snap te melden';
+
+  @override
+  String get snapReportSelectAnOptionLabel => 'Selecteer een optie';
+
+  @override
+  String get snapReportOptionCopyrightViolation =>
+      'Schending van auteursrecht of handelsmerk';
+
+  @override
+  String get snapReportOptionStoreViolation =>
+      'Schending van de servicevoorwaarden van de Snap Store';
+
+  @override
+  String get snapReportDetailsLabel =>
+      'Geef een meer gedetailleerde reden voor de melding';
+
+  @override
+  String get snapReportOptionalEmailAddressLabel =>
+      'Jouw e-mailadres (optioneel)';
+
+  @override
+  String get snapReportCancelButtonLabel => 'Annuleren';
+
+  @override
+  String get snapReportSubmitButtonLabel => 'Melding indienen';
+
+  @override
+  String get snapReportEnterValidEmailError => 'Voer een geldig e-mailadres in';
+
+  @override
+  String get snapReportDetailsHint => 'Commentaar…';
+
+  @override
+  String get snapReportPrivacyAgreementLabel =>
+      'Met de indiening van dit formulier, bevestig ik dat ik heb gelezen en akkoord ga met ';
+
+  @override
+  String get snapReportPrivacyAgreementCanonicalPrivacyNotice =>
+      'Privacyverklaring van Canonical ';
+
+  @override
+  String get snapReportPrivacyAgreementAndLabel => 'en ';
+
+  @override
+  String get snapReportPrivacyAgreementPrivacyPolicy => 'Privacybeleid';
+
+  @override
+  String get debPageErrorNoPackageInfo => 'Geen pakketinformatie gevonden';
+
+  @override
+  String get debPageDocumentationLinkLabel =>
+      'Meer informatie over het beheren van Debian-pakketten';
+
+  @override
+  String get debPageShareLinkCopiedMessage => 'Link copied to clipboard';
+
+  @override
+  String get debPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get externalResources => 'Aanvullende bronnen';
+
+  @override
+  String get externalResourcesButtonLabel => 'Meer ontdekken';
+
+  @override
+  String get allGamesButtonLabel => 'Alle games';
+
+  @override
+  String get externalResourcesDisclaimer =>
+      'Let op: Dit zijn allemaal externe hulpmiddelen. Deze zijn geen eigendom van Canonical en worden ook niet gedistribueerd door Canonical.';
+
+  @override
+  String get openInBrowser => 'Openen in browser';
+
+  @override
+  String get installAll => 'Alles installeren';
+
+  @override
+  String get localDebWarningTitle => 'Mogelijk onveilig';
+
+  @override
+  String get localDebWarningBody =>
+      'Dit pakket wordt verzorgd door een derde partij. Het installeren van pakketten van buiten de App-centrale kan het risico voor je systeem en persoonlijke gegevens vergroten. Zorg ervoor dat je de bron vertrouwt voordat je verder gaat.';
+
+  @override
+  String get localDebLearnMore => 'Meer informatie over pakketten van derden';
+
+  @override
+  String get localDebDialogMessage =>
+      'Dit pakket wordt geleverd door een derde partij en kan een bedreiging vormen voor je systeem en persoonlijke gegevens.';
+
+  @override
+  String get localDebDialogConfirmation =>
+      'Weet je zeker dat je het wilt installeren?';
+
+  @override
+  String snapdExceptionRunningApps(String snapName) {
+    return 'We konden $snapName niet bijwerken omdat het momenteel actief is.';
+  }
+
+  @override
+  String get errorViewCheckStatusLabel => 'Status controleren';
+
+  @override
+  String get errorViewNetworkErrorTitle => 'Verbinding maken met internet';
+
+  @override
+  String get errorViewNetworkErrorDescription =>
+      'Zonder internetverbinding kunnen we geen inhoud laden in de App-centrale.';
+
+  @override
+  String get errorViewNetworkErrorAction =>
+      'Controleer de verbinding en probeer het opnieuw.';
+
+  @override
+  String get errorViewServerErrorDescription =>
+      'Het spijt ons, we ondervinden momenteel problemen met de App-centrale.';
+
+  @override
+  String get errorViewServerErrorAction =>
+      'Controleer de status op updates of probeer het later opnieuw.';
+
+  @override
+  String get errorViewUnknownErrorTitle => 'Er is iets misgegaan';
+
+  @override
+  String get errorViewUnknownErrorDescription =>
+      'Het spijt ons, maar we weten niet zeker wat de fout is.';
+
+  @override
+  String get errorViewUnknownErrorAction =>
+      'Je kunt het nu opnieuw proberen, de status controleren op updates of het later opnieuw proberen.';
+
+  @override
+  String get codecPageTitle => 'Missing media codecs';
+
+  @override
+  String get codecPageDescription =>
+      'You need to install the following codecs for handling certain video and audio formats:';
+
+  @override
+  String get codecProprietaryDisclaimer =>
+      'Some of the recommended codecs could be proprietary.';
+
+  @override
+  String get codecInstallAllButton => 'Install recommended codecs';
+}

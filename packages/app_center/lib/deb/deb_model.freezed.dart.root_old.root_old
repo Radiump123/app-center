@@ -1,0 +1,293 @@
+// coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
+
+part of 'deb_model.dart';
+
+// **************************************************************************
+// FreezedGenerator
+// **************************************************************************
+
+T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+
+/// @nodoc
+mixin _$DebData {
+  String get id => throw _privateConstructorUsedError;
+  AppstreamComponent get component => throw _privateConstructorUsedError;
+  bool get hasUpdate => throw _privateConstructorUsedError;
+  StreamSubscription<PackageKitErrorCodeEvent> get errorStream =>
+      throw _privateConstructorUsedError;
+  PackageKitPackageEvent? get packageInfo => throw _privateConstructorUsedError;
+  PackageKitDetailsEvent? get details => throw _privateConstructorUsedError;
+  int? get activeTransactionId => throw _privateConstructorUsedError;
+  PackageKitErrorCodeEvent? get error => throw _privateConstructorUsedError;
+
+  /// Create a copy of DebData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $DebDataCopyWith<DebData> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $DebDataCopyWith<$Res> {
+  factory $DebDataCopyWith(DebData value, $Res Function(DebData) then) =
+      _$DebDataCopyWithImpl<$Res, DebData>;
+  @useResult
+  $Res call(
+      {String id,
+      AppstreamComponent component,
+      bool hasUpdate,
+      StreamSubscription<PackageKitErrorCodeEvent> errorStream,
+      PackageKitPackageEvent? packageInfo,
+      PackageKitDetailsEvent? details,
+      int? activeTransactionId,
+      PackageKitErrorCodeEvent? error});
+}
+
+/// @nodoc
+class _$DebDataCopyWithImpl<$Res, $Val extends DebData>
+    implements $DebDataCopyWith<$Res> {
+  _$DebDataCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of DebData
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? component = null,
+    Object? hasUpdate = null,
+    Object? errorStream = null,
+    Object? packageInfo = freezed,
+    Object? details = freezed,
+    Object? activeTransactionId = freezed,
+    Object? error = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      component: null == component
+          ? _value.component
+          : component // ignore: cast_nullable_to_non_nullable
+              as AppstreamComponent,
+      hasUpdate: null == hasUpdate
+          ? _value.hasUpdate
+          : hasUpdate // ignore: cast_nullable_to_non_nullable
+              as bool,
+      errorStream: null == errorStream
+          ? _value.errorStream
+          : errorStream // ignore: cast_nullable_to_non_nullable
+              as StreamSubscription<PackageKitErrorCodeEvent>,
+      packageInfo: freezed == packageInfo
+          ? _value.packageInfo
+          : packageInfo // ignore: cast_nullable_to_non_nullable
+              as PackageKitPackageEvent?,
+      details: freezed == details
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as PackageKitDetailsEvent?,
+      activeTransactionId: freezed == activeTransactionId
+          ? _value.activeTransactionId
+          : activeTransactionId // ignore: cast_nullable_to_non_nullable
+              as int?,
+      error: freezed == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as PackageKitErrorCodeEvent?,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$DebDataImplCopyWith<$Res> implements $DebDataCopyWith<$Res> {
+  factory _$$DebDataImplCopyWith(
+          _$DebDataImpl value, $Res Function(_$DebDataImpl) then) =
+      __$$DebDataImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      AppstreamComponent component,
+      bool hasUpdate,
+      StreamSubscription<PackageKitErrorCodeEvent> errorStream,
+      PackageKitPackageEvent? packageInfo,
+      PackageKitDetailsEvent? details,
+      int? activeTransactionId,
+      PackageKitErrorCodeEvent? error});
+}
+
+/// @nodoc
+class __$$DebDataImplCopyWithImpl<$Res>
+    extends _$DebDataCopyWithImpl<$Res, _$DebDataImpl>
+    implements _$$DebDataImplCopyWith<$Res> {
+  __$$DebDataImplCopyWithImpl(
+      _$DebDataImpl _value, $Res Function(_$DebDataImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of DebData
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? component = null,
+    Object? hasUpdate = null,
+    Object? errorStream = null,
+    Object? packageInfo = freezed,
+    Object? details = freezed,
+    Object? activeTransactionId = freezed,
+    Object? error = freezed,
+  }) {
+    return _then(_$DebDataImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      component: null == component
+          ? _value.component
+          : component // ignore: cast_nullable_to_non_nullable
+              as AppstreamComponent,
+      hasUpdate: null == hasUpdate
+          ? _value.hasUpdate
+          : hasUpdate // ignore: cast_nullable_to_non_nullable
+              as bool,
+      errorStream: null == errorStream
+          ? _value.errorStream
+          : errorStream // ignore: cast_nullable_to_non_nullable
+              as StreamSubscription<PackageKitErrorCodeEvent>,
+      packageInfo: freezed == packageInfo
+          ? _value.packageInfo
+          : packageInfo // ignore: cast_nullable_to_non_nullable
+              as PackageKitPackageEvent?,
+      details: freezed == details
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as PackageKitDetailsEvent?,
+      activeTransactionId: freezed == activeTransactionId
+          ? _value.activeTransactionId
+          : activeTransactionId // ignore: cast_nullable_to_non_nullable
+              as int?,
+      error: freezed == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as PackageKitErrorCodeEvent?,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$DebDataImpl extends _DebData {
+  _$DebDataImpl(
+      {required this.id,
+      required this.component,
+      required this.hasUpdate,
+      required this.errorStream,
+      this.packageInfo,
+      this.details,
+      this.activeTransactionId,
+      this.error})
+      : super._();
+
+  @override
+  final String id;
+  @override
+  final AppstreamComponent component;
+  @override
+  final bool hasUpdate;
+  @override
+  final StreamSubscription<PackageKitErrorCodeEvent> errorStream;
+  @override
+  final PackageKitPackageEvent? packageInfo;
+  @override
+  final PackageKitDetailsEvent? details;
+  @override
+  final int? activeTransactionId;
+  @override
+  final PackageKitErrorCodeEvent? error;
+
+  @override
+  String toString() {
+    return 'DebData(id: $id, component: $component, hasUpdate: $hasUpdate, errorStream: $errorStream, packageInfo: $packageInfo, details: $details, activeTransactionId: $activeTransactionId, error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DebDataImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.component, component) ||
+                other.component == component) &&
+            (identical(other.hasUpdate, hasUpdate) ||
+                other.hasUpdate == hasUpdate) &&
+            (identical(other.errorStream, errorStream) ||
+                other.errorStream == errorStream) &&
+            (identical(other.packageInfo, packageInfo) ||
+                other.packageInfo == packageInfo) &&
+            (identical(other.details, details) || other.details == details) &&
+            (identical(other.activeTransactionId, activeTransactionId) ||
+                other.activeTransactionId == activeTransactionId) &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, id, component, hasUpdate,
+      errorStream, packageInfo, details, activeTransactionId, error);
+
+  /// Create a copy of DebData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$DebDataImplCopyWith<_$DebDataImpl> get copyWith =>
+      __$$DebDataImplCopyWithImpl<_$DebDataImpl>(this, _$identity);
+}
+
+abstract class _DebData extends DebData {
+  factory _DebData(
+      {required final String id,
+      required final AppstreamComponent component,
+      required final bool hasUpdate,
+      required final StreamSubscription<PackageKitErrorCodeEvent> errorStream,
+      final PackageKitPackageEvent? packageInfo,
+      final PackageKitDetailsEvent? details,
+      final int? activeTransactionId,
+      final PackageKitErrorCodeEvent? error}) = _$DebDataImpl;
+  _DebData._() : super._();
+
+  @override
+  String get id;
+  @override
+  AppstreamComponent get component;
+  @override
+  bool get hasUpdate;
+  @override
+  StreamSubscription<PackageKitErrorCodeEvent> get errorStream;
+  @override
+  PackageKitPackageEvent? get packageInfo;
+  @override
+  PackageKitDetailsEvent? get details;
+  @override
+  int? get activeTransactionId;
+  @override
+  PackageKitErrorCodeEvent? get error;
+
+  /// Create a copy of DebData
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$DebDataImplCopyWith<_$DebDataImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}

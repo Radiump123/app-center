@@ -1,0 +1,500 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'snap_updates_model.dart';
+
+// **************************************************************************
+// RiverpodGenerator
+// **************************************************************************
+
+String _$hasUpdateHash() => r'72090b4d98cf7cbe0f91d4dcf161f014f6dcfe87';
+
+/// Copied from Dart SDK
+class _SystemHash {
+  _SystemHash._();
+
+  static int combine(int hash, int value) {
+    // ignore: parameter_assignments
+    hash = 0x1fffffff & (hash + value);
+    // ignore: parameter_assignments
+    hash = 0x1fffffff & (hash + ((0x0007ffff & hash) << 10));
+    return hash ^ (hash >> 6);
+  }
+
+  static int finish(int hash) {
+    // ignore: parameter_assignments
+    hash = 0x1fffffff & (hash + ((0x03ffffff & hash) << 3));
+    // ignore: parameter_assignments
+    hash = hash ^ (hash >> 11);
+    return 0x1fffffff & (hash + ((0x00003fff & hash) << 15));
+  }
+}
+
+/// See also [hasUpdate].
+@ProviderFor(hasUpdate)
+const hasUpdateProvider = HasUpdateFamily();
+
+/// See also [hasUpdate].
+class HasUpdateFamily extends Family<bool> {
+  /// See also [hasUpdate].
+  const HasUpdateFamily();
+
+  /// See also [hasUpdate].
+  HasUpdateProvider call(
+    String snapName,
+  ) {
+    return HasUpdateProvider(
+      snapName,
+    );
+  }
+
+  @override
+  HasUpdateProvider getProviderOverride(
+    covariant HasUpdateProvider provider,
+  ) {
+    return call(
+      provider.snapName,
+    );
+  }
+
+  static const Iterable<ProviderOrFamily>? _dependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get dependencies => _dependencies;
+
+  static const Iterable<ProviderOrFamily>? _allTransitiveDependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get allTransitiveDependencies =>
+      _allTransitiveDependencies;
+
+  @override
+  String? get name => r'hasUpdateProvider';
+}
+
+/// See also [hasUpdate].
+class HasUpdateProvider extends Provider<bool> {
+  /// See also [hasUpdate].
+  HasUpdateProvider(
+    String snapName,
+  ) : this._internal(
+          (ref) => hasUpdate(
+            ref as HasUpdateRef,
+            snapName,
+          ),
+          from: hasUpdateProvider,
+          name: r'hasUpdateProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$hasUpdateHash,
+          dependencies: HasUpdateFamily._dependencies,
+          allTransitiveDependencies: HasUpdateFamily._allTransitiveDependencies,
+          snapName: snapName,
+        );
+
+  HasUpdateProvider._internal(
+    super._createNotifier, {
+    required super.name,
+    required super.dependencies,
+    required super.allTransitiveDependencies,
+    required super.debugGetCreateSourceHash,
+    required super.from,
+    required this.snapName,
+  }) : super.internal();
+
+  final String snapName;
+
+  @override
+  Override overrideWith(
+    bool Function(HasUpdateRef provider) create,
+  ) {
+    return ProviderOverride(
+      origin: this,
+      override: HasUpdateProvider._internal(
+        (ref) => create(ref as HasUpdateRef),
+        from: from,
+        name: null,
+        dependencies: null,
+        allTransitiveDependencies: null,
+        debugGetCreateSourceHash: null,
+        snapName: snapName,
+      ),
+    );
+  }
+
+  @override
+  ProviderElement<bool> createElement() {
+    return _HasUpdateProviderElement(this);
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return other is HasUpdateProvider && other.snapName == snapName;
+  }
+
+  @override
+  int get hashCode {
+    var hash = _SystemHash.combine(0, runtimeType.hashCode);
+    hash = _SystemHash.combine(hash, snapName.hashCode);
+
+    return _SystemHash.finish(hash);
+  }
+}
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+mixin HasUpdateRef on ProviderRef<bool> {
+  /// The parameter `snapName` of this provider.
+  String get snapName;
+}
+
+class _HasUpdateProviderElement extends ProviderElement<bool>
+    with HasUpdateRef {
+  _HasUpdateProviderElement(super.provider);
+
+  @override
+  String get snapName => (origin as HasUpdateProvider).snapName;
+}
+
+String _$updateVersionHash() => r'1c9f2f8cfbb53b79574d040608328f25d3039055';
+
+/// Returns the available update version for a snap, if an update exists.
+///
+/// Copied from [updateVersion].
+@ProviderFor(updateVersion)
+const updateVersionProvider = UpdateVersionFamily();
+
+/// Returns the available update version for a snap, if an update exists.
+///
+/// Copied from [updateVersion].
+class UpdateVersionFamily extends Family<String?> {
+  /// Returns the available update version for a snap, if an update exists.
+  ///
+  /// Copied from [updateVersion].
+  const UpdateVersionFamily();
+
+  /// Returns the available update version for a snap, if an update exists.
+  ///
+  /// Copied from [updateVersion].
+  UpdateVersionProvider call(
+    String snapName,
+  ) {
+    return UpdateVersionProvider(
+      snapName,
+    );
+  }
+
+  @override
+  UpdateVersionProvider getProviderOverride(
+    covariant UpdateVersionProvider provider,
+  ) {
+    return call(
+      provider.snapName,
+    );
+  }
+
+  static const Iterable<ProviderOrFamily>? _dependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get dependencies => _dependencies;
+
+  static const Iterable<ProviderOrFamily>? _allTransitiveDependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get allTransitiveDependencies =>
+      _allTransitiveDependencies;
+
+  @override
+  String? get name => r'updateVersionProvider';
+}
+
+/// Returns the available update version for a snap, if an update exists.
+///
+/// Copied from [updateVersion].
+class UpdateVersionProvider extends Provider<String?> {
+  /// Returns the available update version for a snap, if an update exists.
+  ///
+  /// Copied from [updateVersion].
+  UpdateVersionProvider(
+    String snapName,
+  ) : this._internal(
+          (ref) => updateVersion(
+            ref as UpdateVersionRef,
+            snapName,
+          ),
+          from: updateVersionProvider,
+          name: r'updateVersionProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$updateVersionHash,
+          dependencies: UpdateVersionFamily._dependencies,
+          allTransitiveDependencies:
+              UpdateVersionFamily._allTransitiveDependencies,
+          snapName: snapName,
+        );
+
+  UpdateVersionProvider._internal(
+    super._createNotifier, {
+    required super.name,
+    required super.dependencies,
+    required super.allTransitiveDependencies,
+    required super.debugGetCreateSourceHash,
+    required super.from,
+    required this.snapName,
+  }) : super.internal();
+
+  final String snapName;
+
+  @override
+  Override overrideWith(
+    String? Function(UpdateVersionRef provider) create,
+  ) {
+    return ProviderOverride(
+      origin: this,
+      override: UpdateVersionProvider._internal(
+        (ref) => create(ref as UpdateVersionRef),
+        from: from,
+        name: null,
+        dependencies: null,
+        allTransitiveDependencies: null,
+        debugGetCreateSourceHash: null,
+        snapName: snapName,
+      ),
+    );
+  }
+
+  @override
+  ProviderElement<String?> createElement() {
+    return _UpdateVersionProviderElement(this);
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return other is UpdateVersionProvider && other.snapName == snapName;
+  }
+
+  @override
+  int get hashCode {
+    var hash = _SystemHash.combine(0, runtimeType.hashCode);
+    hash = _SystemHash.combine(hash, snapName.hashCode);
+
+    return _SystemHash.finish(hash);
+  }
+}
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+mixin UpdateVersionRef on ProviderRef<String?> {
+  /// The parameter `snapName` of this provider.
+  String get snapName;
+}
+
+class _UpdateVersionProviderElement extends ProviderElement<String?>
+    with UpdateVersionRef {
+  _UpdateVersionProviderElement(super.provider);
+
+  @override
+  String get snapName => (origin as UpdateVersionProvider).snapName;
+}
+
+String _$localSnapsHash() => r'05a95db540b15927924d75f5908d8892587915a3';
+
+/// Returns all locally installed snaps.
+///
+/// Copied from [localSnaps].
+@ProviderFor(localSnaps)
+final localSnapsProvider = AutoDisposeFutureProvider<SnapListState>.internal(
+  localSnaps,
+  name: r'localSnapsProvider',
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product') ? null : _$localSnapsHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef LocalSnapsRef = AutoDisposeFutureProviderRef<SnapListState>;
+String _$localVersionHash() => r'6a1ffc339f0a9ea1cebe44299a46e8da5a71c9a4';
+
+/// Returns the currently installed version for a snap.
+///
+/// Copied from [localVersion].
+@ProviderFor(localVersion)
+const localVersionProvider = LocalVersionFamily();
+
+/// Returns the currently installed version for a snap.
+///
+/// Copied from [localVersion].
+class LocalVersionFamily extends Family<AsyncValue<String?>> {
+  /// Returns the currently installed version for a snap.
+  ///
+  /// Copied from [localVersion].
+  const LocalVersionFamily();
+
+  /// Returns the currently installed version for a snap.
+  ///
+  /// Copied from [localVersion].
+  LocalVersionProvider call(
+    String snapName,
+  ) {
+    return LocalVersionProvider(
+      snapName,
+    );
+  }
+
+  @override
+  LocalVersionProvider getProviderOverride(
+    covariant LocalVersionProvider provider,
+  ) {
+    return call(
+      provider.snapName,
+    );
+  }
+
+  static const Iterable<ProviderOrFamily>? _dependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get dependencies => _dependencies;
+
+  static const Iterable<ProviderOrFamily>? _allTransitiveDependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get allTransitiveDependencies =>
+      _allTransitiveDependencies;
+
+  @override
+  String? get name => r'localVersionProvider';
+}
+
+/// Returns the currently installed version for a snap.
+///
+/// Copied from [localVersion].
+class LocalVersionProvider extends AutoDisposeFutureProvider<String?> {
+  /// Returns the currently installed version for a snap.
+  ///
+  /// Copied from [localVersion].
+  LocalVersionProvider(
+    String snapName,
+  ) : this._internal(
+          (ref) => localVersion(
+            ref as LocalVersionRef,
+            snapName,
+          ),
+          from: localVersionProvider,
+          name: r'localVersionProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$localVersionHash,
+          dependencies: LocalVersionFamily._dependencies,
+          allTransitiveDependencies:
+              LocalVersionFamily._allTransitiveDependencies,
+          snapName: snapName,
+        );
+
+  LocalVersionProvider._internal(
+    super._createNotifier, {
+    required super.name,
+    required super.dependencies,
+    required super.allTransitiveDependencies,
+    required super.debugGetCreateSourceHash,
+    required super.from,
+    required this.snapName,
+  }) : super.internal();
+
+  final String snapName;
+
+  @override
+  Override overrideWith(
+    FutureOr<String?> Function(LocalVersionRef provider) create,
+  ) {
+    return ProviderOverride(
+      origin: this,
+      override: LocalVersionProvider._internal(
+        (ref) => create(ref as LocalVersionRef),
+        from: from,
+        name: null,
+        dependencies: null,
+        allTransitiveDependencies: null,
+        debugGetCreateSourceHash: null,
+        snapName: snapName,
+      ),
+    );
+  }
+
+  @override
+  AutoDisposeFutureProviderElement<String?> createElement() {
+    return _LocalVersionProviderElement(this);
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return other is LocalVersionProvider && other.snapName == snapName;
+  }
+
+  @override
+  int get hashCode {
+    var hash = _SystemHash.combine(0, runtimeType.hashCode);
+    hash = _SystemHash.combine(hash, snapName.hashCode);
+
+    return _SystemHash.finish(hash);
+  }
+}
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+mixin LocalVersionRef on AutoDisposeFutureProviderRef<String?> {
+  /// The parameter `snapName` of this provider.
+  String get snapName;
+}
+
+class _LocalVersionProviderElement
+    extends AutoDisposeFutureProviderElement<String?> with LocalVersionRef {
+  _LocalVersionProviderElement(super.provider);
+
+  @override
+  String get snapName => (origin as LocalVersionProvider).snapName;
+}
+
+String _$refreshInhibitSnapsHash() =>
+    r'0f9ded4a0a324a09db035fe623455b64697fbaee';
+
+/// Used to see which snaps that are installed but need to be restarted to be
+/// refreshed (or be forced to restart after the proceedTime).
+///
+/// Copied from [refreshInhibitSnaps].
+@ProviderFor(refreshInhibitSnaps)
+final refreshInhibitSnapsProvider =
+    AutoDisposeFutureProvider<List<Snap>>.internal(
+  refreshInhibitSnaps,
+  name: r'refreshInhibitSnapsProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$refreshInhibitSnapsHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef RefreshInhibitSnapsRef = AutoDisposeFutureProviderRef<List<Snap>>;
+String _$snapUpdatesModelHash() => r'b14d4b1e4e4c83fde49d2bbb07e98c6910c039ab';
+
+/// See also [SnapUpdatesModel].
+@ProviderFor(SnapUpdatesModel)
+final snapUpdatesModelProvider =
+    AsyncNotifierProvider<SnapUpdatesModel, SnapListState>.internal(
+  SnapUpdatesModel.new,
+  name: r'snapUpdatesModelProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$snapUpdatesModelHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+typedef _$SnapUpdatesModel = AsyncNotifier<SnapListState>;
+// ignore_for_file: type=lint
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

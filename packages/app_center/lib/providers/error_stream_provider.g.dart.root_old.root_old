@@ -1,0 +1,28 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'error_stream_provider.dart';
+
+// **************************************************************************
+// RiverpodGenerator
+// **************************************************************************
+
+String _$errorStreamControllerHash() =>
+    r'5f1c328fef33131ea595b7582ebe186b1bf99b11';
+
+/// See also [errorStreamController].
+@ProviderFor(errorStreamController)
+final errorStreamControllerProvider = Provider<ErrorStreamController>.internal(
+  errorStreamController,
+  name: r'errorStreamControllerProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$errorStreamControllerHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef ErrorStreamControllerRef = ProviderRef<ErrorStreamController>;
+// ignore_for_file: type=lint
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

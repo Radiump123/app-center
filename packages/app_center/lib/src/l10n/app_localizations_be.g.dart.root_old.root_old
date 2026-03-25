@@ -1,0 +1,808 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.g.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Belarusian (`be`).
+class AppLocalizationsBe extends AppLocalizations {
+  AppLocalizationsBe([String locale = 'be']) : super(locale);
+
+  @override
+  String get appCenterLabel => 'Цэнтр праграм';
+
+  @override
+  String get appstreamSearchGreylist =>
+      'дадатак;прыкладанне;пакет;праграма;дачыненне;камплект;інструмент';
+
+  @override
+  String get snapPageChannelLabel => 'Канал';
+
+  @override
+  String get snapPageConfinementLabel => 'Ізаляванасць';
+
+  @override
+  String snapPageContactPublisherLabel(String publisher) {
+    return 'Звязацца з $publisher';
+  }
+
+  @override
+  String get snapPageDeveloperWebsiteLabel => 'Вэб-сайт распрацоўніка';
+
+  @override
+  String get snapPageDownloadSizeLabel => 'Памер загрузкі';
+
+  @override
+  String get snapPageSizeLabel => 'Памер';
+
+  @override
+  String get snapPageGalleryNextSemanticLabel => 'Next image';
+
+  @override
+  String get snapPageGalleryPreviousSemanticLabel => 'Previous image';
+
+  @override
+  String snapPageGalleryImageSemanticLabel(int n) {
+    return 'Image $n';
+  }
+
+  @override
+  String get snapPageLicenseLabel => 'Ліцэнзія';
+
+  @override
+  String get snapPageLinksLabel => 'Спасылкі';
+
+  @override
+  String get snapPagePublisherLabel => 'Выдавец';
+
+  @override
+  String get snapPagePublishedLabel => 'Апублікавана';
+
+  @override
+  String get snapPageSummaryLabel => 'Падсумаванне';
+
+  @override
+  String get snapPageVersionLabel => 'Версія';
+
+  @override
+  String get snapPageShareLinkCopiedMessage =>
+      'Спасылка скапіраваная ў буфер абмену';
+
+  @override
+  String get snapPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get snapPageReportSemanticLabel => 'Report';
+
+  @override
+  String sectionExpandSemanticLabel(String section) {
+    return 'Expand $section';
+  }
+
+  @override
+  String sectionCollapseSemanticLabel(String section) {
+    return 'Collapse $section';
+  }
+
+  @override
+  String get explorePageLabel => 'Агляд';
+
+  @override
+  String get explorePageCategoriesLabel => 'Катэгорыі';
+
+  @override
+  String get managePageOwnUpdateAvailable =>
+      'Даступна абнаўленне Цэнтра праграм';
+
+  @override
+  String get managePageQuitToUpdate => 'Закрыць для абнаўлення';
+
+  @override
+  String get managePageOwnUpdateDescription =>
+      'Праграма абновіцца аўтаматычна, калі вы закрыеце яго.';
+
+  @override
+  String get managePageOwnUpdateQuitButton => 'Закрыць і абнавіць';
+
+  @override
+  String get managePageCheckForUpdates => 'Праверыць наяўнасць абнаўленняў';
+
+  @override
+  String get managePageCheckingForUpdates => 'Праверка абнаўленняў';
+
+  @override
+  String get managePageNoInternet =>
+      'Не ўдалося падключыцца да сервера. Праверце злучэнне з Інтэрнэтам або паўтарыце спробу пазней.';
+
+  @override
+  String get managePageDescription =>
+      'Правярайце даступнасць абнаўленняў, абнаўляйце праграмы і кіруйце імі.';
+
+  @override
+  String get managePageDebUpdatesMessage =>
+      'Абнаўленне пакетаў Debian здзяйсняецца з дапамогаю дадатку «Абнаўленне праграм».';
+
+  @override
+  String get managePageInstalledAndUpdatedLabel => 'Усталявана і абноўлена';
+
+  @override
+  String managePageInstallingLabel(int n) {
+    return 'Усталёўваюцца ($n)';
+  }
+
+  @override
+  String get managePageLabel => 'Кіраваць';
+
+  @override
+  String get managePageTitle => 'Кіраваць усталяванымі праграмамі';
+
+  @override
+  String get managePageNoUpdatesAvailableDescription =>
+      'Няма абнаўленняў. Усе Вашыя праграмы актуальныя.';
+
+  @override
+  String get managePageSearchFieldSearchHint => 'Пошук усталяваных праграм';
+
+  @override
+  String get managePageShowDetailsLabel => 'Падрабязней';
+
+  @override
+  String get managePageShowSystemSnapsLabel => 'Паказаць сістэмныя праграмы';
+
+  @override
+  String get managePagePackageTypeLabel => 'Package type';
+
+  @override
+  String get managePagePackageTypeAll => 'All';
+
+  @override
+  String get managePagePackageTypeSnap => 'Snap';
+
+  @override
+  String get managePagePackageTypeDeb => 'Deb';
+
+  @override
+  String get managePagePackageTypeFlatpak => 'Flatpak';
+
+  @override
+  String get managePageUpdateAllLabel => 'Абнавіць усё';
+
+  @override
+  String managePageUpdatedDaysAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n дзень',
+      many: '$n дзён',
+      few: '$n дні',
+      one: '$n дзень',
+    );
+    return 'Абноўлена $_temp0 таму';
+  }
+
+  @override
+  String managePageUpdatedWeeksAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n тыдзень',
+      many: '$n тыдняў',
+      few: '$n тыдні',
+      one: '$n тыдзень',
+    );
+    return 'Абноўлена $_temp0 таму';
+  }
+
+  @override
+  String managePageUpdatedMonthsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n месяц',
+      many: '$n месяцаў',
+      few: '$n месяцы',
+      one: '$n месяц',
+    );
+    return 'Абноўлена $_temp0 таму';
+  }
+
+  @override
+  String managePageUpdatedYearsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n год',
+      many: '$n гадоў',
+      few: '$n гады',
+      one: '$n год',
+    );
+    return 'Абноўлена $_temp0 таму';
+  }
+
+  @override
+  String managePageUpdatesAvailable(int n) {
+    return 'Абнаўленні даступныя ($n)';
+  }
+
+  @override
+  String managePageUpdatesFailed(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n праграма',
+      many: '$n праграм',
+      few: '$n праграмы',
+      one: '$n праграма',
+    );
+    return '$_temp0 не абноўлены';
+  }
+
+  @override
+  String managePageUpdatesFailedBody(Object snapList) {
+    return 'Мы не можам абнавіць праграму, бо яны пакуль запушчаныя. \n\n$snapList\nКалі вы закрыеце праграмы, яны аўтаматычна абновяцца.';
+  }
+
+  @override
+  String get managePageDocumentationLinkLabel =>
+      'Даведайцеся ў дакументацыі, як кіраваць пакетамі Debian.';
+
+  @override
+  String get productivityPageLabel => 'Прадуктыўнасць';
+
+  @override
+  String get developmentPageLabel => 'Распрацоўка';
+
+  @override
+  String get gamesPageLabel => 'Гульні';
+
+  @override
+  String get gamesPageTitle => 'Актуальнае';
+
+  @override
+  String get gamesPageTop => 'Найвысокі рэйтынг';
+
+  @override
+  String get gamesPageFeatured => 'Абраныя найменні';
+
+  @override
+  String get gamesPageBundles => 'Наборы праграм';
+
+  @override
+  String get unknownPublisher => 'Невядомы выдавец';
+
+  @override
+  String get searchFieldDebSection => 'Пакеты Debian';
+
+  @override
+  String get searchFieldSearchHint => 'Пошук праграм';
+
+  @override
+  String searchFieldSearchForLabel(String query) {
+    return 'Паказаць усе вынікі для \"$query\"';
+  }
+
+  @override
+  String get searchFieldSnapSection => 'Snap-пакеты';
+
+  @override
+  String get searchPageFilterByLabel => 'Фільтраваць па';
+
+  @override
+  String searchPageNoResults(String query) {
+    return 'Няма вынікаў для \"$query\"';
+  }
+
+  @override
+  String get searchPageNoResultsHint =>
+      'Паспрабуйце выкарыстаць іншыя або больш ключавых слоў';
+
+  @override
+  String get searchPageNoResultsCategory =>
+      'Прабачце, мы не змаглі знайсці ніякіх пакетаў для дадзенай катэгорыі';
+
+  @override
+  String get searchPageNoResultsCategoryHint =>
+      'Паспрабуйце пашукаць у іншай катэгорыі, або выкарыстайце іншыя ключавыя словы';
+
+  @override
+  String get searchPageSortByLabel => 'Сартаваць па';
+
+  @override
+  String get searchPageRelevanceLabel => 'Значэнне';
+
+  @override
+  String searchPageTitle(String query) {
+    return 'Вынікі для \"$query\"';
+  }
+
+  @override
+  String get aboutPageLabel => 'Пра';
+
+  @override
+  String aboutPageVersionLabel(String version) {
+    return 'Версія $version';
+  }
+
+  @override
+  String get aboutPageContributorTitle => 'Спраектавана ды распрацавана:';
+
+  @override
+  String get aboutPageCommunityTitle => 'Станьце часткаю супольнасці:';
+
+  @override
+  String get aboutPageContributeLabel =>
+      'Зрабіце ўнёсак або паведаміце пра памылку';
+
+  @override
+  String get aboutPageGitHubLabel => 'Знайдзіце нас у GitHub';
+
+  @override
+  String get aboutPagePublishLabel => 'Апублікаваць у Snap Store';
+
+  @override
+  String get aboutPageLearnMoreLabel => 'Даведацца болей';
+
+  @override
+  String appUrlTypeContact(String publisher) {
+    return 'Contact $publisher';
+  }
+
+  @override
+  String get appUrlTypeHomepage => 'Developer website';
+
+  @override
+  String get appUrlTypeUnknown => 'Link';
+
+  @override
+  String get appConfinementUnknown => 'Unknown';
+
+  @override
+  String get appConfinementStrict => 'Sandboxed';
+
+  @override
+  String get appConfinementDevelopment => 'Devmode';
+
+  @override
+  String get appConfinementClassic => 'Unrestricted';
+
+  @override
+  String get appConfinementUnrestricted => 'Unrestricted';
+
+  @override
+  String get appLicenseUnknown => 'Unknown';
+
+  @override
+  String get appPublishedUnknown => 'Unknown';
+
+  @override
+  String get appMoreActionsSemanticLabel => 'More actions';
+
+  @override
+  String get packageFormatDebLabel => 'Пакеты Debian';
+
+  @override
+  String get packageFormatSnapLabel => 'Snap-пакеты';
+
+  @override
+  String get packageFormatAllLabel => 'All packages';
+
+  @override
+  String get packageFormatFlatpakLabel => 'Flatpak packages';
+
+  @override
+  String get searchFieldFlatpakSection => 'Flatpak packages';
+
+  @override
+  String get flatpakRemoteLabel => 'Remote';
+
+  @override
+  String get flatpakVersionUnknown => 'Unknown';
+
+  @override
+  String get snapActionCancelLabel => 'Скасаваць';
+
+  @override
+  String get snapActionInstallLabel => 'Усталяваць';
+
+  @override
+  String get snapActionInstalledLabel => 'Усталявана';
+
+  @override
+  String get snapActionInstallingLabel => 'Усталяванне';
+
+  @override
+  String get snapActionOpenLabel => 'Адкрыць';
+
+  @override
+  String get snapActionRemoveLabel => 'Выдаліць';
+
+  @override
+  String get snapActionRemovingLabel => 'Выдаленне';
+
+  @override
+  String get snapActionRevertLabel => 'Revert update';
+
+  @override
+  String get snapActionRevertingLabel => 'Reverting update';
+
+  @override
+  String get snapRevertConfirmTitle => 'Revert to previous version?';
+
+  @override
+  String get snapRevertConfirmMessage =>
+      'Automatic updates will resume when a new version is available.';
+
+  @override
+  String get snapRevertConfirmRevert => 'Revert';
+
+  @override
+  String get snapRevertConfirmCancel => 'Cancel';
+
+  @override
+  String snapRevertConfirmTitleWithVersions(String currentVersion,
+      int currentRevision, String previousVersion, int previousRevision) {
+    return 'Revert from $currentVersion (rev $currentRevision) to $previousVersion (rev $previousRevision)?';
+  }
+
+  @override
+  String get snapRevertNoPreviousRevisionMessage =>
+      'No previous local revision is available to revert to.';
+
+  @override
+  String get snapActionSwitchChannelLabel => 'Пераключыць канал';
+
+  @override
+  String get snapActionUpdateLabel => 'Абнавіць';
+
+  @override
+  String get snapCategoryAll => 'Усе катэгорыі';
+
+  @override
+  String get snapActionUpdatingLabel => 'Абнаўленне';
+
+  @override
+  String appCardPublisherSemanticLabel(String publisher) {
+    return 'Published by $publisher.';
+  }
+
+  @override
+  String appCardRatingSemanticLabel(String rating) {
+    return 'Rating $rating.';
+  }
+
+  @override
+  String get snapCategoryArtAndDesign => 'Дызайн і мастацтва';
+
+  @override
+  String get snapCategoryArtAndDesignButtonLabel => 'Пачаць ствараць';
+
+  @override
+  String get snapCategoryArtAndDesignSlogan =>
+      'Ад першага эскізу да фінальнай рыскі — даследуйце праграмы для дызайну і мастацтва.';
+
+  @override
+  String get snapCategoryBooksAndReference => 'Кнігі і даведнікі';
+
+  @override
+  String get snapCategoryDefaultButtonLabel => 'Знайсці больш';
+
+  @override
+  String get snapCategoryDevelopment => 'Распрацоўка';
+
+  @override
+  String get snapCategoryDevelopmentSlogan => 'Праграмы для распрацоўнікаў';
+
+  @override
+  String get snapCategoryDevicesAndIot => 'Прылады і інтэрнэт-рэчы';
+
+  @override
+  String get snapCategoryEducation => 'Адукацыя';
+
+  @override
+  String get snapCategoryEntertainment => 'Забавы';
+
+  @override
+  String get snapCategoryFeatured => 'Абранае';
+
+  @override
+  String get snapCategoryFeaturedSlogan => 'Абраныя праграмы';
+
+  @override
+  String get snapCategoryFinance => 'Фінансы';
+
+  @override
+  String get snapCategoryGames => 'Гульні';
+
+  @override
+  String get snapCategoryGamesSlogan => 'Усё для гульняў уначы';
+
+  @override
+  String get snapCategoryGameDev => 'Распрацоўка гульняў';
+
+  @override
+  String get snapCategoryGameDevSlogan => 'Распрацоўка гульняў';
+
+  @override
+  String get snapCategoryGameEmulators => 'Эмулятары';
+
+  @override
+  String get snapCategoryGameEmulatorsSlogan => 'Эмулятары';
+
+  @override
+  String get snapCategoryGnomeGames => 'Гульні GNOME';
+
+  @override
+  String get snapCategoryGnomeGamesSlogan => 'Набор гульняў GNOME';
+
+  @override
+  String get snapCategoryKdeGames => 'Гульні KDE';
+
+  @override
+  String get snapCategoryKdeGamesSlogan => 'Набор гульняў KDE';
+
+  @override
+  String get snapCategoryGameLaunchers => 'Запускачы гульняў';
+
+  @override
+  String get snapCategoryGameLaunchersSlogan => 'Запускачы гульняў';
+
+  @override
+  String get snapCategoryGameContentCreation => 'Стварэнне змесціва';
+
+  @override
+  String get snapCategoryGameContentCreationSlogan => 'Стварэнне змесціва';
+
+  @override
+  String get snapCategoryHealthAndFitness => 'Здароўе і фітнэс';
+
+  @override
+  String get snapCategoryMusicAndAudio => 'Музыка і аўдыя';
+
+  @override
+  String get snapCategoryNewsAndWeather => 'Навіны і надвор\'е';
+
+  @override
+  String get snapCategoryPersonalisation => 'Персаналізацыя';
+
+  @override
+  String get snapCategoryPhotoAndVideo => 'Фота і відэа';
+
+  @override
+  String get snapCategoryProductivity => 'Прадуктыўнасць';
+
+  @override
+  String get snapCategoryProductivityButtonLabel =>
+      'Даследуйце калекцыю для прадуктыўнасці';
+
+  @override
+  String get snapCategoryProductivitySlogan => 'Выкрасліце са спісу спраў';
+
+  @override
+  String get snapCategoryScience => 'Навука';
+
+  @override
+  String get snapCategorySecurity => 'Бяспека';
+
+  @override
+  String get snapCategoryServerAndCloud => 'Серверы і аблокі';
+
+  @override
+  String get snapCategorySocial => 'Сацсеткі';
+
+  @override
+  String get snapCategoryUbuntuDesktop => 'Стальніца Ubuntu';
+
+  @override
+  String get snapCategoryUbuntuDesktopSlogan =>
+      'Хуткі старт для Вашай стальніцы';
+
+  @override
+  String get snapCategoryUtilities => 'Утыліты';
+
+  @override
+  String get snapSortOrderAlphabeticalAsc => 'Алфавітны (ад А да Я)';
+
+  @override
+  String get snapSortOrderAlphabeticalDesc => 'Алфавітны (ад Я да А)';
+
+  @override
+  String get snapSortOrderDownloadSizeAsc => 'Па памеры (ад менш. да больш.)';
+
+  @override
+  String get snapSortOrderDownloadSizeDesc => 'Па памеры (ад больш. да менш.)';
+
+  @override
+  String get snapSortOrderInstalledSizeAsc => 'Па памеры (ад менш. да больш.)';
+
+  @override
+  String get snapSortOrderInstalledSizeDesc => 'Па памеры (ад больш. да менш.)';
+
+  @override
+  String get snapSortOrderInstalledDateAsc => 'Найдаўнія абнаўленні';
+
+  @override
+  String get snapSortOrderInstalledDateDesc => 'Нядаўнія абнаўленні';
+
+  @override
+  String get snapSortOrderRelevance => 'Значэнне';
+
+  @override
+  String get snapRatingsBandVeryGood => 'Задобра';
+
+  @override
+  String get snapRatingsBandGood => 'Добра';
+
+  @override
+  String get snapRatingsBandNeutral => 'Сярэдне';
+
+  @override
+  String get snapRatingsBandPoor => 'Дрэнна';
+
+  @override
+  String get snapRatingsBandVeryPoor => 'Задрэнна';
+
+  @override
+  String get snapRatingsBandInsufficientVotes => 'Недастаткова галасоў';
+
+  @override
+  String snapRatingsVotes(int n) {
+    return '$n галасоў';
+  }
+
+  @override
+  String snapReportLabel(String snapName) {
+    return 'Паскардзіцца на $snapName';
+  }
+
+  @override
+  String get snapReportSelectReportReasonLabel =>
+      'Выберыце прычыну скаргі на гэты snap-пакет';
+
+  @override
+  String get snapReportSelectAnOptionLabel => 'Абраць опцыю';
+
+  @override
+  String get snapReportOptionCopyrightViolation =>
+      'Парушэнне аўтарскіх правоў або таварных знакаў';
+
+  @override
+  String get snapReportOptionStoreViolation =>
+      'Парушэнне ўмоў абслугоўвання Snap Store';
+
+  @override
+  String get snapReportDetailsLabel =>
+      'Калі ласка, падайце больш дэталяў для абгрунтавання скаргі';
+
+  @override
+  String get snapReportOptionalEmailAddressLabel =>
+      'Ваш адрас эл. пошты (неабавязкова)';
+
+  @override
+  String get snapReportCancelButtonLabel => 'Скасаваць';
+
+  @override
+  String get snapReportSubmitButtonLabel => 'Адправіць скаргу';
+
+  @override
+  String get snapReportEnterValidEmailError =>
+      'Увесці сапраўдны адрас эл. пошты';
+
+  @override
+  String get snapReportDetailsHint => 'Каментар...';
+
+  @override
+  String get snapReportPrivacyAgreementLabel =>
+      'Адпраўляючы дадзеную форму, я пацвярджаю, што азнаёмлены і згодны з ';
+
+  @override
+  String get snapReportPrivacyAgreementCanonicalPrivacyNotice =>
+      'Паведамленнем пра канфідэнцыйнасць Canonical ';
+
+  @override
+  String get snapReportPrivacyAgreementAndLabel => 'і ';
+
+  @override
+  String get snapReportPrivacyAgreementPrivacyPolicy => 'Палітыкаю прыватнасці';
+
+  @override
+  String get debPageErrorNoPackageInfo => 'Інфармацыя пра пакет не знойдзена';
+
+  @override
+  String get debPageDocumentationLinkLabel =>
+      'Даведайцеся больш пра кіраванне пакетамі Debian';
+
+  @override
+  String get debPageShareLinkCopiedMessage => 'Link copied to clipboard';
+
+  @override
+  String get debPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get externalResources => 'Дадатковыя рэсурсы';
+
+  @override
+  String get externalResourcesButtonLabel => 'Даведацца больш';
+
+  @override
+  String get allGamesButtonLabel => 'Усе гульні';
+
+  @override
+  String get externalResourcesDisclaimer =>
+      'Заўвага: Усё гэта вонкавыя інструменты. Яны не належаць і не распаўсюджваюцца Canonical.';
+
+  @override
+  String get openInBrowser => 'Адкрыць у браўзеры';
+
+  @override
+  String get installAll => 'Усталяваць усё';
+
+  @override
+  String get localDebWarningTitle => 'Патэнцыйна небяспечна';
+
+  @override
+  String get localDebWarningBody =>
+      'Гэты пакет паданы трэцяй асобай. Усталявавнне пакетаў не з каталогу Цэнтра праграм можа ўзвысіць рызыку для Вашай сістэмы і персанальных даных. Перш чым прыступіць да ўсталявання, пераканайцеся, што давяраеце крыніцы.';
+
+  @override
+  String get localDebLearnMore => 'Даведайцеся больш пра пабочныя пакеты';
+
+  @override
+  String get localDebDialogMessage =>
+      'Гэты пакет падаецца трэцяй асобай і можа ўяўляць пагрозу для Вашай сістэмы і персанальным даным.';
+
+  @override
+  String get localDebDialogConfirmation =>
+      'Ці перакананыя Вы, што хочаце ўсталяваць гэта?';
+
+  @override
+  String snapdExceptionRunningApps(String snapName) {
+    return 'Мы не можам абнавіць $snapName, бо ён запушчаны.';
+  }
+
+  @override
+  String get errorViewCheckStatusLabel => 'Праверыць статус';
+
+  @override
+  String get errorViewNetworkErrorTitle => 'Злучыцца з Інтэрнэтам';
+
+  @override
+  String get errorViewNetworkErrorDescription =>
+      'Мы не можам выкласці змесціва ў Цэнтр праграм без злучэння з Інтэрнэтам.';
+
+  @override
+  String get errorViewNetworkErrorAction =>
+      'Праверце Ваша злучэнне і паўтарыце спробу.';
+
+  @override
+  String get errorViewServerErrorDescription =>
+      'Нам вельмі шкада, але ў цяперашні час у нас узніклі праблемы з Цэнтрам праграм.';
+
+  @override
+  String get errorViewServerErrorAction =>
+      'Праверце стан абнаўленняў і паўтарыце спробу пазней.';
+
+  @override
+  String get errorViewUnknownErrorTitle => 'Нешта не гэтак';
+
+  @override
+  String get errorViewUnknownErrorDescription =>
+      'Нам вельмі шкада, але мы не ўпэўненыя, у чым палягае праблема.';
+
+  @override
+  String get errorViewUnknownErrorAction =>
+      'Вы можаце паўтарыць спробу зараз, праверыць стан абнаўленняў або паспрабаваць пазней.';
+
+  @override
+  String get codecPageTitle => 'Missing media codecs';
+
+  @override
+  String get codecPageDescription =>
+      'You need to install the following codecs for handling certain video and audio formats:';
+
+  @override
+  String get codecProprietaryDisclaimer =>
+      'Some of the recommended codecs could be proprietary.';
+
+  @override
+  String get codecInstallAllButton => 'Install recommended codecs';
+}

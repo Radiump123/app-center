@@ -1,0 +1,50 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'app_providers.dart';
+
+// **************************************************************************
+// RiverpodGenerator
+// **************************************************************************
+
+String _$appUpdatesHash() => r'f6cbff6758bdf261e218d7b3c2ad1414d1a15191';
+
+/// Combines snap and deb updates into a single sorted list of apps with
+/// pending updates, used to populate the "Updates" section of the manage page.
+///
+/// Copied from [appUpdates].
+@ProviderFor(appUpdates)
+final appUpdatesProvider =
+    AutoDisposeFutureProvider<List<ManageAppData>>.internal(
+  appUpdates,
+  name: r'appUpdatesProvider',
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product') ? null : _$appUpdatesHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef AppUpdatesRef = AutoDisposeFutureProviderRef<List<ManageAppData>>;
+String _$installedAppsHash() => r'6fb40ecbc1e6a19f5dbac7656bab0fe28317b37d';
+
+/// Manages the list of installed apps (snaps and debs) that do not have
+/// pending updates. Supports filtering by name, toggling system app visibility,
+/// sorting, and removing deb packages via PackageKit.
+///
+/// Copied from [InstalledApps].
+@ProviderFor(InstalledApps)
+final installedAppsProvider = AutoDisposeAsyncNotifierProvider<InstalledApps,
+    List<ManageAppData>>.internal(
+  InstalledApps.new,
+  name: r'installedAppsProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$installedAppsHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+typedef _$InstalledApps = AutoDisposeAsyncNotifier<List<ManageAppData>>;
+// ignore_for_file: type=lint
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

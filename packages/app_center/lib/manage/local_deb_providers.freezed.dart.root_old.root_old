@@ -1,0 +1,255 @@
+// coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
+
+part of 'local_deb_providers.dart';
+
+// **************************************************************************
+// FreezedGenerator
+// **************************************************************************
+
+T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+
+/// @nodoc
+mixin _$LocalDebInfo {
+  String get id => throw _privateConstructorUsedError;
+  PackageKitPackageEvent get packageInfo => throw _privateConstructorUsedError;
+  AppstreamComponent? get component => throw _privateConstructorUsedError;
+  PackageKitPackageId? get updatePackageId =>
+      throw _privateConstructorUsedError;
+  PackageKitDetailsEvent? get details => throw _privateConstructorUsedError;
+  int? get activeTransactionId => throw _privateConstructorUsedError;
+
+  /// Create a copy of LocalDebInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $LocalDebInfoCopyWith<LocalDebInfo> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $LocalDebInfoCopyWith<$Res> {
+  factory $LocalDebInfoCopyWith(
+          LocalDebInfo value, $Res Function(LocalDebInfo) then) =
+      _$LocalDebInfoCopyWithImpl<$Res, LocalDebInfo>;
+  @useResult
+  $Res call(
+      {String id,
+      PackageKitPackageEvent packageInfo,
+      AppstreamComponent? component,
+      PackageKitPackageId? updatePackageId,
+      PackageKitDetailsEvent? details,
+      int? activeTransactionId});
+}
+
+/// @nodoc
+class _$LocalDebInfoCopyWithImpl<$Res, $Val extends LocalDebInfo>
+    implements $LocalDebInfoCopyWith<$Res> {
+  _$LocalDebInfoCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of LocalDebInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? packageInfo = null,
+    Object? component = freezed,
+    Object? updatePackageId = freezed,
+    Object? details = freezed,
+    Object? activeTransactionId = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      packageInfo: null == packageInfo
+          ? _value.packageInfo
+          : packageInfo // ignore: cast_nullable_to_non_nullable
+              as PackageKitPackageEvent,
+      component: freezed == component
+          ? _value.component
+          : component // ignore: cast_nullable_to_non_nullable
+              as AppstreamComponent?,
+      updatePackageId: freezed == updatePackageId
+          ? _value.updatePackageId
+          : updatePackageId // ignore: cast_nullable_to_non_nullable
+              as PackageKitPackageId?,
+      details: freezed == details
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as PackageKitDetailsEvent?,
+      activeTransactionId: freezed == activeTransactionId
+          ? _value.activeTransactionId
+          : activeTransactionId // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$LocalDebInfoImplCopyWith<$Res>
+    implements $LocalDebInfoCopyWith<$Res> {
+  factory _$$LocalDebInfoImplCopyWith(
+          _$LocalDebInfoImpl value, $Res Function(_$LocalDebInfoImpl) then) =
+      __$$LocalDebInfoImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id,
+      PackageKitPackageEvent packageInfo,
+      AppstreamComponent? component,
+      PackageKitPackageId? updatePackageId,
+      PackageKitDetailsEvent? details,
+      int? activeTransactionId});
+}
+
+/// @nodoc
+class __$$LocalDebInfoImplCopyWithImpl<$Res>
+    extends _$LocalDebInfoCopyWithImpl<$Res, _$LocalDebInfoImpl>
+    implements _$$LocalDebInfoImplCopyWith<$Res> {
+  __$$LocalDebInfoImplCopyWithImpl(
+      _$LocalDebInfoImpl _value, $Res Function(_$LocalDebInfoImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of LocalDebInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? packageInfo = null,
+    Object? component = freezed,
+    Object? updatePackageId = freezed,
+    Object? details = freezed,
+    Object? activeTransactionId = freezed,
+  }) {
+    return _then(_$LocalDebInfoImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      packageInfo: null == packageInfo
+          ? _value.packageInfo
+          : packageInfo // ignore: cast_nullable_to_non_nullable
+              as PackageKitPackageEvent,
+      component: freezed == component
+          ? _value.component
+          : component // ignore: cast_nullable_to_non_nullable
+              as AppstreamComponent?,
+      updatePackageId: freezed == updatePackageId
+          ? _value.updatePackageId
+          : updatePackageId // ignore: cast_nullable_to_non_nullable
+              as PackageKitPackageId?,
+      details: freezed == details
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as PackageKitDetailsEvent?,
+      activeTransactionId: freezed == activeTransactionId
+          ? _value.activeTransactionId
+          : activeTransactionId // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$LocalDebInfoImpl extends _LocalDebInfo {
+  _$LocalDebInfoImpl(
+      {required this.id,
+      required this.packageInfo,
+      this.component,
+      this.updatePackageId,
+      this.details,
+      this.activeTransactionId})
+      : super._();
+
+  @override
+  final String id;
+  @override
+  final PackageKitPackageEvent packageInfo;
+  @override
+  final AppstreamComponent? component;
+  @override
+  final PackageKitPackageId? updatePackageId;
+  @override
+  final PackageKitDetailsEvent? details;
+  @override
+  final int? activeTransactionId;
+
+  @override
+  String toString() {
+    return 'LocalDebInfo(id: $id, packageInfo: $packageInfo, component: $component, updatePackageId: $updatePackageId, details: $details, activeTransactionId: $activeTransactionId)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$LocalDebInfoImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.packageInfo, packageInfo) ||
+                other.packageInfo == packageInfo) &&
+            (identical(other.component, component) ||
+                other.component == component) &&
+            (identical(other.updatePackageId, updatePackageId) ||
+                other.updatePackageId == updatePackageId) &&
+            (identical(other.details, details) || other.details == details) &&
+            (identical(other.activeTransactionId, activeTransactionId) ||
+                other.activeTransactionId == activeTransactionId));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, id, packageInfo, component,
+      updatePackageId, details, activeTransactionId);
+
+  /// Create a copy of LocalDebInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$LocalDebInfoImplCopyWith<_$LocalDebInfoImpl> get copyWith =>
+      __$$LocalDebInfoImplCopyWithImpl<_$LocalDebInfoImpl>(this, _$identity);
+}
+
+abstract class _LocalDebInfo extends LocalDebInfo {
+  factory _LocalDebInfo(
+      {required final String id,
+      required final PackageKitPackageEvent packageInfo,
+      final AppstreamComponent? component,
+      final PackageKitPackageId? updatePackageId,
+      final PackageKitDetailsEvent? details,
+      final int? activeTransactionId}) = _$LocalDebInfoImpl;
+  _LocalDebInfo._() : super._();
+
+  @override
+  String get id;
+  @override
+  PackageKitPackageEvent get packageInfo;
+  @override
+  AppstreamComponent? get component;
+  @override
+  PackageKitPackageId? get updatePackageId;
+  @override
+  PackageKitDetailsEvent? get details;
+  @override
+  int? get activeTransactionId;
+
+  /// Create a copy of LocalDebInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$LocalDebInfoImplCopyWith<_$LocalDebInfoImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}

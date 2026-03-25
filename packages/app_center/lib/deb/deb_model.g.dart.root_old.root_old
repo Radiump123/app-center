@@ -1,0 +1,173 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'deb_model.dart';
+
+// **************************************************************************
+// RiverpodGenerator
+// **************************************************************************
+
+String _$debModelHash() => r'e35b785311328e5bdda1f9565dbcfe5687edb7d8';
+
+/// Copied from Dart SDK
+class _SystemHash {
+  _SystemHash._();
+
+  static int combine(int hash, int value) {
+    // ignore: parameter_assignments
+    hash = 0x1fffffff & (hash + value);
+    // ignore: parameter_assignments
+    hash = 0x1fffffff & (hash + ((0x0007ffff & hash) << 10));
+    return hash ^ (hash >> 6);
+  }
+
+  static int finish(int hash) {
+    // ignore: parameter_assignments
+    hash = 0x1fffffff & (hash + ((0x03ffffff & hash) << 3));
+    // ignore: parameter_assignments
+    hash = hash ^ (hash >> 11);
+    return 0x1fffffff & (hash + ((0x00003fff & hash) << 15));
+  }
+}
+
+abstract class _$DebModel extends BuildlessAutoDisposeAsyncNotifier<DebData> {
+  late final String id;
+
+  FutureOr<DebData> build(
+    String id,
+  );
+}
+
+/// See also [DebModel].
+@ProviderFor(DebModel)
+const debModelProvider = DebModelFamily();
+
+/// See also [DebModel].
+class DebModelFamily extends Family<AsyncValue<DebData>> {
+  /// See also [DebModel].
+  const DebModelFamily();
+
+  /// See also [DebModel].
+  DebModelProvider call(
+    String id,
+  ) {
+    return DebModelProvider(
+      id,
+    );
+  }
+
+  @override
+  DebModelProvider getProviderOverride(
+    covariant DebModelProvider provider,
+  ) {
+    return call(
+      provider.id,
+    );
+  }
+
+  static const Iterable<ProviderOrFamily>? _dependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get dependencies => _dependencies;
+
+  static const Iterable<ProviderOrFamily>? _allTransitiveDependencies = null;
+
+  @override
+  Iterable<ProviderOrFamily>? get allTransitiveDependencies =>
+      _allTransitiveDependencies;
+
+  @override
+  String? get name => r'debModelProvider';
+}
+
+/// See also [DebModel].
+class DebModelProvider
+    extends AutoDisposeAsyncNotifierProviderImpl<DebModel, DebData> {
+  /// See also [DebModel].
+  DebModelProvider(
+    String id,
+  ) : this._internal(
+          () => DebModel()..id = id,
+          from: debModelProvider,
+          name: r'debModelProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$debModelHash,
+          dependencies: DebModelFamily._dependencies,
+          allTransitiveDependencies: DebModelFamily._allTransitiveDependencies,
+          id: id,
+        );
+
+  DebModelProvider._internal(
+    super._createNotifier, {
+    required super.name,
+    required super.dependencies,
+    required super.allTransitiveDependencies,
+    required super.debugGetCreateSourceHash,
+    required super.from,
+    required this.id,
+  }) : super.internal();
+
+  final String id;
+
+  @override
+  FutureOr<DebData> runNotifierBuild(
+    covariant DebModel notifier,
+  ) {
+    return notifier.build(
+      id,
+    );
+  }
+
+  @override
+  Override overrideWith(DebModel Function() create) {
+    return ProviderOverride(
+      origin: this,
+      override: DebModelProvider._internal(
+        () => create()..id = id,
+        from: from,
+        name: null,
+        dependencies: null,
+        allTransitiveDependencies: null,
+        debugGetCreateSourceHash: null,
+        id: id,
+      ),
+    );
+  }
+
+  @override
+  AutoDisposeAsyncNotifierProviderElement<DebModel, DebData> createElement() {
+    return _DebModelProviderElement(this);
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return other is DebModelProvider && other.id == id;
+  }
+
+  @override
+  int get hashCode {
+    var hash = _SystemHash.combine(0, runtimeType.hashCode);
+    hash = _SystemHash.combine(hash, id.hashCode);
+
+    return _SystemHash.finish(hash);
+  }
+}
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+mixin DebModelRef on AutoDisposeAsyncNotifierProviderRef<DebData> {
+  /// The parameter `id` of this provider.
+  String get id;
+}
+
+class _DebModelProviderElement
+    extends AutoDisposeAsyncNotifierProviderElement<DebModel, DebData>
+    with DebModelRef {
+  _DebModelProviderElement(super.provider);
+
+  @override
+  String get id => (origin as DebModelProvider).id;
+}
+// ignore_for_file: type=lint
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

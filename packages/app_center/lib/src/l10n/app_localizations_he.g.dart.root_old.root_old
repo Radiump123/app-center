@@ -1,0 +1,791 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.g.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Hebrew (`he`).
+class AppLocalizationsHe extends AppLocalizations {
+  AppLocalizationsHe([String locale = 'he']) : super(locale);
+
+  @override
+  String get appCenterLabel => 'מרכז היישומים';
+
+  @override
+  String get appstreamSearchGreylist =>
+      'יישום;תוכנית;אפליקציה;תוכנה;חבילה;כלי;ערכה;תכנית;תכנה;תוכנות;תכניות';
+
+  @override
+  String get snapPageChannelLabel => 'ערוץ';
+
+  @override
+  String get snapPageConfinementLabel => 'בידוד';
+
+  @override
+  String snapPageContactPublisherLabel(String publisher) {
+    return 'ליצור קשר עם $publisher';
+  }
+
+  @override
+  String get snapPageDeveloperWebsiteLabel => 'אתר המפתחים';
+
+  @override
+  String get snapPageDownloadSizeLabel => 'גודל הורדה';
+
+  @override
+  String get snapPageSizeLabel => 'גודל';
+
+  @override
+  String get snapPageGalleryNextSemanticLabel => 'Next image';
+
+  @override
+  String get snapPageGalleryPreviousSemanticLabel => 'Previous image';
+
+  @override
+  String snapPageGalleryImageSemanticLabel(int n) {
+    return 'Image $n';
+  }
+
+  @override
+  String get snapPageLicenseLabel => 'רישיון';
+
+  @override
+  String get snapPageLinksLabel => 'קישורים';
+
+  @override
+  String get snapPagePublisherLabel => 'מפיץ';
+
+  @override
+  String get snapPagePublishedLabel => 'מועד פרסום';
+
+  @override
+  String get snapPageSummaryLabel => 'תקציר';
+
+  @override
+  String get snapPageVersionLabel => 'גרסה';
+
+  @override
+  String get snapPageShareLinkCopiedMessage => 'הקישור הועתק ללוח הגזירים';
+
+  @override
+  String get snapPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get snapPageReportSemanticLabel => 'Report';
+
+  @override
+  String sectionExpandSemanticLabel(String section) {
+    return 'Expand $section';
+  }
+
+  @override
+  String sectionCollapseSemanticLabel(String section) {
+    return 'Collapse $section';
+  }
+
+  @override
+  String get explorePageLabel => 'סיור';
+
+  @override
+  String get explorePageCategoriesLabel => 'קטגוריות';
+
+  @override
+  String get managePageOwnUpdateAvailable => 'יש עדכון למרכז היישומים';
+
+  @override
+  String get managePageQuitToUpdate => 'יש לצאת כדי לעדכן';
+
+  @override
+  String get managePageOwnUpdateDescription =>
+      'יציאה מהיישום תעדכן אותו אוטומטית.';
+
+  @override
+  String get managePageOwnUpdateQuitButton => 'יש לצאת כדי לעדכן';
+
+  @override
+  String get managePageCheckForUpdates => 'איתור עדכונים';
+
+  @override
+  String get managePageCheckingForUpdates => 'מתבצע איתור עדכונים';
+
+  @override
+  String get managePageNoInternet =>
+      'לא ניתן להגיע לשרת, נא לבדוק את החיבור שלך לאינטרנט ולנסות שוב בהמשך.';
+
+  @override
+  String get managePageDescription =>
+      'לבדוק אם יש עדכונים זמינים, לעדכן את היישומים שלך ולנהל את מצבם של כל היישומים שלך.';
+
+  @override
+  String get managePageDebUpdatesMessage =>
+      'עדכוני חבילות דביאן הן בטיפול מעדכן התוכנה.';
+
+  @override
+  String get managePageInstalledAndUpdatedLabel => 'מותקן ועדכני';
+
+  @override
+  String managePageInstallingLabel(int n) {
+    return 'בהתקנה ($n)';
+  }
+
+  @override
+  String get managePageLabel => 'ניהול';
+
+  @override
+  String get managePageTitle => 'ניהול snapים מותקנים';
+
+  @override
+  String get managePageNoUpdatesAvailableDescription =>
+      'אין עדכונים זמינים. כל היישומים שלך עדכניים.';
+
+  @override
+  String get managePageSearchFieldSearchHint => 'חיפוש ביישומים המותקנים';
+
+  @override
+  String get managePageShowDetailsLabel => 'הצגת פרטים';
+
+  @override
+  String get managePageShowSystemSnapsLabel => 'הצגת snapים של המערכת';
+
+  @override
+  String get managePagePackageTypeLabel => 'Package type';
+
+  @override
+  String get managePagePackageTypeAll => 'All';
+
+  @override
+  String get managePagePackageTypeSnap => 'Snap';
+
+  @override
+  String get managePagePackageTypeDeb => 'Deb';
+
+  @override
+  String get managePagePackageTypeFlatpak => 'Flatpak';
+
+  @override
+  String get managePageUpdateAllLabel => 'לעדכן הכול';
+
+  @override
+  String managePageUpdatedDaysAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n ימים',
+      two: 'יומיים',
+      one: 'יום',
+    );
+    return 'עודכן לפני $_temp0';
+  }
+
+  @override
+  String managePageUpdatedWeeksAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n שבועות',
+      two: 'שבועיים',
+      one: 'שבוע',
+    );
+    return 'עודכן לפני $_temp0';
+  }
+
+  @override
+  String managePageUpdatedMonthsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n חודשים',
+      two: 'חודשיים',
+      one: 'חודש',
+    );
+    return 'עודכן לפני $_temp0';
+  }
+
+  @override
+  String managePageUpdatedYearsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n שנים',
+      two: 'שנתיים',
+      one: 'שנה',
+    );
+    return 'עודכן לפני $_temp0';
+  }
+
+  @override
+  String managePageUpdatesAvailable(int n) {
+    return 'יש עדכונים ($n)';
+  }
+
+  @override
+  String managePageUpdatesFailed(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n עדכונים נכשלו',
+      one: 'עדכון נכשל',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String managePageUpdatesFailedBody(Object snapList) {
+    return 'לא הצלחנו לעדכן את היישומים האלה כי הם פועלים כרגע.\n\n$snapList\nיציאה מהם תעדכן אותם אוטומטית.';
+  }
+
+  @override
+  String get managePageDocumentationLinkLabel =>
+      'ניתן למצוא מידע על ניהול חבילות דביאן בתיעוד.';
+
+  @override
+  String get productivityPageLabel => 'הפקה';
+
+  @override
+  String get developmentPageLabel => 'פיתוח';
+
+  @override
+  String get gamesPageLabel => 'משחקים';
+
+  @override
+  String get gamesPageTitle => 'מה לוהט';
+
+  @override
+  String get gamesPageTop => 'בראש הדירוג';
+
+  @override
+  String get gamesPageFeatured => 'כותרים מומלצים';
+
+  @override
+  String get gamesPageBundles => 'מאגדי יישומים';
+
+  @override
+  String get unknownPublisher => 'מפיץ לא מוכר';
+
+  @override
+  String get searchFieldDebSection => 'חבילות דביאן';
+
+  @override
+  String get searchFieldSearchHint => 'חיפוש יישומים';
+
+  @override
+  String searchFieldSearchForLabel(String query) {
+    return 'הצגת כל התוצאות לחיפוש אחר „$query”';
+  }
+
+  @override
+  String get searchFieldSnapSection => 'חבילות Snap';
+
+  @override
+  String get searchPageFilterByLabel => 'סינון לפני';
+
+  @override
+  String searchPageNoResults(String query) {
+    return 'לא נמצאו תוצאות לחיפוש אחר „$query”';
+  }
+
+  @override
+  String get searchPageNoResultsHint =>
+      'נא לנסות להשתמש במילות מפתח אחרות או כלליות יותר';
+
+  @override
+  String get searchPageNoResultsCategory =>
+      'לא הצלחנו למצוא חבילות בקטגוריה הזאת, סליחה';
+
+  @override
+  String get searchPageNoResultsCategoryHint =>
+      'נא לנסות קטגוריה אחרת או להשתמש במילות מפתח כלליות יותר';
+
+  @override
+  String get searchPageSortByLabel => 'מיון לפי';
+
+  @override
+  String get searchPageRelevanceLabel => 'התאמה';
+
+  @override
+  String searchPageTitle(String query) {
+    return 'תוצאות לחיפוש אחר „$query”';
+  }
+
+  @override
+  String get aboutPageLabel => 'על אודות';
+
+  @override
+  String aboutPageVersionLabel(String version) {
+    return 'גרסה $version';
+  }
+
+  @override
+  String get aboutPageContributorTitle => 'עוצב ופותח על ידי:';
+
+  @override
+  String get aboutPageCommunityTitle => 'הצטרפות לקהילה:';
+
+  @override
+  String get aboutPageContributeLabel => 'תרומה או דיווח על תקלה';
+
+  @override
+  String get aboutPageGitHubLabel => 'הנוכחות שלנו ב־GitHub';
+
+  @override
+  String get aboutPagePublishLabel => 'פרסום לחנות ה־Snapים';
+
+  @override
+  String get aboutPageLearnMoreLabel => 'מידע נוסף';
+
+  @override
+  String appUrlTypeContact(String publisher) {
+    return 'Contact $publisher';
+  }
+
+  @override
+  String get appUrlTypeHomepage => 'Developer website';
+
+  @override
+  String get appUrlTypeUnknown => 'Link';
+
+  @override
+  String get appConfinementUnknown => 'Unknown';
+
+  @override
+  String get appConfinementStrict => 'Sandboxed';
+
+  @override
+  String get appConfinementDevelopment => 'Devmode';
+
+  @override
+  String get appConfinementClassic => 'Unrestricted';
+
+  @override
+  String get appConfinementUnrestricted => 'Unrestricted';
+
+  @override
+  String get appLicenseUnknown => 'Unknown';
+
+  @override
+  String get appPublishedUnknown => 'Unknown';
+
+  @override
+  String get appMoreActionsSemanticLabel => 'More actions';
+
+  @override
+  String get packageFormatDebLabel => 'חבילות דביאן';
+
+  @override
+  String get packageFormatSnapLabel => 'חבילות Snap';
+
+  @override
+  String get packageFormatAllLabel => 'All packages';
+
+  @override
+  String get packageFormatFlatpakLabel => 'Flatpak packages';
+
+  @override
+  String get searchFieldFlatpakSection => 'Flatpak packages';
+
+  @override
+  String get flatpakRemoteLabel => 'Remote';
+
+  @override
+  String get flatpakVersionUnknown => 'Unknown';
+
+  @override
+  String get snapActionCancelLabel => 'ביטול';
+
+  @override
+  String get snapActionInstallLabel => 'התקנה';
+
+  @override
+  String get snapActionInstalledLabel => 'מותקן';
+
+  @override
+  String get snapActionInstallingLabel => 'בהתקנה';
+
+  @override
+  String get snapActionOpenLabel => 'פתיחה';
+
+  @override
+  String get snapActionRemoveLabel => 'הסרה';
+
+  @override
+  String get snapActionRemovingLabel => 'מתבצעת הסרה';
+
+  @override
+  String get snapActionRevertLabel => 'Revert update';
+
+  @override
+  String get snapActionRevertingLabel => 'Reverting update';
+
+  @override
+  String get snapRevertConfirmTitle => 'Revert to previous version?';
+
+  @override
+  String get snapRevertConfirmMessage =>
+      'Automatic updates will resume when a new version is available.';
+
+  @override
+  String get snapRevertConfirmRevert => 'Revert';
+
+  @override
+  String get snapRevertConfirmCancel => 'Cancel';
+
+  @override
+  String snapRevertConfirmTitleWithVersions(String currentVersion,
+      int currentRevision, String previousVersion, int previousRevision) {
+    return 'Revert from $currentVersion (rev $currentRevision) to $previousVersion (rev $previousRevision)?';
+  }
+
+  @override
+  String get snapRevertNoPreviousRevisionMessage =>
+      'No previous local revision is available to revert to.';
+
+  @override
+  String get snapActionSwitchChannelLabel => 'החלפת ערוץ';
+
+  @override
+  String get snapActionUpdateLabel => 'עדכון';
+
+  @override
+  String get snapCategoryAll => 'כל הקטגוריות';
+
+  @override
+  String get snapActionUpdatingLabel => 'מתבצע עדכון';
+
+  @override
+  String appCardPublisherSemanticLabel(String publisher) {
+    return 'Published by $publisher.';
+  }
+
+  @override
+  String appCardRatingSemanticLabel(String rating) {
+    return 'Rating $rating.';
+  }
+
+  @override
+  String get snapCategoryArtAndDesign => 'אומנות ועיצוב';
+
+  @override
+  String get snapCategoryArtAndDesignButtonLabel => 'להתחיל ליצור';
+
+  @override
+  String get snapCategoryArtAndDesignSlogan =>
+      'מהשרבוט הראשוני ועד לנגיעה הסופית, סיור בין יישומים לאומנות ולעיצוב.';
+
+  @override
+  String get snapCategoryBooksAndReference => 'ספרים וסימוכין';
+
+  @override
+  String get snapCategoryDefaultButtonLabel => 'היחשפות לעוד';
+
+  @override
+  String get snapCategoryDevelopment => 'פיתוח';
+
+  @override
+  String get snapCategoryDevelopmentSlogan => 'snapים שהם בגדר חובה למתכנתים';
+
+  @override
+  String get snapCategoryDevicesAndIot => 'התקנים ו־IoT (אינטרנט החפצים)';
+
+  @override
+  String get snapCategoryEducation => 'לימוד';
+
+  @override
+  String get snapCategoryEntertainment => 'בידור';
+
+  @override
+  String get snapCategoryFeatured => 'מומלצים';
+
+  @override
+  String get snapCategoryFeaturedSlogan => 'Snapים מומלצים';
+
+  @override
+  String get snapCategoryFinance => 'כלכלה';
+
+  @override
+  String get snapCategoryGames => 'משחקים';
+
+  @override
+  String get snapCategoryGamesSlogan => 'כל מה שצריך ללילה של משחקים';
+
+  @override
+  String get snapCategoryGameDev => 'פיתוח משחקים';
+
+  @override
+  String get snapCategoryGameDevSlogan => 'פיתוח משחקים';
+
+  @override
+  String get snapCategoryGameEmulators => 'הדמיה';
+
+  @override
+  String get snapCategoryGameEmulatorsSlogan => 'הדמיה';
+
+  @override
+  String get snapCategoryGnomeGames => 'משחקי GNOME';
+
+  @override
+  String get snapCategoryGnomeGamesSlogan => 'חבילת המשחקים של GNOME';
+
+  @override
+  String get snapCategoryKdeGames => 'משחקי KDE';
+
+  @override
+  String get snapCategoryKdeGamesSlogan => 'חבילת המשחקים של KDE';
+
+  @override
+  String get snapCategoryGameLaunchers => 'משגרי משחקים';
+
+  @override
+  String get snapCategoryGameLaunchersSlogan => 'משגרי משחקים';
+
+  @override
+  String get snapCategoryGameContentCreation => 'יצירת תוכן';
+
+  @override
+  String get snapCategoryGameContentCreationSlogan => 'יצירת תוכן';
+
+  @override
+  String get snapCategoryHealthAndFitness => 'בריאות וחיטוב';
+
+  @override
+  String get snapCategoryMusicAndAudio => 'מוזיקה ושמע';
+
+  @override
+  String get snapCategoryNewsAndWeather => 'חדשות ומזג אוויר';
+
+  @override
+  String get snapCategoryPersonalisation => 'התאמה אישית';
+
+  @override
+  String get snapCategoryPhotoAndVideo => 'תמונות וסרטונים';
+
+  @override
+  String get snapCategoryProductivity => 'הפקה';
+
+  @override
+  String get snapCategoryProductivityButtonLabel => 'חשיפת אוסף יישומי ההפקה';
+
+  @override
+  String get snapCategoryProductivitySlogan => 'דבר אחד פחות ברשימת המטלות';
+
+  @override
+  String get snapCategoryScience => 'מדעים';
+
+  @override
+  String get snapCategorySecurity => 'אבטחה';
+
+  @override
+  String get snapCategoryServerAndCloud => 'שרת וענן';
+
+  @override
+  String get snapCategorySocial => 'חברתי';
+
+  @override
+  String get snapCategoryUbuntuDesktop => 'שולחן העבודה של אובונטו';
+
+  @override
+  String get snapCategoryUbuntuDesktopSlogan => 'לתת בראש לשולחן העבודה שלך';
+
+  @override
+  String get snapCategoryUtilities => 'עזרים';
+
+  @override
+  String get snapSortOrderAlphabeticalAsc => 'אלפביתי (א׳ עד ת׳)';
+
+  @override
+  String get snapSortOrderAlphabeticalDesc => 'אלפביתי (ת׳ עד א׳)';
+
+  @override
+  String get snapSortOrderDownloadSizeAsc => 'גודל (מהקטן לגדול)';
+
+  @override
+  String get snapSortOrderDownloadSizeDesc => 'גודל (מהגדול לקטן)';
+
+  @override
+  String get snapSortOrderInstalledSizeAsc => 'גודל (מהקטן לגדול)';
+
+  @override
+  String get snapSortOrderInstalledSizeDesc => 'גודל (מהגדול לקטן)';
+
+  @override
+  String get snapSortOrderInstalledDateAsc => 'הכי פחות עדכני';
+
+  @override
+  String get snapSortOrderInstalledDateDesc => 'הכי עדכני';
+
+  @override
+  String get snapSortOrderRelevance => 'התאמה';
+
+  @override
+  String get snapRatingsBandVeryGood => 'טובה מאוד';
+
+  @override
+  String get snapRatingsBandGood => 'טובה';
+
+  @override
+  String get snapRatingsBandNeutral => 'ככה ככה';
+
+  @override
+  String get snapRatingsBandPoor => 'לא טובה';
+
+  @override
+  String get snapRatingsBandVeryPoor => 'גרועה';
+
+  @override
+  String get snapRatingsBandInsufficientVotes => 'אין מספיק קולות';
+
+  @override
+  String snapRatingsVotes(int n) {
+    return '$n קולות';
+  }
+
+  @override
+  String snapReportLabel(String snapName) {
+    return 'דיווח על $snapName';
+  }
+
+  @override
+  String get snapReportSelectReportReasonLabel =>
+      'נא לבחור את סיבת הדיווח על ה־snap הזה';
+
+  @override
+  String get snapReportSelectAnOptionLabel => 'נא לבחור אפשרות';
+
+  @override
+  String get snapReportOptionCopyrightViolation =>
+      'הפרה של זכויות יוצרים או סימני מסחר';
+
+  @override
+  String get snapReportOptionStoreViolation => 'הפרה של תנאי שירות חנות ה־Snap';
+
+  @override
+  String get snapReportDetailsLabel => 'נא לספק פירוט נוסף על מדוע בחרת לדווח';
+
+  @override
+  String get snapReportOptionalEmailAddressLabel => 'כתובת הדוא״ל שלך (רשות)';
+
+  @override
+  String get snapReportCancelButtonLabel => 'ביטול';
+
+  @override
+  String get snapReportSubmitButtonLabel => 'הגשת דוח';
+
+  @override
+  String get snapReportEnterValidEmailError => 'נא למלא כתובת דוא״ל תקנית';
+
+  @override
+  String get snapReportDetailsHint => 'הערה…';
+
+  @override
+  String get snapReportPrivacyAgreementLabel =>
+      'הגשת הטופס הזה מהווה את הסכמתי לכך שקראתי והסכמתי ל ';
+
+  @override
+  String get snapReportPrivacyAgreementCanonicalPrivacyNotice =>
+      'הצהרת הפרטיות של קנוניקל ';
+
+  @override
+  String get snapReportPrivacyAgreementAndLabel => 'ול ';
+
+  @override
+  String get snapReportPrivacyAgreementPrivacyPolicy => 'מדיניות הפרטיות';
+
+  @override
+  String get debPageErrorNoPackageInfo => 'לא נמצאו פרטי חבילה';
+
+  @override
+  String get debPageDocumentationLinkLabel => 'מידע על ניהול חבילות דביאן';
+
+  @override
+  String get debPageShareLinkCopiedMessage => 'Link copied to clipboard';
+
+  @override
+  String get debPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get externalResources => 'משאבים נוספים';
+
+  @override
+  String get externalResourcesButtonLabel => 'לגלות עוד';
+
+  @override
+  String get allGamesButtonLabel => 'כל המשחקים';
+
+  @override
+  String get externalResourcesDisclaimer =>
+      'לתשומת ליבך: כל אלו הם כלים חיצוניים. הם לא בבעלות או בהפצת קנוניקל.';
+
+  @override
+  String get openInBrowser => 'פתיחה בדפדפן';
+
+  @override
+  String get installAll => 'להתקין הכול';
+
+  @override
+  String get localDebWarningTitle => 'כנראה מפוקפק';
+
+  @override
+  String get localDebWarningBody =>
+      'החבילה הזאת מסופקת על ידי גורם צד־שלישי. התקנת חבילה מחוץ למרכז היישומים יכולה להגביר את הסיכון לשלום המערכת והנתונים האישיים שלך. נא לוודא שזה מקור אמין לפני המשך בהתהליך.';
+
+  @override
+  String get localDebLearnMore => 'מידע נוסף על חבילות צד־שלישי';
+
+  @override
+  String get localDebDialogMessage =>
+      'החבילה הזאת מסופקת על ידי גורם צד־שלישי ועלולה לסכן את המערכת והנתונים האישיים שלך.';
+
+  @override
+  String get localDebDialogConfirmation => 'להתקין אותו?';
+
+  @override
+  String snapdExceptionRunningApps(String snapName) {
+    return 'לא הצלחנו לעדכן את $snapName כיוון שהוא פעיל כרגע.';
+  }
+
+  @override
+  String get errorViewCheckStatusLabel => 'בדיקת המצב';
+
+  @override
+  String get errorViewNetworkErrorTitle => 'נא להתחבר לאינטרנט';
+
+  @override
+  String get errorViewNetworkErrorDescription =>
+      'אין אפשרות לטעון את התוכן במרכז היישומים ללא חיבור לאינטרנט.';
+
+  @override
+  String get errorViewNetworkErrorAction =>
+      'נא לבדוק את החיבור שלך ולנסות שוב.';
+
+  @override
+  String get errorViewServerErrorDescription =>
+      'אנו חווים כרגע בעיות עם מרכז היישומים, סליחה.';
+
+  @override
+  String get errorViewServerErrorAction =>
+      'נא לבדוק את מה מצב העדכונים או לנסות שוב מאוחר יותר.';
+
+  @override
+  String get errorViewUnknownErrorTitle => 'משהו השתבש';
+
+  @override
+  String get errorViewUnknownErrorDescription =>
+      'אנחנו לא בטוחים מה השגיאה הזאת, סליחה.';
+
+  @override
+  String get errorViewUnknownErrorAction =>
+      'אפשר לנסות שוב עכשיו, לבדוק מה מצב העדכונים או לנסות שוב מאוחר יותר.';
+
+  @override
+  String get codecPageTitle => 'Missing media codecs';
+
+  @override
+  String get codecPageDescription =>
+      'You need to install the following codecs for handling certain video and audio formats:';
+
+  @override
+  String get codecProprietaryDisclaimer =>
+      'Some of the recommended codecs could be proprietary.';
+
+  @override
+  String get codecInstallAllButton => 'Install recommended codecs';
+}

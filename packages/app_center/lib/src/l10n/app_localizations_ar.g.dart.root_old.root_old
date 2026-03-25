@@ -1,0 +1,795 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.g.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Arabic (`ar`).
+class AppLocalizationsAr extends AppLocalizations {
+  AppLocalizationsAr([String locale = 'ar']) : super(locale);
+
+  @override
+  String get appCenterLabel => 'مركز التطبيقات';
+
+  @override
+  String get appstreamSearchGreylist =>
+      'تطبيقات؛تطبيق؛حزمة؛برمجية؛برنامج؛مجموعة؛أداة';
+
+  @override
+  String get snapPageChannelLabel => 'قناة';
+
+  @override
+  String get snapPageConfinementLabel => 'الحجر';
+
+  @override
+  String snapPageContactPublisherLabel(String publisher) {
+    return 'الاتصال ب $publisher';
+  }
+
+  @override
+  String get snapPageDeveloperWebsiteLabel => 'موقع المطور';
+
+  @override
+  String get snapPageDownloadSizeLabel => 'حجم التحميل';
+
+  @override
+  String get snapPageSizeLabel => 'الحجم';
+
+  @override
+  String get snapPageGalleryNextSemanticLabel => 'Next image';
+
+  @override
+  String get snapPageGalleryPreviousSemanticLabel => 'Previous image';
+
+  @override
+  String snapPageGalleryImageSemanticLabel(int n) {
+    return 'Image $n';
+  }
+
+  @override
+  String get snapPageLicenseLabel => 'الرخصة';
+
+  @override
+  String get snapPageLinksLabel => 'الروابط';
+
+  @override
+  String get snapPagePublisherLabel => 'الناشر';
+
+  @override
+  String get snapPagePublishedLabel => 'نُشرت';
+
+  @override
+  String get snapPageSummaryLabel => 'الملخص';
+
+  @override
+  String get snapPageVersionLabel => 'الإصدار';
+
+  @override
+  String get snapPageShareLinkCopiedMessage => 'تم نسخ الرابط إلى الحافظة';
+
+  @override
+  String get snapPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get snapPageReportSemanticLabel => 'Report';
+
+  @override
+  String sectionExpandSemanticLabel(String section) {
+    return 'Expand $section';
+  }
+
+  @override
+  String sectionCollapseSemanticLabel(String section) {
+    return 'Collapse $section';
+  }
+
+  @override
+  String get explorePageLabel => 'استكشف';
+
+  @override
+  String get explorePageCategoriesLabel => 'الفئات';
+
+  @override
+  String get managePageOwnUpdateAvailable => 'تحديث مركز التطبيقات متاح';
+
+  @override
+  String get managePageQuitToUpdate => 'الخروج للتحديث';
+
+  @override
+  String get managePageOwnUpdateDescription =>
+      'عند الخروج من التطبيق سيتم تحديثه تلقائيا.';
+
+  @override
+  String get managePageOwnUpdateQuitButton => 'الخروج للتحديث';
+
+  @override
+  String get managePageCheckForUpdates => 'التحقق من التحديثات';
+
+  @override
+  String get managePageCheckingForUpdates => 'قيد التحقق من التحديثات';
+
+  @override
+  String get managePageNoInternet =>
+      'لا يمكن الوصول إلى الخادم، تحقق من اتصالك بالإنترنت أو حاول مرة أخرى لاحقًا.';
+
+  @override
+  String get managePageDescription =>
+      'التحقق من التحديثات المتوفرة وتحديث تطبيقاتك وإدارة حالة جميع تطبيقاتك.';
+
+  @override
+  String get managePageDebUpdatesMessage =>
+      'يتم التعامل مع تحديثات حزمة الDebian بواسطة محدث البرمجيّات.';
+
+  @override
+  String get managePageInstalledAndUpdatedLabel => 'تم التثبيت والتحديث';
+
+  @override
+  String managePageInstallingLabel(int n) {
+    return 'جاري تثبيت ($n)';
+  }
+
+  @override
+  String get managePageLabel => 'إدارة';
+
+  @override
+  String get managePageTitle => 'إدارة snaps المثبتة';
+
+  @override
+  String get managePageNoUpdatesAvailableDescription =>
+      'لا تتوفر تحديثات. جميع تطبيقاتك محدثة.';
+
+  @override
+  String get managePageSearchFieldSearchHint => 'ابحث عن التطبيقات المثبتة';
+
+  @override
+  String get managePageShowDetailsLabel => 'عرض التفاصيل';
+
+  @override
+  String get managePageShowSystemSnapsLabel => 'عرض snaps النظام';
+
+  @override
+  String get managePagePackageTypeLabel => 'Package type';
+
+  @override
+  String get managePagePackageTypeAll => 'All';
+
+  @override
+  String get managePagePackageTypeSnap => 'Snap';
+
+  @override
+  String get managePagePackageTypeDeb => 'Deb';
+
+  @override
+  String get managePagePackageTypeFlatpak => 'Flatpak';
+
+  @override
+  String get managePageUpdateAllLabel => 'تحديث الكل';
+
+  @override
+  String managePageUpdatedDaysAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n أيام',
+      two: '$n يومان',
+      one: '$n يوم',
+    );
+    return 'تم التحديث منذ $_temp0';
+  }
+
+  @override
+  String managePageUpdatedWeeksAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n أسابيع',
+      two: '$n أسبوعين',
+      one: '$n أسبوع',
+    );
+    return 'تم التحديث منذ $_temp0';
+  }
+
+  @override
+  String managePageUpdatedMonthsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n أشهر',
+      two: '$n شهرين',
+      one: '$n شهر',
+    );
+    return 'تم التحديث منذ $_temp0';
+  }
+
+  @override
+  String managePageUpdatedYearsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n سنوات',
+      two: '$n سنتين',
+      one: '$n سنة',
+    );
+    return 'تم التحديث منذ $_temp0';
+  }
+
+  @override
+  String managePageUpdatesAvailable(int n) {
+    return 'التحديثات المتوفرة ($n)';
+  }
+
+  @override
+  String managePageUpdatesFailed(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n فشل التحديثات',
+      one: '$n فشل تحديث واحد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String managePageUpdatesFailedBody(Object snapList) {
+    return 'لم نتمكن من تحديث هذه التطبيقات لأنها قيد التشغيل حاليًا.\n\n$snapList\nعند إغلاق التطبيقات، سيتم تحديثها تلقائيًا.';
+  }
+
+  @override
+  String get managePageDocumentationLinkLabel =>
+      'Learn how to manage Debian packages in the documentation.';
+
+  @override
+  String get productivityPageLabel => 'الإنتاجية';
+
+  @override
+  String get developmentPageLabel => 'التطوير';
+
+  @override
+  String get gamesPageLabel => 'الألعاب';
+
+  @override
+  String get gamesPageTitle => 'الأفضل في الٱونة الاخيرة';
+
+  @override
+  String get gamesPageTop => 'أفضل الألعاب';
+
+  @override
+  String get gamesPageFeatured => 'العناوين المميزة';
+
+  @override
+  String get gamesPageBundles => 'حزم التطبيقات';
+
+  @override
+  String get unknownPublisher => 'ناشر غير معروف';
+
+  @override
+  String get searchFieldDebSection => 'حزم ال Debian';
+
+  @override
+  String get searchFieldSearchHint => 'البحث عن التطبيقات';
+
+  @override
+  String searchFieldSearchForLabel(String query) {
+    return 'عرض جميع النتائج لـ \"$query\"';
+  }
+
+  @override
+  String get searchFieldSnapSection => 'حزم snap';
+
+  @override
+  String get searchPageFilterByLabel => 'التصفية حسب';
+
+  @override
+  String searchPageNoResults(String query) {
+    return 'لم يتم العثور على نتائج لـ \"$query\"';
+  }
+
+  @override
+  String get searchPageNoResultsHint =>
+      'حاول استخدام كلمات رئيسية عامة أو مختلفة';
+
+  @override
+  String get searchPageNoResultsCategory =>
+      'عذرًا، لم نتمكن من العثور على أي حزم في هذه الفئة';
+
+  @override
+  String get searchPageNoResultsCategoryHint =>
+      'جرب فئة مختلفة أو استخدم كلمات رئيسية عامة';
+
+  @override
+  String get searchPageSortByLabel => 'فرز حسب';
+
+  @override
+  String get searchPageRelevanceLabel => 'الصلة';
+
+  @override
+  String searchPageTitle(String query) {
+    return 'نتائج البحث عن \"$query\"';
+  }
+
+  @override
+  String get aboutPageLabel => 'حول';
+
+  @override
+  String aboutPageVersionLabel(String version) {
+    return 'النسخة $version';
+  }
+
+  @override
+  String get aboutPageContributorTitle => 'تم تصميمه وتطويره بواسطة:';
+
+  @override
+  String get aboutPageCommunityTitle => 'كن جزءًا من المجتمع:';
+
+  @override
+  String get aboutPageContributeLabel => 'المساهمة أو الإبلاغ عن الخطأ';
+
+  @override
+  String get aboutPageGitHubLabel => 'تجدنا على GitHub';
+
+  @override
+  String get aboutPagePublishLabel => 'نشر على متجر Snap';
+
+  @override
+  String get aboutPageLearnMoreLabel => 'تعرف على المزيد';
+
+  @override
+  String appUrlTypeContact(String publisher) {
+    return 'Contact $publisher';
+  }
+
+  @override
+  String get appUrlTypeHomepage => 'Developer website';
+
+  @override
+  String get appUrlTypeUnknown => 'Link';
+
+  @override
+  String get appConfinementUnknown => 'Unknown';
+
+  @override
+  String get appConfinementStrict => 'Sandboxed';
+
+  @override
+  String get appConfinementDevelopment => 'Devmode';
+
+  @override
+  String get appConfinementClassic => 'Unrestricted';
+
+  @override
+  String get appConfinementUnrestricted => 'Unrestricted';
+
+  @override
+  String get appLicenseUnknown => 'Unknown';
+
+  @override
+  String get appPublishedUnknown => 'Unknown';
+
+  @override
+  String get appMoreActionsSemanticLabel => 'More actions';
+
+  @override
+  String get packageFormatDebLabel => 'حزم ال Debian';
+
+  @override
+  String get packageFormatSnapLabel => 'حزم Snap';
+
+  @override
+  String get packageFormatAllLabel => 'All packages';
+
+  @override
+  String get packageFormatFlatpakLabel => 'Flatpak packages';
+
+  @override
+  String get searchFieldFlatpakSection => 'Flatpak packages';
+
+  @override
+  String get flatpakRemoteLabel => 'Remote';
+
+  @override
+  String get flatpakVersionUnknown => 'Unknown';
+
+  @override
+  String get snapActionCancelLabel => 'إلغاء';
+
+  @override
+  String get snapActionInstallLabel => 'ثبت';
+
+  @override
+  String get snapActionInstalledLabel => 'مثبتة';
+
+  @override
+  String get snapActionInstallingLabel => 'تثبيت';
+
+  @override
+  String get snapActionOpenLabel => 'فتح';
+
+  @override
+  String get snapActionRemoveLabel => 'إلغاء تثبيت';
+
+  @override
+  String get snapActionRemovingLabel => 'إلغاء التثبيت';
+
+  @override
+  String get snapActionRevertLabel => 'Revert update';
+
+  @override
+  String get snapActionRevertingLabel => 'Reverting update';
+
+  @override
+  String get snapRevertConfirmTitle => 'Revert to previous version?';
+
+  @override
+  String get snapRevertConfirmMessage =>
+      'Automatic updates will resume when a new version is available.';
+
+  @override
+  String get snapRevertConfirmRevert => 'Revert';
+
+  @override
+  String get snapRevertConfirmCancel => 'Cancel';
+
+  @override
+  String snapRevertConfirmTitleWithVersions(String currentVersion,
+      int currentRevision, String previousVersion, int previousRevision) {
+    return 'Revert from $currentVersion (rev $currentRevision) to $previousVersion (rev $previousRevision)?';
+  }
+
+  @override
+  String get snapRevertNoPreviousRevisionMessage =>
+      'No previous local revision is available to revert to.';
+
+  @override
+  String get snapActionSwitchChannelLabel => 'تبديل القناة';
+
+  @override
+  String get snapActionUpdateLabel => 'تحديث';
+
+  @override
+  String get snapCategoryAll => 'جميع الفئات';
+
+  @override
+  String get snapActionUpdatingLabel => 'قيد التحديث';
+
+  @override
+  String appCardPublisherSemanticLabel(String publisher) {
+    return 'Published by $publisher.';
+  }
+
+  @override
+  String appCardRatingSemanticLabel(String rating) {
+    return 'Rating $rating.';
+  }
+
+  @override
+  String get snapCategoryArtAndDesign => 'الفن والتصميم';
+
+  @override
+  String get snapCategoryArtAndDesignButtonLabel => 'ابدأ في الإنشاء';
+
+  @override
+  String get snapCategoryArtAndDesignSlogan =>
+      'من الرسم الأولي حتى اللمسة النهائية، استكشف التطبيقات الخاصة بالفن والتصميم.';
+
+  @override
+  String get snapCategoryBooksAndReference => 'الكتب والمراجع';
+
+  @override
+  String get snapCategoryDefaultButtonLabel => 'اكتشف المزيد';
+
+  @override
+  String get snapCategoryDevelopment => 'التطوير';
+
+  @override
+  String get snapCategoryDevelopmentSlogan => 'snaps ضرورية للمطورين';
+
+  @override
+  String get snapCategoryDevicesAndIot => 'الأجهزة و أنترنت الأشياء';
+
+  @override
+  String get snapCategoryEducation => 'التعليم';
+
+  @override
+  String get snapCategoryEntertainment => 'الترفيه';
+
+  @override
+  String get snapCategoryFeatured => 'مميزة';
+
+  @override
+  String get snapCategoryFeaturedSlogan => 'snaps مميزة';
+
+  @override
+  String get snapCategoryFinance => 'التمويل';
+
+  @override
+  String get snapCategoryGames => 'الألعاب';
+
+  @override
+  String get snapCategoryGamesSlogan => 'كل شيء من أجل ليلة اللعب';
+
+  @override
+  String get snapCategoryGameDev => 'تطوير الألعاب';
+
+  @override
+  String get snapCategoryGameDevSlogan => 'تطوير الألعاب';
+
+  @override
+  String get snapCategoryGameEmulators => '‬المحاكيات';
+
+  @override
+  String get snapCategoryGameEmulatorsSlogan => 'المحاكيات';
+
+  @override
+  String get snapCategoryGnomeGames => 'ألعاب GNOME';
+
+  @override
+  String get snapCategoryGnomeGamesSlogan => 'مجموعة ألعاب GNOME';
+
+  @override
+  String get snapCategoryKdeGames => 'ألعاب KDE';
+
+  @override
+  String get snapCategoryKdeGamesSlogan => 'مجموعة ألعاب KDE';
+
+  @override
+  String get snapCategoryGameLaunchers => 'مشغلات الألعاب';
+
+  @override
+  String get snapCategoryGameLaunchersSlogan => 'مشغلات الألعاب';
+
+  @override
+  String get snapCategoryGameContentCreation => 'إنشاء المحتوى';
+
+  @override
+  String get snapCategoryGameContentCreationSlogan => 'إنشاء المحتوى';
+
+  @override
+  String get snapCategoryHealthAndFitness => 'الصحة و اللياقة البدنية';
+
+  @override
+  String get snapCategoryMusicAndAudio => 'الموسيقى و الصوت';
+
+  @override
+  String get snapCategoryNewsAndWeather => 'الأخبار و الطقس';
+
+  @override
+  String get snapCategoryPersonalisation => 'التخصيص';
+
+  @override
+  String get snapCategoryPhotoAndVideo => 'الصور و الفيديو';
+
+  @override
+  String get snapCategoryProductivity => 'الإنتاجية';
+
+  @override
+  String get snapCategoryProductivityButtonLabel => 'اكتشف مجموعة الإنتاجية';
+
+  @override
+  String get snapCategoryProductivitySlogan =>
+      'اشطب شيئًا واحدًا من قائمة مهامك';
+
+  @override
+  String get snapCategoryScience => 'العلوم';
+
+  @override
+  String get snapCategorySecurity => 'الحماية';
+
+  @override
+  String get snapCategoryServerAndCloud => 'الخادم و السحابة';
+
+  @override
+  String get snapCategorySocial => 'اجتماعي';
+
+  @override
+  String get snapCategoryUbuntuDesktop => 'سطح مكتب Ubuntu';
+
+  @override
+  String get snapCategoryUbuntuDesktopSlogan =>
+      'ابدأ تشغيل سطح المكتب الخاص بك';
+
+  @override
+  String get snapCategoryUtilities => 'المرافق';
+
+  @override
+  String get snapSortOrderAlphabeticalAsc => 'أبجدي (من الألف إلى الياء)';
+
+  @override
+  String get snapSortOrderAlphabeticalDesc => 'أبجدي (من الياء إلى الألف)';
+
+  @override
+  String get snapSortOrderDownloadSizeAsc => 'الحجم (من الأصغر إلى الأكبر)';
+
+  @override
+  String get snapSortOrderDownloadSizeDesc => 'الحجم (من الأكبر إلى الأصغر)';
+
+  @override
+  String get snapSortOrderInstalledSizeAsc => 'الحجم (من الأصغر إلى الأكبر)';
+
+  @override
+  String get snapSortOrderInstalledSizeDesc => 'الحجم (من الأكبر إلى الأصغر)';
+
+  @override
+  String get snapSortOrderInstalledDateAsc => 'آخر تحديث';
+
+  @override
+  String get snapSortOrderInstalledDateDesc => 'تم التحديث مؤخرا';
+
+  @override
+  String get snapSortOrderRelevance => 'الصلة';
+
+  @override
+  String get snapRatingsBandVeryGood => 'جيد جدًا';
+
+  @override
+  String get snapRatingsBandGood => 'جيد';
+
+  @override
+  String get snapRatingsBandNeutral => 'حيادي';
+
+  @override
+  String get snapRatingsBandPoor => 'سيء';
+
+  @override
+  String get snapRatingsBandVeryPoor => 'سيء جدًا';
+
+  @override
+  String get snapRatingsBandInsufficientVotes => 'عدد الأصوات غير كاف';
+
+  @override
+  String snapRatingsVotes(int n) {
+    return '$n تصويت';
+  }
+
+  @override
+  String snapReportLabel(String snapName) {
+    return 'الإبلاغ عن $snapName';
+  }
+
+  @override
+  String get snapReportSelectReportReasonLabel =>
+      'اختر سببًا للإبلاغ عن هذه snap';
+
+  @override
+  String get snapReportSelectAnOptionLabel => 'حدد خيارا';
+
+  @override
+  String get snapReportOptionCopyrightViolation =>
+      'انتهاك حقوق الطبع والنشر أو العلامة التجارية';
+
+  @override
+  String get snapReportOptionStoreViolation => 'انتهاك شروط خدمة Snap Store';
+
+  @override
+  String get snapReportDetailsLabel =>
+      'يرجى تقديم سبب أكثر تفصيلا لقرار الابلاغ';
+
+  @override
+  String get snapReportOptionalEmailAddressLabel =>
+      'بريدك الإلكتروني (اختياري)';
+
+  @override
+  String get snapReportCancelButtonLabel => 'الغاء';
+
+  @override
+  String get snapReportSubmitButtonLabel => 'إرسال قرار الابلاغ';
+
+  @override
+  String get snapReportEnterValidEmailError => 'أدخل عنوان بريد إلكتروني صالح';
+
+  @override
+  String get snapReportDetailsHint => 'تعليق...';
+
+  @override
+  String get snapReportPrivacyAgreementLabel =>
+      'بإرسال هذا النموذج، أؤكد أنني قرأت ووافقت على. ';
+
+  @override
+  String get snapReportPrivacyAgreementCanonicalPrivacyNotice =>
+      'إشعار الخصوصية الخاص بشركة Canonical. ';
+
+  @override
+  String get snapReportPrivacyAgreementAndLabel => 'و. ';
+
+  @override
+  String get snapReportPrivacyAgreementPrivacyPolicy => 'سياسة الخصوصية';
+
+  @override
+  String get debPageErrorNoPackageInfo => 'لم يتم العثور على معلومات الحزمة';
+
+  @override
+  String get debPageDocumentationLinkLabel =>
+      'Learn about managing Debian packages';
+
+  @override
+  String get debPageShareLinkCopiedMessage => 'Link copied to clipboard';
+
+  @override
+  String get debPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get externalResources => 'الموارد الإضافية';
+
+  @override
+  String get externalResourcesButtonLabel => 'اكتشف المزيد';
+
+  @override
+  String get allGamesButtonLabel => 'جميع الألعاب';
+
+  @override
+  String get externalResourcesDisclaimer =>
+      'ملاحظة: هذه كلها أدوات خارجية، ولا تمتلكها شركة Canonical ولا توزعها.';
+
+  @override
+  String get openInBrowser => 'فتح في المتصفح';
+
+  @override
+  String get installAll => 'تثبيت الكل';
+
+  @override
+  String get localDebWarningTitle => 'احتمال غير آمن';
+
+  @override
+  String get localDebWarningBody =>
+      'يتم توفير هذه الحزمة بواسطة جهة خارجية. قد يؤدي تثبيت الحزم من خارج مركز التطبيقات إلى زيادة المخاطر التي يتعرض لها نظامك وبياناتك الشخصية. تأكد من ثقتك في المصدر قبل المتابعة.';
+
+  @override
+  String get localDebLearnMore => 'تعرف على المزيد حول حزم الطرف الثالث';
+
+  @override
+  String get localDebDialogMessage =>
+      'يتم توفير هذه الحزمة بواسطة جهة خارجية وقد تشكل تهديدًا لنظامك وبياناتك الشخصية.';
+
+  @override
+  String get localDebDialogConfirmation => 'هل أنت متأكد أنك تريد تثبيته؟';
+
+  @override
+  String snapdExceptionRunningApps(String snapName) {
+    return 'لم نتمكن من تحديث $snapName لأنه قيد التشغيل حاليًا.';
+  }
+
+  @override
+  String get errorViewCheckStatusLabel => 'التحقق من الحالة';
+
+  @override
+  String get errorViewNetworkErrorTitle => 'الاتصال بالانترنت';
+
+  @override
+  String get errorViewNetworkErrorDescription =>
+      'لا يمكننا تحميل المحتوى في مركز التطبيقات دون اتصال بالانترنت.';
+
+  @override
+  String get errorViewNetworkErrorAction => 'تحقق من اتصالك ثم حاول مرة أخرى.';
+
+  @override
+  String get errorViewServerErrorDescription =>
+      'عذرًا، نحن نواجه حاليًا مشاكل مع مركز التطبيقات.';
+
+  @override
+  String get errorViewServerErrorAction =>
+      'تحقق من حالة التحديثات أو حاول مرة أخرى لاحقًا.';
+
+  @override
+  String get errorViewUnknownErrorTitle => 'لقد حدث خطأ';
+
+  @override
+  String get errorViewUnknownErrorDescription =>
+      'عذرًا، ولكننا لسنا متأكدين من الخطأ.';
+
+  @override
+  String get errorViewUnknownErrorAction =>
+      'يمكنك إعادة المحاولة الآن، والتحقق من حالة التحديثات، أو المحاولة مرة أخرى لاحقًا.';
+
+  @override
+  String get codecPageTitle => 'Missing media codecs';
+
+  @override
+  String get codecPageDescription =>
+      'You need to install the following codecs for handling certain video and audio formats:';
+
+  @override
+  String get codecProprietaryDisclaimer =>
+      'Some of the recommended codecs could be proprietary.';
+
+  @override
+  String get codecInstallAllButton => 'Install recommended codecs';
+}

@@ -1,0 +1,811 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.g.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Tamil (`ta`).
+class AppLocalizationsTa extends AppLocalizations {
+  AppLocalizationsTa([String locale = 'ta']) : super(locale);
+
+  @override
+  String get appCenterLabel => 'பயன்பாட்டு நடுவண்';
+
+  @override
+  String get appstreamSearchGreylist =>
+      'பயன்பாடு; பயன்பாடு; தொகுப்பு; நிரல்; நிரல்; தொகுப்பு; கருவி';
+
+  @override
+  String get snapPageChannelLabel => 'வாய்க்கால்';
+
+  @override
+  String get snapPageConfinementLabel => 'சிறைவாசம்';
+
+  @override
+  String snapPageContactPublisherLabel(String publisher) {
+    return 'தொடர்பு $publisher';
+  }
+
+  @override
+  String get snapPageDeveloperWebsiteLabel => 'உருவாக்குபவர் வலைத்தளம்';
+
+  @override
+  String get snapPageDownloadSizeLabel => 'பதிவிறக்க அளவு';
+
+  @override
+  String get snapPageSizeLabel => 'அளவு';
+
+  @override
+  String get snapPageGalleryNextSemanticLabel => 'Next image';
+
+  @override
+  String get snapPageGalleryPreviousSemanticLabel => 'Previous image';
+
+  @override
+  String snapPageGalleryImageSemanticLabel(int n) {
+    return 'Image $n';
+  }
+
+  @override
+  String get snapPageLicenseLabel => 'உரிமம்';
+
+  @override
+  String get snapPageLinksLabel => 'இணைப்புகள்';
+
+  @override
+  String get snapPagePublisherLabel => 'வெளியீட்டாளர்';
+
+  @override
+  String get snapPagePublishedLabel => 'வெளியிடப்பட்டது';
+
+  @override
+  String get snapPageSummaryLabel => 'சுருக்கம்';
+
+  @override
+  String get snapPageVersionLabel => 'பதிப்பு';
+
+  @override
+  String get snapPageShareLinkCopiedMessage =>
+      'கிளிப்போர்டில் இணைப்பு நகலெடுக்கப்பட்டது';
+
+  @override
+  String get snapPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get snapPageReportSemanticLabel => 'Report';
+
+  @override
+  String sectionExpandSemanticLabel(String section) {
+    return 'Expand $section';
+  }
+
+  @override
+  String sectionCollapseSemanticLabel(String section) {
+    return 'Collapse $section';
+  }
+
+  @override
+  String get explorePageLabel => 'ஆராயுங்கள்';
+
+  @override
+  String get explorePageCategoriesLabel => 'வகைகள்';
+
+  @override
+  String get managePageOwnUpdateAvailable =>
+      'பயன்பாட்டு மைய புதுப்பிப்பு கிடைக்கிறது';
+
+  @override
+  String get managePageQuitToUpdate => 'புதுப்பிக்க விட்டுவிடுங்கள்';
+
+  @override
+  String get managePageOwnUpdateDescription =>
+      'நீங்கள் பயன்பாட்டை விட்டு வெளியேறும்போது அது தானாகவே புதுப்பிக்கப்படும்.';
+
+  @override
+  String get managePageOwnUpdateQuitButton => 'புதுப்பிக்க விட்டுவிடுங்கள்';
+
+  @override
+  String get managePageCheckForUpdates => 'புதுப்பிப்புகளை சரிபார்க்கவும்';
+
+  @override
+  String get managePageCheckingForUpdates => 'புதுப்பிப்புகளைச் சரிபார்க்கிறது';
+
+  @override
+  String get managePageNoInternet =>
+      'சேவையகத்தை அடைய முடியாது, உங்கள் இணைய இணைப்பை சரிபார்க்கவும் அல்லது பின்னர் மீண்டும் முயற்சிக்கவும்.';
+
+  @override
+  String get managePageDescription =>
+      'கிடைக்கக்கூடிய புதுப்பிப்புகளைச் சரிபார்க்கவும், உங்கள் பயன்பாடுகளைப் புதுப்பிக்கவும், உங்கள் எல்லா பயன்பாடுகளின் நிலையை நிர்வகிக்கவும்.';
+
+  @override
+  String get managePageDebUpdatesMessage =>
+      'டெபியன் தொகுப்பு புதுப்பிப்புகள் மென்பொருள் புதுப்பிப்பாளரால் கையாளப்படுகின்றன.';
+
+  @override
+  String get managePageInstalledAndUpdatedLabel =>
+      'நிறுவப்பட்டு புதுப்பிக்கப்பட்டது';
+
+  @override
+  String managePageInstallingLabel(int n) {
+    return 'நிறுவுதல் ($n)';
+  }
+
+  @override
+  String get managePageLabel => 'நிர்வகிக்கவும்';
+
+  @override
+  String get managePageTitle => 'நிறுவப்பட்ட புகைப்படங்களை நிர்வகிக்கவும்';
+
+  @override
+  String get managePageNoUpdatesAvailableDescription =>
+      'புதுப்பிப்புகள் எதுவும் கிடைக்கவில்லை. உங்கள் விண்ணப்பங்கள் அனைத்தும் புதுப்பித்தவை.';
+
+  @override
+  String get managePageSearchFieldSearchHint =>
+      'உங்கள் நிறுவப்பட்ட பயன்பாடுகளைத் தேடுங்கள்';
+
+  @override
+  String get managePageShowDetailsLabel => 'விவரங்களைக் காட்டு';
+
+  @override
+  String get managePageShowSystemSnapsLabel => 'கணினி புகைப்படங்களைக் காட்டு';
+
+  @override
+  String get managePagePackageTypeLabel => 'Package type';
+
+  @override
+  String get managePagePackageTypeAll => 'All';
+
+  @override
+  String get managePagePackageTypeSnap => 'Snap';
+
+  @override
+  String get managePagePackageTypeDeb => 'Deb';
+
+  @override
+  String get managePagePackageTypeFlatpak => 'Flatpak';
+
+  @override
+  String get managePageUpdateAllLabel => 'அனைத்தையும் புதுப்பிக்கவும்';
+
+  @override
+  String managePageUpdatedDaysAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n நாட்கள்',
+      one: '$n நாள்',
+    );
+    return 'புதுப்பிக்கப்பட்டது $_temp0 முன்பு';
+  }
+
+  @override
+  String managePageUpdatedWeeksAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n weeks',
+      one: '$n week',
+    );
+    return 'Updated $_temp0 ago';
+  }
+
+  @override
+  String managePageUpdatedMonthsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n மாதங்கள்',
+      one: '$n மாதம்',
+    );
+    return 'புதுப்பிக்கப்பட்டது $_temp0 முன்பு';
+  }
+
+  @override
+  String managePageUpdatedYearsAgo(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n ஆண்டுகள்',
+      one: '$n ஆண்டு',
+    );
+    return 'புதுப்பிக்கப்பட்டது $_temp0 முன்பு';
+  }
+
+  @override
+  String managePageUpdatesAvailable(int n) {
+    return 'புதுப்பிப்புகள் கிடைக்கின்றன ($n)';
+  }
+
+  @override
+  String managePageUpdatesFailed(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n புதுப்பிப்புகள்',
+      one: 'One update',
+    );
+    return '$_temp0 தோல்வியுற்றது';
+  }
+
+  @override
+  String managePageUpdatesFailedBody(Object snapList) {
+    return 'இந்த பயன்பாடுகள் தற்போது இயங்குவதால் எங்களால் புதுப்பிக்க முடியவில்லை.\n\n $snapList\n நீங்கள் பயன்பாடுகளை விட்டு வெளியேறும்போது, அவை தானாகவே புதுப்பிக்கப்படும்.';
+  }
+
+  @override
+  String get managePageDocumentationLinkLabel =>
+      'ஆவணத்தில் டெபியன் தொகுப்புகளை எவ்வாறு நிர்வகிப்பது என்பதை அறிக.';
+
+  @override
+  String get productivityPageLabel => 'உற்பத்தித்திறன்';
+
+  @override
+  String get developmentPageLabel => 'வளர்ச்சி';
+
+  @override
+  String get gamesPageLabel => 'விளையாட்டுகள்';
+
+  @override
+  String get gamesPageTitle => 'என்ன சூடாக இருக்கிறது';
+
+  @override
+  String get gamesPageTop => 'மேல் மதிப்பிடப்பட்ட';
+
+  @override
+  String get gamesPageFeatured => 'சிறப்பு தலைப்புகள்';
+
+  @override
+  String get gamesPageBundles => 'பயன்பாட்டு மூட்டைகள்';
+
+  @override
+  String get unknownPublisher => 'தெரியாத வெளியீட்டாளர்';
+
+  @override
+  String get searchFieldDebSection => 'டெபியன் தொகுப்புகள்';
+
+  @override
+  String get searchFieldSearchHint => 'பயன்பாடுகளைத் தேடுங்கள்';
+
+  @override
+  String searchFieldSearchForLabel(String query) {
+    return '\"$query\" க்கான அனைத்து முடிவுகளையும் காண்க';
+  }
+
+  @override
+  String get searchFieldSnapSection => 'தொகுப்புகள்';
+
+  @override
+  String get searchPageFilterByLabel => 'மூலம் வடிகட்டவும்';
+
+  @override
+  String searchPageNoResults(String query) {
+    return '\"$query\" க்கு முடிவுகள் எதுவும் கிடைக்கவில்லை';
+  }
+
+  @override
+  String get searchPageNoResultsHint =>
+      'வெவ்வேறு அல்லது அதற்கு மேற்பட்ட பொதுவான சொற்களைப் பயன்படுத்த முயற்சிக்கவும்';
+
+  @override
+  String get searchPageNoResultsCategory =>
+      'மன்னிக்கவும், இந்த வகையில் எந்த தொகுப்புகளையும் எங்களால் கண்டுபிடிக்க முடியவில்லை';
+
+  @override
+  String get searchPageNoResultsCategoryHint =>
+      'வேறு வகையை முயற்சிக்கவும் அல்லது பொதுவான முக்கிய வார்த்தைகளைப் பயன்படுத்தவும்';
+
+  @override
+  String get searchPageSortByLabel => 'வரிசைப்படுத்தவும்';
+
+  @override
+  String get searchPageRelevanceLabel => 'பொருத்தமானது';
+
+  @override
+  String searchPageTitle(String query) {
+    return '\"$query\" க்கான முடிவுகள்';
+  }
+
+  @override
+  String get aboutPageLabel => 'பற்றி';
+
+  @override
+  String aboutPageVersionLabel(String version) {
+    return 'பதிப்பு $version';
+  }
+
+  @override
+  String get aboutPageContributorTitle => 'வடிவமைக்கப்பட்டு உருவாக்கப்பட்டது:';
+
+  @override
+  String get aboutPageCommunityTitle => 'சமூகத்தின் ஒரு பகுதியாக இருங்கள்:';
+
+  @override
+  String get aboutPageContributeLabel =>
+      'பிழையை பங்களிக்கவும் அல்லது புகாரளிக்கவும்';
+
+  @override
+  String get aboutPageGitHubLabel => 'கிதுபில் எங்களை கண்டுபிடி';
+
+  @override
+  String get aboutPagePublishLabel => 'ச்னாப் கடைக்கு வெளியிடுங்கள்';
+
+  @override
+  String get aboutPageLearnMoreLabel => 'மேலும் அறிக';
+
+  @override
+  String appUrlTypeContact(String publisher) {
+    return 'Contact $publisher';
+  }
+
+  @override
+  String get appUrlTypeHomepage => 'Developer website';
+
+  @override
+  String get appUrlTypeUnknown => 'Link';
+
+  @override
+  String get appConfinementUnknown => 'Unknown';
+
+  @override
+  String get appConfinementStrict => 'Sandboxed';
+
+  @override
+  String get appConfinementDevelopment => 'Devmode';
+
+  @override
+  String get appConfinementClassic => 'Unrestricted';
+
+  @override
+  String get appConfinementUnrestricted => 'Unrestricted';
+
+  @override
+  String get appLicenseUnknown => 'Unknown';
+
+  @override
+  String get appPublishedUnknown => 'Unknown';
+
+  @override
+  String get appMoreActionsSemanticLabel => 'More actions';
+
+  @override
+  String get packageFormatDebLabel => 'டெபியன் தொகுப்புகள்';
+
+  @override
+  String get packageFormatSnapLabel => 'தொகுப்புகள்';
+
+  @override
+  String get packageFormatAllLabel => 'All packages';
+
+  @override
+  String get packageFormatFlatpakLabel => 'Flatpak packages';
+
+  @override
+  String get searchFieldFlatpakSection => 'Flatpak packages';
+
+  @override
+  String get flatpakRemoteLabel => 'Remote';
+
+  @override
+  String get flatpakVersionUnknown => 'Unknown';
+
+  @override
+  String get snapActionCancelLabel => 'ரத்துசெய்';
+
+  @override
+  String get snapActionInstallLabel => 'நிறுவவும்';
+
+  @override
+  String get snapActionInstalledLabel => 'நிறுவப்பட்டது';
+
+  @override
+  String get snapActionInstallingLabel => 'நிறுவுகிறது';
+
+  @override
+  String get snapActionOpenLabel => 'திற';
+
+  @override
+  String get snapActionRemoveLabel => 'நிறுவல் நீக்க';
+
+  @override
+  String get snapActionRemovingLabel => 'நிறுவல் நீக்குதல்';
+
+  @override
+  String get snapActionRevertLabel => 'Revert update';
+
+  @override
+  String get snapActionRevertingLabel => 'Reverting update';
+
+  @override
+  String get snapRevertConfirmTitle => 'Revert to previous version?';
+
+  @override
+  String get snapRevertConfirmMessage =>
+      'Automatic updates will resume when a new version is available.';
+
+  @override
+  String get snapRevertConfirmRevert => 'Revert';
+
+  @override
+  String get snapRevertConfirmCancel => 'Cancel';
+
+  @override
+  String snapRevertConfirmTitleWithVersions(String currentVersion,
+      int currentRevision, String previousVersion, int previousRevision) {
+    return 'Revert from $currentVersion (rev $currentRevision) to $previousVersion (rev $previousRevision)?';
+  }
+
+  @override
+  String get snapRevertNoPreviousRevisionMessage =>
+      'No previous local revision is available to revert to.';
+
+  @override
+  String get snapActionSwitchChannelLabel => 'சேனல் சுவிட்ச்';
+
+  @override
+  String get snapActionUpdateLabel => 'புதுப்பிப்பு';
+
+  @override
+  String get snapCategoryAll => 'அனைத்து பிரிவுகளும்';
+
+  @override
+  String get snapActionUpdatingLabel => 'புதுப்பித்தல்';
+
+  @override
+  String appCardPublisherSemanticLabel(String publisher) {
+    return 'Published by $publisher.';
+  }
+
+  @override
+  String appCardRatingSemanticLabel(String rating) {
+    return 'Rating $rating.';
+  }
+
+  @override
+  String get snapCategoryArtAndDesign => 'கலை மற்றும் வடிவமைப்பு';
+
+  @override
+  String get snapCategoryArtAndDesignButtonLabel => 'உருவாக்கத் தொடங்குங்கள்';
+
+  @override
+  String get snapCategoryArtAndDesignSlogan =>
+      'உங்கள் முதல் ஓவியத்திலிருந்து இறுதி தொடுதல் வரை, கலை மற்றும் வடிவமைப்பிற்கான பயன்பாடுகளை ஆராயுங்கள்.';
+
+  @override
+  String get snapCategoryBooksAndReference => 'புத்தகங்கள் மற்றும் குறிப்பு';
+
+  @override
+  String get snapCategoryDefaultButtonLabel => 'மேலும் கண்டறியவும்';
+
+  @override
+  String get snapCategoryDevelopment => 'வளர்ச்சி';
+
+  @override
+  String get snapCategoryDevelopmentSlogan =>
+      'டெவலப்பர்களுக்கு புகைப்படங்கள் இருக்க வேண்டும்';
+
+  @override
+  String get snapCategoryDevicesAndIot => 'சாதனங்கள் மற்றும் ஐஓடி';
+
+  @override
+  String get snapCategoryEducation => 'கல்வி';
+
+  @override
+  String get snapCategoryEntertainment => 'பொழுதுபோக்கு';
+
+  @override
+  String get snapCategoryFeatured => 'இடம்பெற்றது';
+
+  @override
+  String get snapCategoryFeaturedSlogan => 'பிரத்யேக புகைப்படங்கள்';
+
+  @override
+  String get snapCategoryFinance => 'பொருள்';
+
+  @override
+  String get snapCategoryGames => 'விளையாட்டுகள்';
+
+  @override
+  String get snapCategoryGamesSlogan => 'உங்கள் விளையாட்டு இரவுக்கான எல்லாம்';
+
+  @override
+  String get snapCategoryGameDev => 'விளையாட்டு வளர்ச்சி';
+
+  @override
+  String get snapCategoryGameDevSlogan => 'விளையாட்டு வளர்ச்சி';
+
+  @override
+  String get snapCategoryGameEmulators => 'முன்மாதிரிகள்';
+
+  @override
+  String get snapCategoryGameEmulatorsSlogan => 'முன்மாதிரிகள்';
+
+  @override
+  String get snapCategoryGnomeGames => 'க்னோம் விளையாட்டுகள்';
+
+  @override
+  String get snapCategoryGnomeGamesSlogan => 'க்னோம் கேம்ச் சூட்';
+
+  @override
+  String get snapCategoryKdeGames => 'விளையாட்டுகள்';
+
+  @override
+  String get snapCategoryKdeGamesSlogan => 'கே.டி.இ கேம்ச் சூட்';
+
+  @override
+  String get snapCategoryGameLaunchers => 'விளையாட்டு லாஞ்சர்கள்';
+
+  @override
+  String get snapCategoryGameLaunchersSlogan => 'விளையாட்டு லாஞ்சர்கள்';
+
+  @override
+  String get snapCategoryGameContentCreation => 'உள்ளடக்க உருவாக்கம்';
+
+  @override
+  String get snapCategoryGameContentCreationSlogan => 'உள்ளடக்க உருவாக்கம்';
+
+  @override
+  String get snapCategoryHealthAndFitness => 'உடல்நலம் மற்றும் உடற்பயிற்சி';
+
+  @override
+  String get snapCategoryMusicAndAudio => 'இசை மற்றும் ஆடியோ';
+
+  @override
+  String get snapCategoryNewsAndWeather => 'செய்தி மற்றும் வானிலை';
+
+  @override
+  String get snapCategoryPersonalisation => 'தனிப்பயனாக்கம்';
+
+  @override
+  String get snapCategoryPhotoAndVideo => 'புகைப்படம் மற்றும் வீடியோ';
+
+  @override
+  String get snapCategoryProductivity => 'உற்பத்தித்திறன்';
+
+  @override
+  String get snapCategoryProductivityButtonLabel =>
+      'உற்பத்தித்திறன் சேகரிப்பைக் கண்டறியவும்';
+
+  @override
+  String get snapCategoryProductivitySlogan =>
+      'நீங்கள் செய்ய வேண்டிய பட்டியலில் இருந்து ஒரு விசயத்தைக் கடக்கவும்';
+
+  @override
+  String get snapCategoryScience => 'அறிவியல்';
+
+  @override
+  String get snapCategorySecurity => 'பாதுகாப்பு';
+
+  @override
+  String get snapCategoryServerAndCloud => 'சேவையகம் மற்றும் முகில்';
+
+  @override
+  String get snapCategorySocial => 'சமூக';
+
+  @override
+  String get snapCategoryUbuntuDesktop => 'உபுண்டு டெச்க்டாப்';
+
+  @override
+  String get snapCategoryUbuntuDesktopSlogan =>
+      'உங்கள் டெச்க்டாப்பைத் தொடங்கவும்';
+
+  @override
+  String get snapCategoryUtilities => 'பயன்பாடுகள்';
+
+  @override
+  String get snapSortOrderAlphabeticalAsc => 'அகரவரிசை (A முதல் சட் வரை)';
+
+  @override
+  String get snapSortOrderAlphabeticalDesc => 'அகரவரிசை (z முதல் A வரை)';
+
+  @override
+  String get snapSortOrderDownloadSizeAsc =>
+      'அளவு (மிகச்சிறிய முதல் மிகப்பெரியது)';
+
+  @override
+  String get snapSortOrderDownloadSizeDesc =>
+      'அளவு (மிகப்பெரியது முதல் சிறியது)';
+
+  @override
+  String get snapSortOrderInstalledSizeAsc =>
+      'அளவு (மிகச்சிறிய முதல் மிகப்பெரியது)';
+
+  @override
+  String get snapSortOrderInstalledSizeDesc =>
+      'அளவு (மிகப்பெரியது முதல் சிறியது)';
+
+  @override
+  String get snapSortOrderInstalledDateAsc =>
+      'குறைந்தது அண்மைக் காலத்தில் புதுப்பிக்கப்பட்டது';
+
+  @override
+  String get snapSortOrderInstalledDateDesc =>
+      'மிக அண்மைக் காலத்தில் புதுப்பிக்கப்பட்டது';
+
+  @override
+  String get snapSortOrderRelevance => 'பொருத்தமானது';
+
+  @override
+  String get snapRatingsBandVeryGood => 'மிகவும் நல்லது';
+
+  @override
+  String get snapRatingsBandGood => 'நல்லது';
+
+  @override
+  String get snapRatingsBandNeutral => 'நடுநிலை';
+
+  @override
+  String get snapRatingsBandPoor => 'ஏழை';
+
+  @override
+  String get snapRatingsBandVeryPoor => 'மிகவும் ஏழை';
+
+  @override
+  String get snapRatingsBandInsufficientVotes => 'போதிய வாக்குகள்';
+
+  @override
+  String snapRatingsVotes(int n) {
+    return '$n வாக்குகள்';
+  }
+
+  @override
+  String snapReportLabel(String snapName) {
+    return 'அறிக்கை $snapName';
+  }
+
+  @override
+  String get snapReportSelectReportReasonLabel =>
+      'இந்த புகைப்படத்தைப் புகாரளிப்பதற்கான காரணத்தைத் தேர்வுசெய்க';
+
+  @override
+  String get snapReportSelectAnOptionLabel =>
+      'ஒரு விருப்பத்தைத் தேர்ந்தெடுக்கவும்';
+
+  @override
+  String get snapReportOptionCopyrightViolation =>
+      'பதிப்புரிமை அல்லது வர்த்தக முத்திரை மீறல்';
+
+  @override
+  String get snapReportOptionStoreViolation =>
+      'பணி மீறல் விதிமுறைகளை ச்னாப் செய்யுங்கள்';
+
+  @override
+  String get snapReportDetailsLabel =>
+      'உங்கள் அறிக்கைக்கு மேலும் விரிவான காரணத்தை வழங்கவும்';
+
+  @override
+  String get snapReportOptionalEmailAddressLabel =>
+      'உங்கள் மின்னஞ்சல் (விரும்பினால்)';
+
+  @override
+  String get snapReportCancelButtonLabel => 'ரத்துசெய்';
+
+  @override
+  String get snapReportSubmitButtonLabel => 'அறிக்கையை சமர்ப்பிக்கவும்';
+
+  @override
+  String get snapReportEnterValidEmailError =>
+      'சரியான மின்னஞ்சல் முகவரியை உள்ளிடவும்';
+
+  @override
+  String get snapReportDetailsHint => 'கருத்து ...';
+
+  @override
+  String get snapReportPrivacyAgreementLabel =>
+      'இந்த படிவத்தை சமர்ப்பிப்பதில், நான் படித்து ஒப்புக்கொள்கிறேன் என்பதை உறுதிப்படுத்துகிறேன் ';
+
+  @override
+  String get snapReportPrivacyAgreementCanonicalPrivacyNotice =>
+      'நியமனத்தின் தனியுரிமை அறிவிப்பு ';
+
+  @override
+  String get snapReportPrivacyAgreementAndLabel => 'மற்றும் ';
+
+  @override
+  String get snapReportPrivacyAgreementPrivacyPolicy => 'தனியுரிமைக் கொள்கை';
+
+  @override
+  String get debPageErrorNoPackageInfo =>
+      'தொகுப்பு தகவல்கள் எதுவும் கிடைக்கவில்லை';
+
+  @override
+  String get debPageDocumentationLinkLabel =>
+      'டெபியன் தொகுப்புகளை நிர்வகிப்பது பற்றி அறிக';
+
+  @override
+  String get debPageShareLinkCopiedMessage => 'Link copied to clipboard';
+
+  @override
+  String get debPageShareSemanticLabel => 'Copy link';
+
+  @override
+  String get externalResources => 'கூடுதல் ஆதாரங்கள்';
+
+  @override
+  String get externalResourcesButtonLabel => 'மேலும் கண்டறியவும்';
+
+  @override
+  String get allGamesButtonLabel => 'அனைத்து விளையாட்டுகளும்';
+
+  @override
+  String get externalResourcesDisclaimer =>
+      'குறிப்பு: இவை அனைத்தும் வெளிப்புற கருவிகள். இவை நியமனத்தால் சொந்தமானவை அல்லது விநியோகிக்கப்படவில்லை.';
+
+  @override
+  String get openInBrowser => 'உலாவியில் திற';
+
+  @override
+  String get installAll => 'அனைத்தையும் நிறுவவும்';
+
+  @override
+  String get localDebWarningTitle => 'பாதுகாப்பற்றது';
+
+  @override
+  String get localDebWarningBody =>
+      'இந்த தொகுப்பு மூன்றாம் தரப்பினரால் வழங்கப்படுகிறது. பயன்பாட்டு மையத்திற்கு வெளியில் இருந்து தொகுப்புகளை நிறுவுவது உங்கள் கணினி மற்றும் தனிப்பட்ட தரவுகளுக்கு ஆபத்தை அதிகரிக்கும். தொடர்வதற்கு முன் மூலத்தை நம்புவதை உறுதிசெய்க.';
+
+  @override
+  String get localDebLearnMore =>
+      'மூன்றாம் தரப்பு தொகுப்புகள் பற்றி மேலும் அறிக';
+
+  @override
+  String get localDebDialogMessage =>
+      'இந்த தொகுப்பு மூன்றாம் தரப்பினரால் வழங்கப்படுகிறது, மேலும் இது உங்கள் கணினி மற்றும் தனிப்பட்ட தரவை அச்சுறுத்தக்கூடும்.';
+
+  @override
+  String get localDebDialogConfirmation =>
+      'நீங்கள் அதை நிறுவ விரும்புகிறீர்களா?';
+
+  @override
+  String snapdExceptionRunningApps(String snapName) {
+    return '$snapName புதுப்பிக்க முடியவில்லை, ஏனெனில் அது தற்போது இயங்குகிறது.';
+  }
+
+  @override
+  String get errorViewCheckStatusLabel => 'நிலையை சரிபார்க்கவும்';
+
+  @override
+  String get errorViewNetworkErrorTitle => 'இணையத்துடன் இணைக்கவும்';
+
+  @override
+  String get errorViewNetworkErrorDescription =>
+      'இணைய இணைப்பு இல்லாமல் பயன்பாட்டு மையத்தில் உள்ளடக்கத்தை ஏற்ற முடியாது.';
+
+  @override
+  String get errorViewNetworkErrorAction =>
+      'உங்கள் இணைப்பைச் சரிபார்த்து மீண்டும் முயற்சிக்கவும்.';
+
+  @override
+  String get errorViewServerErrorDescription =>
+      'மன்னிக்கவும், நாங்கள் தற்போது பயன்பாட்டு மையத்தில் சிக்கல்களை சந்தித்து வருகிறோம்.';
+
+  @override
+  String get errorViewServerErrorAction =>
+      'புதுப்பிப்புகளுக்கான நிலையை சரிபார்க்கவும் அல்லது பின்னர் மீண்டும் முயற்சிக்கவும்.';
+
+  @override
+  String get errorViewUnknownErrorTitle => 'ஏதோ தவறு நடந்தது';
+
+  @override
+  String get errorViewUnknownErrorDescription =>
+      'மன்னிக்கவும், ஆனால் பிழை என்னவென்று எங்களுக்குத் தெரியவில்லை.';
+
+  @override
+  String get errorViewUnknownErrorAction =>
+      'நீங்கள் இப்போது மீண்டும் முயற்சிக்கலாம், புதுப்பிப்புகளுக்கான நிலையை சரிபார்க்கலாம் அல்லது பின்னர் மீண்டும் முயற்சிக்கவும்.';
+
+  @override
+  String get codecPageTitle => 'Missing media codecs';
+
+  @override
+  String get codecPageDescription =>
+      'You need to install the following codecs for handling certain video and audio formats:';
+
+  @override
+  String get codecProprietaryDisclaimer =>
+      'Some of the recommended codecs could be proprietary.';
+
+  @override
+  String get codecInstallAllButton => 'Install recommended codecs';
+}

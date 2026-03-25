@@ -16,13 +16,15 @@ part 'app_providers.g.dart';
 enum PackageTypeFilter {
   all,
   snap,
-  deb;
+  deb,
+  flatpak;
 
   String localize(AppLocalizations l10n) {
     return switch (this) {
       PackageTypeFilter.all => l10n.managePagePackageTypeAll,
       PackageTypeFilter.snap => l10n.managePagePackageTypeSnap,
       PackageTypeFilter.deb => l10n.managePagePackageTypeDeb,
+      PackageTypeFilter.flatpak => l10n.managePagePackageTypeFlatpak,
     };
   }
 }
@@ -119,6 +121,7 @@ class InstalledApps extends _$InstalledApps {
             PackageTypeFilter.all => true,
             PackageTypeFilter.snap => app is ManageSnapData,
             PackageTypeFilter.deb => app is ManageDebData,
+            PackageTypeFilter.flatpak => false, // flatpak apps not yet in manage list
           },
         )
         .where((app) => showSystemApps || app.isLaunchable)

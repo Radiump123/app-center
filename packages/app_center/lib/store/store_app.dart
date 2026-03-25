@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:app_center/deb/deb.dart';
+import 'package:app_center/flatpak/flatpak.dart';
 import 'package:app_center/error/error.dart';
 import 'package:app_center/games/games.dart';
 import 'package:app_center/gstreamer/gstreamer.dart';
@@ -139,6 +140,10 @@ class _StoreAppHome extends ConsumerWidget {
           onSearch: (query) => navigator.pushAndRemoveSearch(query: query),
           onSnapSelected: (name) => navigator.pushSnap(name: name),
           onDebSelected: (id) => navigator.pushDeb(id: id),
+          onFlatpakSelected: (app) => navigator.pushNamed(
+            '/search',
+            arguments: app,
+          ),
           searchFocus: searchFocus,
         ),
       ),
